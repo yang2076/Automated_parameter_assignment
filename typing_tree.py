@@ -57,10 +57,10 @@ class typing_tree:
     self.premodified_items_set[self.type_num] = tree_item
 
   def read_ranking_file(self, rank_file, type_file):
-    f_0 = open(rank_file)
+    f_0 = open(os.path.join(databasedir,rank_file))
     rank_lines = f_0.readlines()
     f_0.close()
-    f_1 = open(type_file)
+    f_1 = open(os.path.join(databasedir,type_file))
     type_lines = f_1.readlines()
     f_1.close()
     items = {}
@@ -149,5 +149,7 @@ class typing_tree:
 
 
 a = typing_tree()
-a.read_ranking_file('typing_tree.log','amoebaplusBondedType.dat')
+global databasedir
+databasedir = os.path.join(os.path.split(__file__)[0]
+a.read_ranking_file(os.path.join(databasedir,'typing_tree.log'),os.path.join(databasedir,'amoebaplusBondedType.dat'))
 a.sorting_tree()
