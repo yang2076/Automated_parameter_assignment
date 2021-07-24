@@ -9,7 +9,7 @@ def typing_tree_assign(typing_tree, term, comb, classParameterDict):
     atoms = comb.split('_')
     lists_1 = typing_tree.search_in_tree(max(int(atoms[0]),int(atoms[1])))
     lists_2 = typing_tree.search_in_tree(min(int(atoms[0]),int(atoms[1])))
-
+    
     # check if there is H (HCH, HCH2, HCH3 and so on)
     if(int(atoms[0]) == 1 or int(atoms[0]) in range(16,29)):
       for i in lists_1:

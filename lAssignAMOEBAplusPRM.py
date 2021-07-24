@@ -256,7 +256,7 @@ def assignBonded(fname, tinkerkey, new_para_method, fitting = "NO"):
   # bond stretching
   # only assign force constant parameter, since equilibrium length will be from QM
   class1, class2 = np.loadtxt(os.path.join(databasedir,"bond.prm"), usecols=(1,2), unpack=True, dtype="str",skiprows=1)
-  bondLs, bondKs = np.loadtxt(os.path.join(databasedir,"bond.prm"), usecols=(3,4), unpack=True, dtype="float",skiprows=1)
+  bondKs, bondLs = np.loadtxt(os.path.join(databasedir,"bond.prm"), usecols=(3,4), unpack=True, dtype="float",skiprows=1)
   classes = []
   for c1, c2 in zip(class1, class2):
     classes.append(c1 + "_" + c2)
@@ -279,12 +279,12 @@ def assignBonded(fname, tinkerkey, new_para_method, fitting = "NO"):
           comb1 = c1 + "_" + c2
           comb2 = c2 + "_" + c1
           if comb1 in classBondParameterDict:
-            para_strings_k.append("bond %s %s %10.5f %s\n"%(d[1], d[2], classBondParameterDict[comb1][1], d[4]))
-            para_strings_kbt.append("bond %s %s %10.5f %10.5f\n"%(d[1], d[2], classBondParameterDict[comb1][1], classBondParameterDict[comb1][0]))
+            para_strings_k.append("bond %s %s %10.4f %s\n"%(d[1], d[2], classBondParameterDict[comb1][0], d[4]))
+            para_strings_kbt.append("bond %s %s %10.4f %10.4f\n"%(d[1], d[2], classBondParameterDict[comb1][0], classBondParameterDict[comb1][1]))
             print(GREEN + "BOND stretching parameter assigned for bond %s-%s"%(d[1], d[2]) + ENDC)
           elif comb2 in classBondParameterDict:
-            para_strings_k.append("bond %s %s %10.5f %s\n"%(d[1], d[2], classBondParameterDict[comb2][1], d[4]))
-            para_strings_kbt.append("bond %s %s %10.5f %10.5f\n"%(d[1], d[2], classBondParameterDict[comb2][1], classBondParameterDict[comb2][0]))
+            para_strings_k.append("bond %s %s %10.4f %s\n"%(d[1], d[2], classBondParameterDict[comb2][0], d[4]))
+            para_strings_kbt.append("bond %s %s %10.4f %10.4f\n"%(d[1], d[2], classBondParameterDict[comb2][0], classBondParameterDict[comb2][1]))
             print(GREEN + "BOND stretching parameter assigned for bond %s-%s"%(d[1], d[2]) + ENDC)
           else:
             if(new_para_method == 'DATABASE'):
@@ -293,8 +293,8 @@ def assignBonded(fname, tinkerkey, new_para_method, fitting = "NO"):
               para = modified_Seminario('b', d[1] + "_" + d[2], atomclasses, k_b_dict)
 
             if(fitting == 'NO'):
-              para_strings_k.append("bond %s %s %10.5f %s\n"%(d[1], d[2], para[0], d[4])) # para[0]: k;  para[1]: b 
-              para_strings_kbt.append("bond %s %s %10.5f %s\n"%(d[1], d[2], para[0], para[1]))
+              para_strings_k.append("bond %s %s %10.4f %s\n"%(d[1], d[2], para[0], d[4])) # para[0]: k;  para[1]: b 
+              para_strings_kbt.append("bond %s %s %10.4f %10.4f\n"%(d[1], d[2], para[0], para[1]))
               print(GREEN + "BOND stretching parameter (newly generated) assigned for bond %s-%s"%(d[1], d[2]) + ENDC)
             else:
               para_strings_k.append("bond %s %s PRM%d_ %s\n"%(d[1], d[2], len(fitting_list), d[4]))
@@ -395,8 +395,10 @@ def assignBonded(fname, tinkerkey, new_para_method, fitting = "NO"):
           else: 
             _, para = typing_tree_assign(tree_1, 'ba', comb1, classStrbndKconstantDict)
             if(fitting == 'NO'):
-              para_strings_k.append("strbnd %s %s %s %s %s\n"%(angletype1, angletype2, angletype3, para[0], para[1]))
-              para_strings_kbt.append("strbnd %s %s %s %s %s\n"%(angletype1, angletype2, angletype3, para[0], para[1]))
+              p0 = "%10.5f"%para[0] 
+              p1 = "%10.5f"%para[1] 
+              para_strings_k.append("strbnd %s %s %s %s %s\n"%(angletype1, angletype2, angletype3, p0, p1))
+              para_strings_kbt.append("strbnd %s %s %s %s %s\n"%(angletype1, angletype2, angletype3, p0, p1))
               print(GREEN + "STRBND coupling parameter (newly generated) assigned for angle %s-%s-%s"%(d[1], d[2], d[3]) + ENDC)
             else:
               para_strings_k.append("strbnd %s %s %s PRM%d_ PRM%d_\n"%(d[1], d[2], d[3], len(fitting_list), len(fitting_list)))
@@ -466,11 +468,16 @@ def main():
   global konly
   konly = args["konly"]
   global databasedir,databasedir
-  databasedir = os.path.join(os.path.split(__file__)[0]
+  databasedir = os.path.join(os.path.split(__file__)[0])
 
   global inclusions
   inclusions = []
-  atom_class = genAtomType(xyz, key, potent)
+  typefile = xyz.split('.')[0] + '.type'
+  if not os.path.isfile(typefile):
+    atom_class = genAtomType(xyz, key, potent)
+  else:
+    atms, clsss = np.loadtxt(typefile, usecols=(1,2), dtype='str', unpack=True)
+    atom_class = dict(zip(atms,clsss))
   if atoms == []:
     inclusions = atom_class.values()
   else:
