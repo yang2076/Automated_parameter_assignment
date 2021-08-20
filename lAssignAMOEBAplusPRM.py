@@ -61,7 +61,7 @@ def genAtomType(txyz, key, potent):
         data = line.split()
         myStr = data[0]
         classNum = data[2]
-        className = data[3]
+        className = line.split("#")[0].split()[-1] 
         comment = line.split("# ")[1][0:-1]
         smarts = Smarts(myStr)
         match = smarts.findall(mol)
