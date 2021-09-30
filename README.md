@@ -1,4 +1,4 @@
-# Automated Parameter Assignment for AMOEBA(+) Model
+# Automated Parameter Assignment for AMOEBA+ Model
 
 ## Introduction
 This program (`lAssignAMOEBAplusPRM.py`), together with others, is designed to automatically assign the bonded and nonbonded parameters for the AMOEBA and AMOEBA+ models, based on chemical pattern matching. Here we will use phenol as an example (files can be found in example folder)
@@ -28,11 +28,13 @@ python lAssignAMOEBAplusPRM.py -potent polar -xyz phenol.xyz -key phenol.key
 
 ### Charge flux
 
-Charge flux parameters are assigned if `bond` and `angle` keywords exist in the `key` file. 
+Charge flux parameters can be assigned if `bond` and `angle` keywords exist in the `key` file. 
+
 ```shell
 python lAssignAMOEBAplusPRM.py -potent CF -xyz phenol.xyz -key phenol.key
 ```
 
-### Other terms
-
-Coming soon.
+### Reference
+* Polarizability parameters. In submission (2021)
+* Valence parameters. Submitted (2021)
+* CF parameters. J. Chem. Phys. 153, 064103 (2020); [website](https://doi.org/10.1063/5.0016376)
