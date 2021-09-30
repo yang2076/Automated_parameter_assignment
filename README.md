@@ -37,4 +37,4 @@ python lAssignAMOEBAplusPRM.py -potent CF -xyz phenol.xyz -key phenol.key
 ### Reference
 * Polarizability parameters. In submission (2021)
 * Valence parameters. Submitted (2021)
-* CF parameters. J. Chem. Phys. 153, 064103 (2020); [website](https://doi.org/10.1063/5.0016376)
+* CF parameters. J. Chem. Phys. 153, 064103 (2020); [link](https://doi.org/10.1063/5.0016376)
