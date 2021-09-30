@@ -15,10 +15,10 @@ python lAssignAMOEBAplusPRM.py -potent bonded -xyz phenol.xyz -key phenol.key -k
 In addition, ranking tree and reversed searching algorithm can be used to assign the best bonded parameters if no exact match available.
 * Format of the typing tree
 
-  The whole structure of typing tree has been documented in file typing_tree.log.
+  The whole structure of typing tree has been documented in file dat/typing_tree.log.
   The format for this file:
   
-  level   upper_index   general_index   type_index
+  `level   upper_index   general_index   type_index`
   
 ### Polarizability
 
