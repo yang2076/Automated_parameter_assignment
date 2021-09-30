@@ -11,10 +11,10 @@ import sys
 import argparse
 import numpy as np
 from pybel import *
-from fitting import *
-from typing_tree import *
-from typing_tree_assign import *
-from modified_Seminario import *
+from valenceModule.fitting import *
+from valenceModule.typing_tree import *
+from valenceModule.typing_tree_assign import *
+from valenceModule.modified_Seminario import *
 
 # color
 RED = '\033[91m'
