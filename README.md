@@ -42,6 +42,6 @@ Go to the example folder and execute `sh run.sh`, you should be able to get the 
 
 ### Reference
 * Polarizability parameters. _Manuscript in prep_ (2021)
-* Valence parameters. _Submitted_ (2021)
+* Valence parameters for organic molecules. _Submitted_ (2021)
 * CF parameters for organic molecules. _J. Chem. Phys._ 153, 064103 (2020); [link](https://doi.org/10.1063/5.0016376)
 * CF model implementation & AMOEBA+ water. _J. Phys. Chem. Lett._ 2020, 11, 2, 419–426; [link](https://doi.org/10.1021/acs.jpclett.9b03489)
