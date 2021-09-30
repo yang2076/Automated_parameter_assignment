@@ -1,6 +1,7 @@
-import os,sys
-from typing_tree import typing_tree
+import os
+import sys
 import numpy as np
+from valenceModule.typing_tree import typing_tree
 
 def typing_tree_assign(typing_tree, term, comb, classParameterDict):
 

@@ -150,6 +150,8 @@ class typing_tree:
 
 a = typing_tree()
 global databasedir
-databasedir = os.path.join(os.path.split(__file__)[0])
-a.read_ranking_file(os.path.join(databasedir,'dat', 'typing_tree.log'),os.path.join(databasedir, 'dat', 'amoebaplusBondedType.dat'))
+moduledir = os.path.join(os.path.split(__file__)[0])
+databasedir = moduledir.replace("valenceModule", 'dat')
+
+a.read_ranking_file(os.path.join(databasedir, 'typing_tree.log'), os.path.join(databasedir, 'amoebaplusBondedType.dat'))
 a.sorting_tree()

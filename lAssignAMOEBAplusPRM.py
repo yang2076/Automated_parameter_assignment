@@ -21,7 +21,6 @@ RED = '\033[91m'
 GREEN = '\033[92m'
 ENDC = '\033[0m'
 
-
 def genAtomType(txyz, key, potent):
   fname, _ = os.path.splitext(txyz)
   lines = open(txyz).readlines()
@@ -57,7 +56,7 @@ def genAtomType(txyz, key, potent):
                          "NONBONDED": "amoebaplusNonbondedType.dat"}
     lines = open(os.path.join(datfiledir, potent_typefile_dict[potent])).readlines()
     for line in lines:
-      if "#" not in line[0] and len(line)>10:
+      if ("#" not in line[0]) and (len(line) > 10):
         data = line.split()
         myStr = data[0]
         classNum = data[2]
@@ -70,7 +69,7 @@ def genAtomType(txyz, key, potent):
             matchDict[match[i][0]] = className
             commentsDict[match[i][0]] = comment
             classesDict[match[i][0]] = classNum
-    with open(f"{fname}.type", "w") as f:	
+    with open(f"{fname}.type.{potent.lower()}", "w") as f:	
       for atom in range(1, natoms+1, 1):
         atomtype = types[atom-1]
         atomclass = type_class_dict[atomtype]
@@ -80,13 +79,13 @@ def genAtomType(txyz, key, potent):
 def assignPolar(fname, tinkerkey):
   types, polars = np.loadtxt(os.path.join(prmfiledir,"polarize.prm"), usecols=(0,1), unpack=True, dtype="str",skiprows=1)
   smartspolarDict = dict(zip(types, polars))
-  ttypes, stypes = np.loadtxt(f"{fname}.type", usecols=(1,3), unpack=True, dtype="str")
+  ttypes, stypes = np.loadtxt(f"{fname}.type.polar", usecols=(1,3), unpack=True, dtype="str")
   tinkerpolarDict = {}
   for t,s in zip(ttypes, stypes): 
     if t not in tinkerpolarDict:
       tinkerpolarDict[t] = smartspolarDict[s]
   lines = open(tinkerkey).readlines()
-  with open(tinkerkey, "w") as f:
+  with open(tinkerkey + "_polar", "w") as f:
     for line in lines:
       if "polarize " in line:
         dd = line.split()
@@ -94,7 +93,7 @@ def assignPolar(fname, tinkerkey):
           dd[2] = tinkerpolarDict[dd[1]]
           line = "    ".join(dd) + "\n"
           print(GREEN + "polarizability parameter found for %s"%dd[1] + ENDC)
-      f.write(line)
+          f.write(line)
   return
 
 def assignNonbonded(fname, tinkerkey):
@@ -110,7 +109,7 @@ def assignNonbonded(fname, tinkerkey):
   smartsVDWDict = dict(zip(types, VDW))
   # !!! attention, vdw/cp/ct may use atom type/atom class, depending on the tinker code
   # it's correct if atom type == atom class, which is the case for a new molecule derived by poltype
-  ttypes, stypes = np.loadtxt(f"{fname}.type", usecols=(1,2), unpack=True, dtype="str")
+  ttypes, stypes = np.loadtxt(f"{fname}.type.nonbonded", usecols=(2,3), unpack=True, dtype="str")
   tinkerCPDict = {}
   tinkerCTDict = {}
   tinkerVDWDict = {}
@@ -148,7 +147,8 @@ def assignCFlux(fname, tinkerkey):
   # map from tinker type number to smart type string
   # this will be used by bndcflux and angcflux
   # !!! pay attention to the atom type/class
-  ttypes, stypes = np.loadtxt(f"{fname}.type", usecols=(1,2), unpack=True, dtype="str")
+  # here I am using atom type (index {1}) 
+  ttypes, stypes = np.loadtxt(f"{fname}.type.cf", usecols=(1,3), unpack=True, dtype="str")
   tinker2smarts = dict(zip(ttypes, stypes))
   #cflux-b
   '''bond cflux atom indices are interchangable'''
@@ -159,7 +159,7 @@ def assignCFlux(fname, tinkerkey):
   smartsCFbondDict = dict(zip(types, jbonds))
   lines = open(tinkerkey).readlines()
 
-  with open(tinkerkey,"a") as f:
+  with open(tinkerkey + "_cf","w") as f:
     f.write("# CHGFLX parameters assigned from database\n")
     for line in lines:
       if "bond " in line:
@@ -202,7 +202,7 @@ def assignCFlux(fname, tinkerkey):
   
   smartsCFangleDict = dict(zip(types, jparams))
   
-  with open(tinkerkey, "a") as f:
+  with open(tinkerkey + "_cf", "a") as f:
     for line in lines:
       if "angle " in line:
         dd = line.split()
@@ -228,18 +228,11 @@ def assignCFlux(fname, tinkerkey):
 def assignBonded(fname, tinkerkey, new_para_method, fitting = "NO"):
   # 2 methods to generate the new parameters: modified Seminario (Hessian); average by ranking tree (DATABASE)
   # you can choose to fit the new parameters to the given frequencies to improve the accuracy
-  atomclasses, databaseclasses = np.loadtxt(f"{fname}.type", usecols=(2,4), unpack=True, dtype="str")
+  atomclasses, databaseclasses = np.loadtxt(f"{fname}.type.bonded", usecols=(2,4), unpack=True, dtype="str")
   tinker2database = dict(zip(atomclasses, databaseclasses))
   fitting_list = []
   para_strings_k = []
   para_strings_kbt = []
-  if header == "AMOEBA":
-    head = open(os.path.join(prmfiledir, "amoebabio18_header.prm")).readlines()
-  else:
-    head = open(os.path.join(prmfiledir, "amoebaplus21_header.prm")).readlines()
-  
-  para_strings_k += head
-  para_strings_kbt += head
   hessian_mat = []
   coords = []
 
@@ -269,9 +262,6 @@ def assignBonded(fname, tinkerkey, new_para_method, fitting = "NO"):
   with open(tinkerkey) as f:
     for line in lines[idx:]:
       d = line.split()
-      if ("atom " in line) and (d[2] in inclusions):
-        para_strings_k.append(line)
-        para_strings_kbt.append(line)
       if ("bond " in line) and (set(d[1:3]).issubset(set(inclusions))):
         if (d[1] in atomclasses) and (d[2] in atomclasses):
           c1 = tinker2database[d[1]]
@@ -429,7 +419,7 @@ def assignBonded(fname, tinkerkey, new_para_method, fitting = "NO"):
             para_strings_kbt.append("opbend %s %s    0    0 %s\n"%(d[1], d[2], para))
             print(GREEN + "OPBEND parameter (newly generated) assigned for bond %s-%s-0-0"%(d[1], d[2]) + ENDC)
 
-  with open(f"{fname}_new.key", "w") as f:
+  with open(tinkerkey + "_bonded", "w") as f:
     if konly == "YES":
       for line in para_strings_k:
         f.write(line)
@@ -475,11 +465,7 @@ def main():
   global inclusions
   inclusions = []
   typefile = xyz.split('.')[0] + '.type'
-  if not os.path.isfile(typefile):
-    atom_class = genAtomType(xyz, key, potent)
-  else:
-    atms, clsss = np.loadtxt(typefile, usecols=(1,2), dtype='str', unpack=True)
-    atom_class = dict(zip(atms,clsss))
+  atom_class = genAtomType(xyz, key, potent)
   if atoms == []:
     inclusions = atom_class.values()
   else:
