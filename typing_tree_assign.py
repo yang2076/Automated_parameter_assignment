@@ -439,25 +439,3 @@ def typing_tree_assign(typing_tree, term, comb, classParameterDict):
       return (comb, average)
     else:
       pass
-
-
-#a = typing_tree()
-#a.read_ranking_file('typing_tree.log','amoebaplusBondedType.dat')
-#a.sorting_tree()
-#class1, class2, kbonds = np.loadtxt("opbend.prm", usecols=(1,2,5), unpack=True, dtype="str",skiprows=1)
-#classes = []
-#for c1, c2 in zip(class1, class2):
-#  classes.append(c1 + "_" + c2)
-#classParameterDict = dict(zip(classes, kbonds))
-#
-#comb = []
-#f = open("undefined_2")
-#lines = f.readlines()
-#f.close()
-#for line in lines:
-#  terms = line.split()
-#  comb.append(terms[0] + '_' + terms[1])
-#for k in comb:
-#  i = typing_tree_assign(a, 'o', k, classParameterDict)
-#  atoms = i[0].split('_')
-#  print("opbend %5d %6d %6d %6d %15.4f" %(int(atoms[0]), int(atoms[1]), 0, 0, float(i[1])))

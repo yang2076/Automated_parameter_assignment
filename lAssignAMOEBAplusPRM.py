@@ -55,7 +55,7 @@ def genAtomType(txyz, key, potent):
                              "POLAR": "amoebaplusPolarType.dat",  \
                             "BONDED": "amoebaplusBondedType.dat", \
                          "NONBONDED": "amoebaplusNonbondedType.dat"}
-    lines = open(os.path.join(databasedir,potent_typefile_dict[potent])).readlines()
+    lines = open(os.path.join(datfiledir, potent_typefile_dict[potent])).readlines()
     for line in lines:
       if "#" not in line[0] and len(line)>10:
         data = line.split()
@@ -78,7 +78,7 @@ def genAtomType(txyz, key, potent):
   return atom_class_dict
 
 def assignPolar(fname, tinkerkey):
-  types, polars = np.loadtxt(os.path.join(databasedir,"polarize.prm"), usecols=(0,1), unpack=True, dtype="str",skiprows=1)
+  types, polars = np.loadtxt(os.path.join(prmfiledir,"polarize.prm"), usecols=(0,1), unpack=True, dtype="str",skiprows=1)
   smartspolarDict = dict(zip(types, polars))
   ttypes, stypes = np.loadtxt(f"{fname}.type", usecols=(1,3), unpack=True, dtype="str")
   tinkerpolarDict = {}
@@ -98,10 +98,10 @@ def assignPolar(fname, tinkerkey):
   return
 
 def assignNonbonded(fname, tinkerkey):
-  types = np.loadtxt(os.path.join(databasedir,"nonbonded.prm"), usecols=(0,), unpack=True, dtype="str",skiprows=2)
-  cpalphas, cpnucs = np.loadtxt(os.path.join(databasedir,"nonbonded.prm"), usecols=(1,2), unpack=True, dtype="float",skiprows=2)
-  ctas, ctbs = np.loadtxt(os.path.join(databasedir,"nonbonded.prm"), usecols=(3,4), unpack=True, dtype="float",skiprows=2)
-  vdwrs, vdwes, vdwreds = np.loadtxt(os.path.join(databasedir,"nonbonded.prm"), usecols=(5,6,7), unpack=True, dtype="float",skiprows=2)
+  types = np.loadtxt(os.path.join(prmfiledir,"nonbonded.prm"), usecols=(0,), unpack=True, dtype="str",skiprows=2)
+  cpalphas, cpnucs = np.loadtxt(os.path.join(prmfiledir,"nonbonded.prm"), usecols=(1,2), unpack=True, dtype="float",skiprows=2)
+  ctas, ctbs = np.loadtxt(os.path.join(prmfiledir,"nonbonded.prm"), usecols=(3,4), unpack=True, dtype="float",skiprows=2)
+  vdwrs, vdwes, vdwreds = np.loadtxt(os.path.join(prmfiledir,"nonbonded.prm"), usecols=(5,6,7), unpack=True, dtype="float",skiprows=2)
   CP = [[i,j] for i,j in zip(cpalphas, cpnucs)]
   CT = [[i,j] for i,j in zip(ctas, ctbs)]
   VDW = [[i,j,k] for i,j,k in zip(vdwrs, vdwes, vdwreds)]
@@ -152,7 +152,7 @@ def assignCFlux(fname, tinkerkey):
   tinker2smarts = dict(zip(ttypes, stypes))
   #cflux-b
   '''bond cflux atom indices are interchangable'''
-  type1, type2, jbonds = np.loadtxt(os.path.join(databasedir,"cfbond.prm"), usecols=(-2,-1,1), unpack=True, dtype="str",skiprows=1)
+  type1, type2, jbonds = np.loadtxt(os.path.join(prmfiledir,"cfbond.prm"), usecols=(-2,-1,1), unpack=True, dtype="str",skiprows=1)
   types = []
   for t1, t2 in zip(type1, type2):
     types.append(t1 + "_" + t2)
@@ -181,8 +181,8 @@ def assignCFlux(fname, tinkerkey):
   #cflux-a
   '''angle cflux in parameter file is in the right order for jt1,jt2,jb1,jb2'''
   '''when assign parameters, need to first sort the angle atom indices, then to match database'''
-  type1, type2, type3  = np.loadtxt(os.path.join(databasedir,"cfangle.prm"), usecols=(-3, -2, -1), unpack=True, dtype="str",skiprows=1)
-  jtheta1, jtheta2, jbond1, jbond2  = np.loadtxt(os.path.join(databasedir,"cfangle.prm"), usecols=(1, 2, 3, 4), unpack=True, dtype="float",skiprows=1)
+  type1, type2, type3  = np.loadtxt(os.path.join(prmfiledir,"cfangle.prm"), usecols=(-3, -2, -1), unpack=True, dtype="str",skiprows=1)
+  jtheta1, jtheta2, jbond1, jbond2  = np.loadtxt(os.path.join(prmfiledir,"cfangle.prm"), usecols=(1, 2, 3, 4), unpack=True, dtype="float",skiprows=1)
 
   types = []
   jparams = []
@@ -234,9 +234,9 @@ def assignBonded(fname, tinkerkey, new_para_method, fitting = "NO"):
   para_strings_k = []
   para_strings_kbt = []
   if header == "AMOEBA":
-    head = open(os.path.join(databasedir, "amoebabio18_header.prm")).readlines()
+    head = open(os.path.join(prmfiledir, "amoebabio18_header.prm")).readlines()
   else:
-    head = open(os.path.join(databasedir, "amoebaplus21_header.prm")).readlines()
+    head = open(os.path.join(prmfiledir, "amoebaplus21_header.prm")).readlines()
   
   para_strings_k += head
   para_strings_kbt += head
@@ -255,8 +255,8 @@ def assignBonded(fname, tinkerkey, new_para_method, fitting = "NO"):
 
   # bond stretching
   # only assign force constant parameter, since equilibrium length will be from QM
-  class1, class2 = np.loadtxt(os.path.join(databasedir,"bond.prm"), usecols=(1,2), unpack=True, dtype="str",skiprows=1)
-  bondKs, bondLs = np.loadtxt(os.path.join(databasedir,"bond.prm"), usecols=(3,4), unpack=True, dtype="float",skiprows=1)
+  class1, class2 = np.loadtxt(os.path.join(prmfiledir,"bond.prm"), usecols=(1,2), unpack=True, dtype="str",skiprows=1)
+  bondKs, bondLs = np.loadtxt(os.path.join(prmfiledir,"bond.prm"), usecols=(3,4), unpack=True, dtype="float",skiprows=1)
   classes = []
   for c1, c2 in zip(class1, class2):
     classes.append(c1 + "_" + c2)
@@ -301,8 +301,8 @@ def assignBonded(fname, tinkerkey, new_para_method, fitting = "NO"):
               fitting_list.append(para)
 
   #angle bending
-  class1, class2, class3  = np.loadtxt(os.path.join(databasedir, "angle.prm"), usecols=(1, 2, 3), unpack=True, dtype="str",skiprows=1)
-  angleKs, angleTs  = np.loadtxt(os.path.join(databasedir, "angle.prm"), usecols=(4,5), unpack=True, dtype="float",skiprows=1)
+  class1, class2, class3  = np.loadtxt(os.path.join(prmfiledir, "angle.prm"), usecols=(1, 2, 3), unpack=True, dtype="str",skiprows=1)
+  angleKs, angleTs  = np.loadtxt(os.path.join(prmfiledir, "angle.prm"), usecols=(4,5), unpack=True, dtype="float",skiprows=1)
   classes = []
   angKconsts = []
   angThetas = []
@@ -354,8 +354,8 @@ def assignBonded(fname, tinkerkey, new_para_method, fitting = "NO"):
               fitting_list.append(para)
 
   #bond-angle coupling (strbnd term)
-  class1, class2, class3  = np.loadtxt(os.path.join(databasedir, "strbnd.prm"), usecols=(1, 2, 3), unpack=True, dtype="str",skiprows=1)
-  strbndK1, strbndK2  = np.loadtxt(os.path.join(databasedir, "strbnd.prm"), usecols=(4,5), unpack=True, dtype="float",skiprows=1)
+  class1, class2, class3  = np.loadtxt(os.path.join(prmfiledir, "strbnd.prm"), usecols=(1, 2, 3), unpack=True, dtype="str",skiprows=1)
+  strbndK1, strbndK2  = np.loadtxt(os.path.join(prmfiledir, "strbnd.prm"), usecols=(4,5), unpack=True, dtype="float",skiprows=1)
   classes = []
   strbndKs = []
   '''store two sets of parameters since strbnd is asymetric''' 
@@ -405,7 +405,7 @@ def assignBonded(fname, tinkerkey, new_para_method, fitting = "NO"):
               fitting_list.append(para)
 
   # out-of-plane bending 
-  class1, class2, kopbends = np.loadtxt(os.path.join(databasedir,"opbend.prm"), usecols=(1,2,5), unpack=True, dtype="str",skiprows=1)
+  class1, class2, kopbends = np.loadtxt(os.path.join(prmfiledir,"opbend.prm"), usecols=(1,2,5), unpack=True, dtype="str",skiprows=1)
   classes = []
   for c1, c2 in zip(class1, class2):
     classes.append(c1 + "_" + c2)
@@ -467,8 +467,10 @@ def main():
   atoms = args["atoms"]
   global konly
   konly = args["konly"]
-  global databasedir,databasedir
-  databasedir = os.path.join(os.path.split(__file__)[0])
+  global prmfiledir, datfiledir
+  rootdir = os.path.join(os.path.split(__file__)[0])
+  prmfiledir = os.path.join(rootdir, 'prm')
+  datfiledir = os.path.join(rootdir, 'dat')
 
   global inclusions
   inclusions = []

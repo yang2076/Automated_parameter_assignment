@@ -5,7 +5,7 @@ import subprocess
 from multiprocessing import Pool
 
 
-def getPolar(params, fname, savetxt=True):
+def single_point(params, fname, savetxt=True):
   node = []
   keys = [line.split()[0] for line in open("p0.txt").readlines()]
   subprocess.run("rm -rf ./outs/*.out", shell=True)
@@ -40,7 +40,7 @@ def getPolar(params, fname, savetxt=True):
   return QM,MM
 
 def costFUNC(params, x0):
-  QM, MM = getPolar(params, 'filelist_0.txt', "nodelist") 
+  QM, MM = single_point(params, 'filelist_0.txt', "nodelist") 
   QM_1 = []
   MM_1 = []
   for i, j in enumerate(QM):
