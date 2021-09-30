@@ -38,7 +38,7 @@ python lAssignAMOEBAplusPRM.py -potent CF -xyz phenol.xyz -key phenol.key
 
 ### Example
 
-Go to the example folder and execute `sh run.sh`, you should be able to get the assigned parameter files including `phenol.key_boned`, 'phenol.key_cf', `phenol.key_polar`.
+Go to the example folder and execute `sh run.sh`, you should be able to get the assigned parameter files including `phenol.key_boned`, `phenol.key_cf` and `phenol.key_polar`.
 
 ### Reference
 * Polarizability parameters. _Manuscript in prep_ (2021)
