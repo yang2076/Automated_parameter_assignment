@@ -91,10 +91,12 @@ def assignPolar(fname, tinkerkey):
         dd = line.split()
         if dd[1] in ttypes:
           dd[2] = tinkerpolarDict[dd[1]]
-          line = "    ".join(dd) + "\n"
+          newline = "    ".join(dd) + "\n"
+          oldline = "#" + line
           print(GREEN + "polarizability parameter found for %s"%dd[1] + ENDC)
-          f.write(line)
-  return
+          f.write(oldline)
+          f.write(newline)
+  return True
 
 def assignNonbonded(fname, tinkerkey):
   types = np.loadtxt(os.path.join(prmfiledir,"nonbonded.prm"), usecols=(0,), unpack=True, dtype="str",skiprows=2)
@@ -141,7 +143,7 @@ def assignNonbonded(fname, tinkerkey):
         line = "vdw  %5s%10.5f%10.5f\n"%(t, tinkerVDWDict[t][0], tinkerVDWDict[t][1])
       f.write(line)
     print(GREEN+"van der Waals parameters assigned from database"+ENDC)
-  return
+  return True
 
 def assignCFlux(fname, tinkerkey):
   # map from tinker type number to smart type string
@@ -223,7 +225,7 @@ def assignCFlux(fname, tinkerkey):
             print(GREEN + "CFlux parameters found for angle %s-%s-%s"%(angletype1, angletype2, angletype3) + ENDC)
           else:
             print(RED + "CFlux parameters NOT found for angle %s-%s-%s"%(angletype1, angletype2, angletype3) + ENDC)
-  return
+  return True
 
 def assignBonded(fname, tinkerkey, new_para_method, fitting = "NO"):
   # 2 methods to generate the new parameters: modified Seminario (Hessian); average by ranking tree (DATABASE)
@@ -322,12 +324,12 @@ def assignBonded(fname, tinkerkey, new_para_method, fitting = "NO"):
           comb1 = c1 + "_" + c2 + "_" + c3
           comb2 = c3 + "_" + c2 + "_" + c1
           if (comb1 in classAngleParameterDict):
-            para_strings_k.append("angle %s %s %s %10.5f %s\n"%(angletype1, angletype2, angletype3, classAngleParameterDict[comb1][0], d[5]))
-            para_strings_kbt.append("angle %s %s %s %10.5f %10.5f\n"%(angletype1, angletype2, angletype3, classAngleParameterDict[comb1][0], classAngleParameterDict[comb1][1]))
+            para_strings_k.append("%s %s %s %s %10.5f %s\n"%(d[0], angletype1, angletype2, angletype3, classAngleParameterDict[comb1][0], d[5]))
+            para_strings_kbt.append("%s %s %s %s %10.5f %10.5f\n"%(d[0], angletype1, angletype2, angletype3, classAngleParameterDict[comb1][0], classAngleParameterDict[comb1][1]))
             print(GREEN + "ANGLE bending parameter found for angle %s-%s-%s"%(angletype1, angletype2, angletype3) + ENDC)
           elif (comb2 in classAngleParameterDict):
-            para_strings_k.append("angle %s %s %s %10.5f %s\n"%(angletype3, angletype2, angletype1, classAngleParameterDict[comb2][0], d[5]))
-            para_strings_kbt.append("angle %s %s %s %10.5f %10.5f\n"%(angletype3, angletype2, angletype1, classAngleParameterDict[comb2][0], classAngleParameterDict[comb2][1]))
+            para_strings_k.append("%s %s %s %s %10.5f %s\n"%(d[0], angletype3, angletype2, angletype1, classAngleParameterDict[comb2][0], d[5]))
+            para_strings_kbt.append("%s %s %s %s %10.5f %10.5f\n"%(d[0],angletype3, angletype2, angletype1, classAngleParameterDict[comb2][0], classAngleParameterDict[comb2][1]))
             print(GREEN + "ANGLE bending parameter found for angle %s-%s-%s"%(angletype1, angletype2, angletype3) + ENDC)
           else: 
             if(new_para_method == 'DATABASE'):
@@ -336,11 +338,11 @@ def assignBonded(fname, tinkerkey, new_para_method, fitting = "NO"):
               para = modified_Seminario('a', d[1] + "_" + d[2] + "_" + d[3], atomclasses, k_a_dict)
 
             if(fitting == 'NO'):
-              para_strings_k.append("angle %s %s %s %10.5f %s\n"%(angletype1, angletype2, angletype3, para[0], d[5]))
-              para_strings_kbt.append("angle %s %s %s %10.5f %s\n"%(angletype1, angletype2, angletype3, para[0], para[1]))
+              para_strings_k.append("%s %s %s %s %10.5f %s\n"%(d[0], angletype1, angletype2, angletype3, para[0], d[5]))
+              para_strings_kbt.append("%s %s %s %s %10.5f %s\n"%(d[0], angletype1, angletype2, angletype3, para[0], para[1]))
               print(GREEN + "ANGLE bending parameter (newly generated) assigned for angle %s-%s-%s"%(d[1], d[2], d[3]) + ENDC)
             else:
-              para_strings_k.append("angle %s %s %s PRM%d_ %s\n"%(d[1], d[2], d[3], len(fitting_list), d[5]))
+              para_strings_k.append("%s %s %s %s PRM%d_ %s\n"%(d[0], d[1], d[2], d[3], len(fitting_list), d[5]))
               fitting_list.append(para)
 
   #bond-angle coupling (strbnd term)
@@ -432,7 +434,7 @@ def assignBonded(fname, tinkerkey, new_para_method, fitting = "NO"):
       for line in fitting_list:
         f.write(line)
     fitting(fname)
-  return
+  return True
  
 def main():
   if len(sys.argv) == 1:
@@ -443,7 +445,6 @@ def main():
   parser.add_argument('-potent', dest = 'potent', help = "potential energy term", required=True, type=str.upper, choices=["POLAR", "CF", "BONDED", "NONBONDED"])  
   parser.add_argument('-fitting', dest = 'fitting', help = "fit the frequencies if new parameters are needed", default="NO", type=str.upper, choices=["YES", "NO"])
   parser.add_argument('-new_para', dest = 'new_para', help = "method to generate the new valence parameters", default="DATABASE", type=str.upper, choices=["HESSIAN", "DATABASE"])  
-  parser.add_argument('-header', dest = 'header', help = "parameter header for AMOEBA or AMOEBAPLUS", default="AMOEBA", type=str.upper, choices=["AMOEBA", "AMOEBAPLUS"])  
   parser.add_argument('-konly', dest = 'konly', help = "assign force constant only for valence parameters", default="YES", type=str.upper, choices=["YES", "NO"])  
   parser.add_argument('-atoms', dest = 'atoms', nargs='+', help = "only assign parameters involving these atoms", default = [])  
   args = vars(parser.parse_args())
@@ -452,8 +453,6 @@ def main():
   potent = args["potent"]
   new_para = args["new_para"]
   fitting = args["fitting"]
-  global header,atoms
-  header = args["header"]
   atoms = args["atoms"]
   global konly
   konly = args["konly"]
