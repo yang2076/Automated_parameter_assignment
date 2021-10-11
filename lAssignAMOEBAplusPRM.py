@@ -60,7 +60,7 @@ def genAtomType(txyz, key, potent):
         data = line.split()
         myStr = data[0]
         classNum = data[2]
-        className = line.split("#")[0].split()[-1] 
+        className = line.split("# ")[0].split()[-1] 
         comment = line.split("# ")[1][0:-1]
         smarts = Smarts(myStr)
         match = smarts.findall(mol)
@@ -77,7 +77,7 @@ def genAtomType(txyz, key, potent):
   return atom_class_dict
 
 def assignPolar(fname, tinkerkey):
-  types, polars = np.loadtxt(os.path.join(prmfiledir,"polarize.prm"), usecols=(0,1), unpack=True, dtype="str",skiprows=1)
+  types, polars = np.loadtxt(os.path.join(prmfiledir,"polarize.prm"), usecols=(0,1), unpack=True, dtype="str")
   smartspolarDict = dict(zip(types, polars))
   ttypes, stypes = np.loadtxt(f"{fname}.type.polar", usecols=(1,3), unpack=True, dtype="str")
   tinkerpolarDict = {}

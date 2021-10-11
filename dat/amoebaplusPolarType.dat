@@ -26,7 +26,6 @@
 [H][o]                        					          Har             # H on aromatic oxygen 
 [H][C]=[C]                    					          Har             # H on C=C system 
 [H][OH2] 			                					          HW	            # H on Water
-[H][O][P] 					          					          Hop             # H on oxygen connected to P 
 
 # Carbon
 [$([C][C])]                   					          Cnonpol         # C on non-aromatic carbon
@@ -44,8 +43,6 @@
 [C]([C]=[*])([C]=[*])         					          Car	            # C on conjugated systems 
 [CH4]                         					          Cch4            # C on methane
 [$([C]#[*])]                  										Csp             # C of tripole bond, C#C, C#N, etc
-[C][NX4]                      										Cnx4            # C on NX4 ion 
-[C](=O)=[O]                   										Co2              # C on CO2
 
 # Nitrogen
 [N][C]                        										Nnonpol         # N on non-aromatic carbon 
@@ -73,8 +70,6 @@
 [OX2][S]                      										O-sulf          # O on O-S bond 
 [OX1]=[S]                     										O=sulf          # O on O=S bond 
 [OX2H2]		                    										OW              # O on Water
-[$([OH1][P](=O)(O)[O])]       										O(H)P           # O on phosphate uncharged with H 
-[$([O]([C])[P](=O)(O)[O])]    										O(C)P           # O on phosphate uncharged with C
 [$([OH1][C]=[O])]             										Ohacid          # O of acid with H
 
 # Sulfur

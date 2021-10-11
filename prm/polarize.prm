@@ -1,4 +1,4 @@
-HW	    0.428
+HW      0.428
 Har	    0.432
 Hnonpol	0.480
 Hpolar	0.457
@@ -29,6 +29,8 @@ Sar	    3.206
 Snonpol	3.406
 Spolar	2.994
 S*	    3.202
+Po4     1.432 
+P*      1.432 
 Far	    0.309
 Fnonar	0.348
 Clnonar	2.337
