@@ -145,33 +145,93 @@ def assignNonbonded(fname, tinkerkey):
     print(GREEN+"van der Waals parameters assigned from database"+ENDC)
   return True
 
+#def assignCFlux(fname, tinkerkey):
+#  # read in atom classes and short types (stype) 
+#  classs, stypes = np.loadtxt(f"{fname}.type.cf", usecols=(2,3), unpack=True, dtype="str")
+#  class2stype = dict(zip(classs, stypes))
+#  
+#  # read in the database CFlux parameters
+#  # store two sets of parameters
+#  lines = open(os.path.join(prmfiledir,"cflux2022.prm")).readlines()
+#  stype2param = {}
+#  for line in lines:
+#    s = line.split()
+#    #bndcflux
+#    if len(s) == 2: 
+#      key0, value0 = s[0], f"{float(s[1]):10.5f}"
+#      k = key0.split("_")
+#      key1 = '_'.join([k[1], k[0]])
+#      value1 = "%10.5f"%(-float(s[1]))
+#      stype2param[key0] = value0
+#      stype2param[key1] = value1
+#    #angcflux
+#    if len(s) == 5: 
+#      key0, value0 = s[0], f"{float(s[1]):10.5f}{float(s[2]):10.5f}{float(s[3]):10.5f}{float(s[4]):10.5f}"
+#      k = key0.split("_")
+#      key1 = '_'.join([k[2], k[1], k[0]])
+#      value1 = f"{float(s[2]):10.5f}{float(s[1]):10.5f}{float(s[4]):10.5f}{float(s[3]):10.5f}"
+#      stype2param[key0] = value0
+#      stype2param[key1] = value1
+#  
+#  # assign parameters 
+#  lines = open(tinkerkey).readlines()
+#  with open(tinkerkey + "_cf","w") as f:
+#    for line in lines:
+#      if "bond " in line:
+#        d = line.split()
+#        if set(d[1:3]).issubset(set(classs)):
+#          s1 = class2stype[d[1]]
+#          s2 = class2stype[d[2]]
+#          comb = s1 + "_" + s2
+#          if comb in stype2param:
+#            f.write("bndcflux %s %s %s\n"%(d[1], d[2], stype2param[comb]))
+#            print(GREEN + "CFlux parameter assigned for bond %s-%s"%(d[1], d[2]) + ENDC)
+#          else:
+#            print(RED + "CFlux parameter NOT found for bond %s-%s"%(d[1], d[2]) + ENDC)
+#      if ("angle " in line) or ("anglep " in line):
+#        d = line.split()
+#        if set(d[1:4]).issubset(set(classs)):
+#          s1 = class2stype[d[1]]
+#          s2 = class2stype[d[2]]
+#          s3 = class2stype[d[3]]
+#          if int(d[1]) > int(d[3]):
+#            s1, s3 = s3, s1
+#            d[1], d[3] = d[3], d[1]
+#          comb = f"{s1}_{s2}_{s3}"
+#          if comb in stype2param:
+#            f.write("angcflux %s %s %s %s\n"%(d[1], d[2], d[3], stype2param[comb]))
+#            print(GREEN + "CFlux parameter assigned for angle %s-%s-%s"%(d[1], d[2], d[3]) + ENDC)
+#          else:
+#            print(RED + "CFlux parameter NOT found for bond %s-%s-%s"%(d[1], d[2], d[3]) + ENDC)
+#  return True
+
 def assignCFlux(fname, tinkerkey):
   # read in atom classes and short types (stype) 
-  classs, stypes = np.loadtxt(f"{fname}.type.cf", usecols=(2,3), unpack=True, dtype="str")
-  class2stype = dict(zip(classs, stypes))
+  atomclasses, databaseclasses = np.loadtxt(f"{fname}.type.cf", usecols=(2,4), unpack=True, dtype="str")
+  class2cftype = dict(zip(atomclasses, databaseclasses))
   
   # read in the database CFlux parameters
   # store two sets of parameters
   lines = open(os.path.join(prmfiledir,"cflux2022.prm")).readlines()
-  stype2param = {}
+  cftype2param = {}
   for line in lines:
     s = line.split()
     #bndcflux
-    if len(s) == 2: 
-      key0, value0 = s[0], f"{float(s[1]):10.5f}"
-      k = key0.split("_")
-      key1 = '_'.join([k[1], k[0]])
-      value1 = "%10.5f"%(-float(s[1]))
-      stype2param[key0] = value0
-      stype2param[key1] = value1
+    if len(s) == 4: 
+      value0 = f"{float(s[3]):10.4f}"
+      k0 = '_'.join([s[1], s[2]])
+      value1 = "%10.4f"%(-float(s[3]))
+      k1 = '_'.join([s[2], s[1]])
+      cftype2param[k0] = value0
+      cftype2param[k1] = value1
     #angcflux
-    if len(s) == 5: 
-      key0, value0 = s[0], f"{float(s[1]):10.5f}{float(s[2]):10.5f}{float(s[3]):10.5f}{float(s[4]):10.5f}"
-      k = key0.split("_")
-      key1 = '_'.join([k[2], k[1], k[0]])
-      value1 = f"{float(s[2]):10.5f}{float(s[1]):10.5f}{float(s[4]):10.5f}{float(s[3]):10.5f}"
-      stype2param[key0] = value0
-      stype2param[key1] = value1
+    if len(s) == 8: 
+      value0 = f"{float(s[4]):10.4f}{float(s[5]):10.4f}{float(s[6]):10.4f}{float(s[7]):10.4f}"
+      k0 = '_'.join([s[1], s[2], s[3]])
+      value1 = f"{float(s[5]):10.4f}{float(s[4]):10.4f}{float(s[7]):10.4f}{float(s[6]):10.4f}"
+      k1 = '_'.join([s[3], s[2], s[1]])
+      cftype2param[k0] = value0
+      cftype2param[k1] = value1
   
   # assign parameters 
   lines = open(tinkerkey).readlines()
@@ -179,27 +239,27 @@ def assignCFlux(fname, tinkerkey):
     for line in lines:
       if "bond " in line:
         d = line.split()
-        if set(d[1:3]).issubset(set(classs)):
-          s1 = class2stype[d[1]]
-          s2 = class2stype[d[2]]
+        if set(d[1:3]).issubset(set(atomclasses)):
+          s1 = class2cftype[d[1]]
+          s2 = class2cftype[d[2]]
           comb = s1 + "_" + s2
-          if comb in stype2param:
-            f.write("bndcflux %s %s %s\n"%(d[1], d[2], stype2param[comb]))
+          if comb in cftype2param:
+            f.write("bndcflux %s %s %s\n"%(d[1], d[2], cftype2param[comb]))
             print(GREEN + "CFlux parameter assigned for bond %s-%s"%(d[1], d[2]) + ENDC)
           else:
             print(RED + "CFlux parameter NOT found for bond %s-%s"%(d[1], d[2]) + ENDC)
       if ("angle " in line) or ("anglep " in line):
         d = line.split()
-        if set(d[1:4]).issubset(set(classs)):
-          s1 = class2stype[d[1]]
-          s2 = class2stype[d[2]]
-          s3 = class2stype[d[3]]
+        if set(d[1:4]).issubset(set(atomclasses)):
+          s1 = class2cftype[d[1]]
+          s2 = class2cftype[d[2]]
+          s3 = class2cftype[d[3]]
           if int(d[1]) > int(d[3]):
             s1, s3 = s3, s1
             d[1], d[3] = d[3], d[1]
           comb = f"{s1}_{s2}_{s3}"
-          if comb in stype2param:
-            f.write("angcflux %s %s %s %s\n"%(d[1], d[2], d[3], stype2param[comb]))
+          if comb in cftype2param:
+            f.write("angcflux %s %s %s %s\n"%(d[1], d[2], d[3], cftype2param[comb]))
             print(GREEN + "CFlux parameter assigned for angle %s-%s-%s"%(d[1], d[2], d[3]) + ENDC)
           else:
             print(RED + "CFlux parameter NOT found for bond %s-%s-%s"%(d[1], d[2], d[3]) + ENDC)

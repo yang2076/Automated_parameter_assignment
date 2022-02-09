@@ -1,275 +1,2712 @@
-Hother_Cother      0.19380347
-Hother_Nother     -0.00436015
-Cother_Nother     -0.21608960
-Hother_Oother      0.00868705
-Cother_Oother     -0.08532150
-Cother_Csp2      0.11319075
-Csp2_Osp2     -0.06666044
-Csp2_Nother     -0.23157112
-Csp2_Oother     -0.20894154
-Har_Nar      0.06384233
-Car_Nar      0.05524750
-Car_Oother     -0.19987310
-Car_Car     -0.01147165
-Har_Car      0.09190064
-Hother_Csp2      0.13209958
-Csp2_Csp2     -0.04698137
-Cother_Cother      0.01003769
-Cother_Sother     -0.06398892
-Hother_Sother      0.11685933
-Cother_S=X     -0.01939770
-Osp2_S=X      0.12472221
-Fother_Car      0.17568441
-Clother_Car      0.07045754
-Brother_Car      0.14746228
-Fother_Cother      0.19792584
-Clother_Cother      0.24322875
-Brother_Cother      0.22869818
-Oother_PwoH      0.05572766
-Osp2_PwoH      0.02390271
-Car_Cother      0.05616159
-Cother_Car      0.01959654
-Car_Nother     -0.23584181
-Cother_Nsp2     -0.15034453
-Csp2_Nsp2     -0.10006878
-Csp_Nsp     -0.10842973
-Cother_Csp     -0.05903478
-Sother_Sother     -0.21563953
-Clother_Csp2      0.24686343
-Fother_Csp2      0.21217240
-Brother_Csp2      0.25096331
-Car_Csp     -0.05464519
-Hother_PwH     -0.29314697
-Hother_Nsp2      0.04619392
-Nsp2_Osp2     -0.27792232
-Car_Nsp2     -0.19766826
-Nother_Oother     -0.29042655
-Nother_Osp2     -0.28035670
-Nother_Nother     -0.19228530
-Oother_Sother      0.18603393
-Car_Sother     -0.20851504
-Csp_Sother     -0.07263569
-Hother_Osp2      0.02248155
-Car_Csp2      0.11969466
-Cother_Nar     -0.25873854
-Csp2_Sother     -0.17878782
-Car_Oar     -0.17109017
-Nother_S=X      0.19488749
-Iother_Cother      0.14980662
-Iother_Car      0.16712265
-Car_Sar     -0.23969140
-Nar_Nar      0.07436575
-Csp2_Car     -0.13799085
-Car_S=X     -0.20051347
-Oother_Oother      0.07420271
-Hother_Cother_Hother      0.00373605      0.00373605     -0.06833512     -0.06833512
-Hother_Nother_Hother     -0.01968416     -0.01968416     -0.05193229     -0.05193229
-Hother_Nother_Cother      0.02858053      0.06077821     -0.04736041     -0.01274095
-Hother_Cother_Nother      0.01053195      0.01941795      0.00938677      0.03051194
-Hother_Oother_Cother      0.27754339      0.04213160     -0.01131835      0.01151110
-Hother_Cother_Oother     -0.03207842      0.12155382      0.07825089      0.05923665
-Hother_Cother_Csp2      0.09674787      0.04692035      0.03737099     -0.01078017
-Cother_Csp2_Osp2      0.04298799      0.02524288      0.09535911      0.04307897
-Cother_Csp2_Nother     -0.06788317      0.02203273     -0.00262992      0.01626132
-Nother_Csp2_Osp2      0.10177955     -0.01991097      0.29162930      0.23860297
-Hother_Nother_Csp2      0.01058855      0.04517760     -0.03677569     -0.11693295
-Cother_Nother_Csp2      0.04409179     -0.00381069     -0.18575615     -0.16488932
-Oother_Csp2_Osp2      0.26632409      0.19836981      0.24479582      0.19119174
-Cother_Csp2_Oother      0.08001358      0.07828146      0.18616642      0.08493962
-Hother_Oother_Csp2      0.23435780      0.16146315     -0.06141087      0.03655362
-Har_Nar_Car      0.15918508      0.13661597     -0.29499683     -0.16189512
-Car_Nar_Car     -0.09455263     -0.09455263     -0.24313842     -0.24313842
-Nar_Car_Oother     -0.08367678      0.11578413      0.28523213      0.31312274
-Car_Car_Nar     -0.02112444     -0.06421102     -0.03101557     -0.03080361
-Car_Car_Oother     -0.04409933     -0.09948287      0.21016868      0.09155228
-Har_Car_Car      0.04553377      0.03422391     -0.07842289     -0.03900234
-Car_Car_Car     -0.05005436     -0.05005436     -0.11153075     -0.11153075
-Har_Car_Nar      0.04965447      0.02223099     -0.27557211      0.02218520
-Nar_Car_Nar      0.01252164      0.01252164     -0.00819573     -0.00819573
-Hother_Csp2_Hother      0.03059438      0.03059438     -0.08395165     -0.08395165
-Hother_Csp2_Csp2      0.08772017      0.04434792     -0.00724015     -0.03550161
-Hother_Cother_Cother      0.03511243      0.04712482      0.01896095      0.00453341
-Cother_Cother_Cother     -0.03204278     -0.03204278      0.02711300      0.02711300
-Hother_Cother_Sother      0.12571249      0.08084402      0.05507049     -0.06460868
-Hother_Sother_Cother     -0.12177672      0.14971978     -0.06700163      0.02418622
-Hother_Cother_S=X      0.07509671      0.07291499     -0.03022547     -0.07315058
-Cother_S=X_Osp2      0.01739446     -0.00747337      0.14351559      0.14668119
-Cother_S=X_Cother      0.01733260      0.01733260      0.02939538      0.02939538
-Fother_Car_Car      0.17396604      0.00306255      0.01766301      0.22526613
-Clother_Car_Car      0.16755442     -0.01340668     -0.01110321      0.06651042
-Brother_Car_Car      0.19808170     -0.02130754      0.04439712     -0.00835025
-Cother_Sother_Cother      0.01711275      0.01711275     -0.01190511     -0.01190511
-Cother_Nother_Cother      0.01048615      0.01048615     -0.03187165     -0.03187165
-Cother_Cother_Nother     -0.04836779     -0.02559321      0.04941781      0.05964287
-Hother_Oother_Car      0.12429820     -0.04267001     -0.14529583     -0.10107294
-Fother_Cother_Fother      0.07349388      0.07349388      0.06617041      0.06617041
-Fother_Cother_Hother      0.13553795      0.03013150     -0.01803259      0.03483605
-Clother_Cother_Clother      0.02858742      0.02858742      0.08677488      0.08677488
-Clother_Cother_Hother      0.04883071      0.03599991     -0.01009780     -0.00676057
-Brother_Cother_Brother     -0.03130901     -0.03130901      0.04451834      0.04451834
-Brother_Cother_Hother      0.06244898     -0.02154263     -0.11205441     -0.00171516
-Oother_PwoH_Oother     -0.21783686     -0.21783686      0.03785226      0.03785226
-Oother_PwoH_Osp2     -0.19032771     -0.19716788      0.17992057      0.08688385
-Hother_Oother_PwoH     -0.28086356     -0.23011364     -0.26728599     -0.14724045
-Csp2_Csp2_Nother     -0.12798067      0.02422489      0.09898139     -0.16169887
-Hother_Csp2_Nother     -0.03332583     -0.03703989     -0.07403587      0.00431822
-Nother_Csp2_Nother      0.00359243      0.00359243      0.06703563      0.06703563
-Hother_Csp2_Osp2      0.01003734      0.03148206      0.04803739      0.02211135
-Hother_Csp2_Oother     -0.10299896      0.10248163     -0.08091012      0.04594004
-Cother_Cother_Oother      0.05590898      0.00205241      0.17939639      0.08760050
-Hother_Cother_Car      0.01915531      0.02420844     -0.10403694      0.03184010
-Car_Car_Cother      0.03107515     -0.00308985      0.02073146     -0.06600144
-Cother_Car_Car      0.05578362      0.02763035     -0.02107079     -0.02716890
-Cother_Car_Nar      0.01387378     -0.04438137      0.00207027     -0.06529531
-Nother_Car_Nar      0.18057734      0.08545344     -0.03781092      0.31415389
-Car_Car_Nother      0.03395707      0.13262972      0.22505589      0.17132983
-Hother_Nother_Car      0.34728576      0.13449004     -0.01244356     -0.03996405
-Hother_Sother_Hother      0.09717977      0.09717977     -0.00779414     -0.00779414
-Cother_Nsp2_Csp2      0.03167143     -0.06062267     -0.08708418     -0.12823892
-Car_Cother_Nsp2      0.07223357      0.03877146      0.04690402      0.09712908
-Nother_Cother_Nsp2     -0.06900293     -0.03449844      0.11182336      0.01677497
-Car_Cother_Nother      0.00954722      0.05166084      0.11457943      0.13722996
-Csp2_Nother_Car      0.02133154      0.16857949     -0.20583531     -0.29335533
-Nsp2_Csp2_Nother     -0.01333773      0.06911223      0.15956199      0.02456955
-Hother_Csp2_Nsp2      0.00350122     -0.00790097     -0.04395497     -0.01081146
-Hother_Cother_Csp      0.06872767      0.07283408      0.05127116      0.01670919
-Cother_Csp_Nsp     -0.04164595     -0.02987648     -0.04184012     -0.00361342
-Cother_Cother_Sother     -0.03107770      0.07383021      0.06897872     -0.00974976
-Cother_Csp2_Cother     -0.04448353     -0.04448353      0.00959016      0.00959016
-Cother_Oother_Cother     -0.22218317     -0.22218317     -0.26314637     -0.26314637
-Hother_Csp2_Cother      0.00112883      0.01701785      0.00178780     -0.00119384
-Csp2_Oother_Csp2     -0.07187733     -0.07187733     -0.30203574     -0.30203574
-Osp2_Csp2_Oother      0.06357879      0.09929537      0.28040739      0.29133605
-Nother_Csp2_Oother      0.18572356     -0.03848076      0.22626642      0.18564701
-Cother_Cother_Csp2     -0.07610666      0.01292086     -0.04829718      0.08652300
-Osp2_S=X_Osp2     -0.07771318     -0.07771318      0.12463443      0.12463443
-Cother_Cother_S=X     -0.00553019      0.05399716      0.01531434     -0.01429555
-Cother_Sother_Sother      0.01662305      0.02353182      0.00782519     -0.02990232
-Clother_Csp2_Osp2      0.07735827     -0.07175574      0.26940462      0.21343164
-Clother_Csp2_Cother      0.03197617     -0.13057506      0.02723115      0.09338706
-Fother_Csp2_Osp2      0.12677595      0.06825472      0.24990136      0.21693417
-Fother_Csp2_Cother      0.11114565      0.08395037      0.06192344      0.19814055
-Brother_Csp2_Osp2      0.17781356     -0.15159495      0.27849307      0.21677768
-Brother_Csp2_Cother      0.13864916     -0.11041325     -0.06902962      0.14716902
-Cother_Oother_Csp2     -0.02139095     -0.17740050     -0.24914401     -0.27449942
-Oother_Csp2_Oother      0.13748456      0.13748456      0.28601707      0.28601707
-Oother_Cother_Oother      0.07624317      0.07624317      0.22476991      0.22476991
-Car_Car_Csp     -0.21993135     -0.11716091      0.01130833     -0.00642850
-Car_Csp_Nsp      0.05091615     -0.01921163      0.02060443      0.03400835
-Hother_PwH_Hother      0.19017354      0.19017354     -0.04685430     -0.04685430
-Car_Oother_Cother     -0.17217172     -0.11532942     -0.33981846     -0.18216996
-Cother_Csp2_Nsp2     -0.02820245      0.01688262     -0.06330542      0.05825963
-Cother_Cother_Nsp2     -0.03911080      0.00394564      0.01953091      0.02509979
-Hother_Cother_Nsp2     -0.14859609      0.00483660     -0.06680273      0.02529108
-Hother_Nsp2_Csp2      0.04352657      0.04837268     -0.06114823     -0.04252011
-Csp2_Cother_Csp2      0.06254560      0.06254560     -0.05436915     -0.05436915
-Csp2_Csp2_Oother      0.11030496      0.08844189      0.19556566      0.12208794
-Csp2_Csp2_Osp2      0.10488358     -0.02953841      0.14797309      0.02586329
-Cother_Csp2_Csp2     -0.00190149      0.00299736      0.08120895      0.01506791
-Csp2_Nother_Csp2      0.03312693      0.03312693     -0.18728624     -0.18728624
-Osp2_Nsp2_Osp2      0.02103544      0.02103544      0.23249925      0.23249925
-Cother_Nsp2_Osp2     -0.05150426     -0.08420504      0.25366205      0.12687122
-Car_Nsp2_Osp2      0.06778803     -0.13954435      0.28230796      0.30176177
-Car_Car_Nsp2     -0.05499510      0.03680442      0.11715105      0.00326017
-Cother_Oother_Nother     -0.14687004     -0.01721831     -0.28753611     -0.17332971
-Oother_Nother_Osp2      0.10491898      0.01926219      0.27267305      0.26572412
-Car_Nother_Nother      0.03032702      0.18214308      0.03499168      0.20507198
-Oother_Sother_Oother     -0.02380448     -0.02380448      0.12502721      0.12502721
-Cother_Sother_Oother      0.04837917      0.00154601      0.13745011      0.19244611
-Hother_Oother_Sother     -0.03680921     -0.07622547     -0.22338532     -0.12754411
-Car_Sother_Oother      0.13858187     -0.03409735      0.21531007      0.29256887
-Car_Car_Sother      0.04493592      0.09669816     -0.06356403     -0.09927932
-Cother_Oother_Sother     -0.05916304     -0.23732760     -0.26621160     -0.25612616
-Cother_Sother_Csp      0.04111156      0.00422477     -0.02940875     -0.01063522
-Nsp_Csp_Sother     -0.24348495     -0.24964374      0.25809673     -0.25064365
-Car_Sother_Csp      0.17300421     -0.15462748     -0.03475693      0.02596082
-Csp2_Csp2_Csp2     -0.00233037     -0.00233037     -0.04951407     -0.04951407
-Hother_Osp2_Nsp2     -0.24828960     -0.06178738     -0.22410805     -0.06598155
-Csp2_Nsp2_Osp2     -0.08361219      0.01025851      0.25110721      0.16965333
-Car_Cother_Oother      0.09234629     -0.03617225      0.17913603      0.06238941
-Car_Cother_Cother      0.08843503     -0.12132087     -0.28550918     -0.10997664
-Car_Car_Csp2      0.12542534     -0.01038974     -0.01049631     -0.03264160
-Car_Csp2_Osp2      0.05005988     -0.07874834      0.18056330      0.04688706
-Hother_Csp2_Car     -0.02764192      0.01929442     -0.13669338      0.05289160
-Car_Csp2_Oother      0.03878455     -0.01459544      0.18828039      0.10668405
-Csp2_Cother_Nother     -0.20007637      0.02070632      0.04909328      0.02233345
-Osp2_PwoH_Oother     -0.12775781     -0.26082857      0.14167420      0.10249738
-Cother_Oother_PwoH     -0.09659468     -0.04492313     -0.30567917     -0.09670531
-Csp2_Cother_Oother      0.00762083      0.05987402      0.17145721      0.03479120
-Fother_Cother_Cother      0.05494454      0.05570540      0.09409136      0.17474121
-Clother_Cother_Cother     -0.02754567     -0.10862062      0.05101410      0.06426169
-Brother_Cother_Cother      0.04685664     -0.06312506     -0.02242377      0.10312870
-Nother_Csp2_Nsp2      0.00349467      0.02075722      0.12526300      0.09894532
-Cother_Cother_Csp     -0.02790214     -0.01524950      0.04205116      0.00815728
-Cother_Nar_Car      0.26998447      0.02397477     -0.28727930     -0.22682304
-Hother_Cother_Nar      0.05892947      0.01555629      0.21836535     -0.10069449
-Nar_Cother_Oother      0.20906573     -0.33681267      0.26290708      0.05866979
-Cother_Cother_Nar     -0.27037487      0.15290011     -0.12175801     -0.30950019
-Osp2_PwoH_Osp2     -0.29056032     -0.29056032     -0.29758043     -0.29758043
-Cother_Sother_Csp2      0.00077305     -0.06341000     -0.05070076      0.01774123
-Osp2_Csp2_Sother     -0.16395434      0.17580846      0.19574218      0.30300291
-Cother_Csp2_Sother     -0.05034561      0.15457789      0.13558700     -0.00055183
-Car_Oar_Car     -0.21098481     -0.21098481     -0.07397512     -0.07397512
-Car_Car_Oar     -0.07441032     -0.09885325      0.09577155     -0.12592181
-Cother_Car_Oar     -0.06009249      0.08929464      0.08713449     -0.08330906
-Nother_S=X_Osp2     -0.08177799     -0.17967489      0.16109927      0.09303059
-Cother_S=X_Nother     -0.11010249      0.04608234      0.15274825      0.14779202
-Cother_Nother_S=X     -0.04516168     -0.05459475     -0.15677646     -0.21288438
-Hother_Nother_S=X      0.03292176     -0.01937094     -0.17593113     -0.04522049
-Cother_Cother_Car     -0.00334752      0.03478092     -0.11455570     -0.15972887
-Iother_Cother_Hother      0.07950145     -0.00344592     -0.00363344     -0.15623401
-Iother_Cother_Iother     -0.01295455     -0.01295455      0.07707253      0.07707253
-Fother_Cother_Car     -0.02751945      0.15379414      0.18223980      0.14219058
-Clother_Cother_Car     -0.03376578      0.02596102      0.22668911      0.00637232
-Iother_Cother_Car      0.10625331      0.04118042     -0.04699030      0.15015972
-Iother_Car_Car      0.22631410     -0.07569988      0.10662460     -0.19668175
-Brother_Cother_Car     -0.03469622      0.04490018      0.09651037      0.06608930
-Car_Cother_Car      0.04027993      0.04027993      0.13862168      0.13862168
-Car_Oother_Car     -0.17835863     -0.17835863      0.11927956      0.11927956
-Car_Nother_Car      0.02481167      0.02481167     -0.31787085     -0.31787085
-Car_Nother_Cother      0.21559636      0.00732001     -0.02810771     -0.23153079
-Cother_Nother_Car      0.08785695      0.09848905     -0.15111322     -0.19917949
-Car_Nother_Csp2      0.12964441     -0.02332212     -0.24485398     -0.15678282
-Car_Csp2_Nother      0.01505158      0.03853986      0.17096293      0.11478920
-Car_Csp2_Nsp2      0.06250361     -0.01546062      0.08954815      0.04188391
-Car_Csp2_Cother      0.03514422     -0.18069806     -0.10065870     -0.27401246
-Csp2_Cother_Nsp2     -0.04474710     -0.00344454     -0.03669063     -0.01156549
-Car_Nar_Nar     -0.21933094     -0.08883583      0.01439700     -0.21074048
-Har_Car_Oar      0.12951540      0.09373519      0.00764452     -0.05864964
-Car_Sar_Car     -0.02761128     -0.02761128      0.02565944      0.02565944
-Nar_Car_Sar     -0.21885783     -0.12387520     -0.10286824      0.20998198
-Car_Car_Sar      0.01425109      0.06410588      0.03718035     -0.06010985
-Har_Car_Sar      0.17873899      0.13515981     -0.08645331     -0.06861151
-Car_Csp2_Car     -0.03854504     -0.03854504      0.22360382      0.22360382
-Fother_Cother_Csp2      0.09367530      0.06056719      0.10175795      0.19352667
-Csp2_Car_Nar     -0.10124746      0.05490447     -0.15271744     -0.18658431
-Nar_Car_Oar     -0.26744814     -0.27011251     -0.04132441      0.06267080
-Csp2_Car_Oar     -0.06259666      0.09243051      0.10765056     -0.12994765
-Csp2_Car_Sar     -0.07373643      0.17291417      0.06256076     -0.16945691
-Csp2_Car_Car     -0.01887955     -0.00650898     -0.10789924     -0.12670965
-Cother_Csp2_Car     -0.05957975     -0.00174152     -0.04568123     -0.08163509
-Nother_Car_Sar     -0.06770320     -0.03297441     -0.07648094      0.02580303
-Nother_Car_Oar     -0.21202904     -0.09413927     -0.18167068      0.01470578
-Har_Nar_Nar     -0.15806126      0.03425001     -0.12790544     -0.23301396
-Cother_Oother_Car     -0.03737705     -0.19879562     -0.22645373     -0.30662016
-Cother_Nar_Nar      0.08207019      0.09362551      0.01618106     -0.15009666
-Fother_Cother_Oother      0.15063480      0.12754034      0.24867087      0.21965287
-Clother_Cother_Oother      0.03359458     -0.01764728      0.27267961      0.19713879
-Cother_Car_Sar     -0.08048385      0.14031103      0.07510404     -0.07610374
-Car_S=X_Osp2      0.13252968     -0.01106338      0.21363136      0.28921373
-Car_S=X_Nother      0.26677129     -0.10735657      0.23550840      0.21815056
-Car_Car_S=X      0.06070939      0.02971143     -0.06292170     -0.12725757
-Car_S=X_Cother      0.21936188     -0.09745036     -0.01242936      0.09351038
-Nar_Car_S=X     -0.06299043     -0.13633623     -0.20115814      0.06635227
-S=X_Car_Sar      0.08744872      0.15661984     -0.20803239     -0.23617876
-Fother_Cother_S=X     -0.20711374      0.19294227     -0.24823187     -0.01469374
-Clother_Cother_S=X      0.08409814      0.14230225      0.16392750      0.14421972
-Csp2_Cother_Sother     -0.00466134      0.09608723      0.05620089      0.00010957
-Csp2_Csp2_Sother     -0.06498302      0.10145194      0.11839713     -0.00335272
-Hother_Csp2_Sother      0.11328202      0.11488782     -0.02811495     -0.06507819
-Hother_Sother_Csp2     -0.06329187      0.07952463     -0.08994935      0.00923207
-Nar_Nar_Nar     -0.18852689     -0.18852689     -0.01945287     -0.01945287
-Csp2_Oother_Oother     -0.02443716      0.08676314      0.04211900     -0.19653613
-Hother_Oother_Oother      0.05771550     -0.08378287      0.07804972      0.03283498
-Iother_Cother_Cother      0.04177644     -0.02813859      0.12058896     -0.04487593
-Car_Cother_Csp2      0.05707264     -0.04616491     -0.09505690     -0.07641801
+bndcflux    80   227     -0.3285
+bndcflux    81   227     -0.3285
+bndcflux    82   227     -0.3285
+bndcflux    85   227     -0.3285
+bndcflux    87   227     -0.3285
+bndcflux    90   227     -0.3285
+bndcflux    91   227     -0.3285
+bndcflux    96   227     -0.3285
+bndcflux   101   245     -0.3285
+bndcflux    92   179     -0.3082
+bndcflux    66   223     -0.3082
+bndcflux    92   176     -0.3082
+bndcflux    92   182     -0.3082
+bndcflux   104   171     -0.2791
+bndcflux    48   176     -0.2791
+bndcflux    94   174     -0.2791
+bndcflux    95   174     -0.2791
+bndcflux    95   176     -0.2791
+bndcflux    96   180     -0.2791
+bndcflux    96   181     -0.2791
+bndcflux   103   176     -0.2791
+bndcflux   104   195     -0.2791
+bndcflux   106   195     -0.2791
+bndcflux   106   196     -0.2791
+bndcflux    95   179     -0.2791
+bndcflux    33   221     -0.2791
+bndcflux    33   223     -0.2791
+bndcflux    33   227     -0.2791
+bndcflux    34   221     -0.2791
+bndcflux    34   223     -0.2791
+bndcflux    34   227     -0.2791
+bndcflux    34   238     -0.2791
+bndcflux    35   221     -0.2791
+bndcflux    35   223     -0.2791
+bndcflux    35   227     -0.2791
+bndcflux    37   223     -0.2791
+bndcflux    41   223     -0.2791
+bndcflux    41   227     -0.2791
+bndcflux    41   239     -0.2791
+bndcflux    42   223     -0.2791
+bndcflux    42   239     -0.2791
+bndcflux    43   221     -0.2791
+bndcflux    44   227     -0.2791
+bndcflux    45   223     -0.2791
+bndcflux    46   223     -0.2791
+bndcflux    49   224     -0.2791
+bndcflux    49   227     -0.2791
+bndcflux   115   248     -0.2791
+bndcflux    34   230     -0.2791
+bndcflux    35   230     -0.2791
+bndcflux   102   178     -0.2791
+bndcflux    29   174     -0.2791
+bndcflux    29   176     -0.2791
+bndcflux    29   197     -0.2791
+bndcflux    29   199     -0.2791
+bndcflux    30   197     -0.2791
+bndcflux   127   197     -0.2791
+bndcflux   128   197     -0.2791
+bndcflux   129   196     -0.2791
+bndcflux   134   197     -0.2791
+bndcflux    56   230     -0.2722
+bndcflux    34   216     -0.2722
+bndcflux    60   230     -0.2722
+bndcflux   117   199     -0.2722
+bndcflux    29   171     -0.2510
+bndcflux    29   179     -0.2510
+bndcflux   143   179     -0.2510
+bndcflux    84   213     -0.2510
+bndcflux    85   213     -0.2510
+bndcflux    86   213     -0.2510
+bndcflux    89   213     -0.2510
+bndcflux    91   213     -0.2510
+bndcflux    96   213     -0.2510
+bndcflux   141   179     -0.2139
+bndcflux    48   219     -0.2139
+bndcflux    70   219     -0.2139
+bndcflux    71   219     -0.2139
+bndcflux    72   219     -0.2139
+bndcflux    73   219     -0.2139
+bndcflux    75   219     -0.2139
+bndcflux    81   219     -0.2139
+bndcflux    82   219     -0.2139
+bndcflux    84   219     -0.2139
+bndcflux    85   219     -0.2139
+bndcflux    86   219     -0.2139
+bndcflux    87   219     -0.2139
+bndcflux    88   219     -0.2139
+bndcflux    89   219     -0.2139
+bndcflux    90   219     -0.2139
+bndcflux    91   219     -0.2139
+bndcflux    94   219     -0.2139
+bndcflux    95   219     -0.2139
+bndcflux    96   219     -0.2139
+bndcflux    97   219     -0.2139
+bndcflux    98   219     -0.2139
+bndcflux    99   219     -0.2139
+bndcflux   105   219     -0.2139
+bndcflux    92   219     -0.2139
+bndcflux    80   213     -0.2139
+bndcflux    83   219     -0.2338
+bndcflux   150   269     -0.2338
+bndcflux   152   269     -0.2338
+bndcflux   163   269     -0.2338
+bndcflux    29   229     -0.2338
+bndcflux    30   229     -0.2338
+bndcflux    30   239     -0.2338
+bndcflux   130   226     -0.1999
+bndcflux   137   226     -0.1999
+bndcflux   138   226     -0.1999
+bndcflux   139   226     -0.1999
+bndcflux   140   226     -0.1999
+bndcflux   100   241     -0.1999
+bndcflux   101   242     -0.1999
+bndcflux    29   230     -0.1999
+bndcflux    30   230     -0.1999
+bndcflux   145   230     -0.1999
+bndcflux    69   219     -0.1999
+bndcflux    73   143     -0.2141
+bndcflux    95   130     -0.2141
+bndcflux    95   132     -0.2141
+bndcflux    95   143     -0.2141
+bndcflux    95   147     -0.2141
+bndcflux    95   150     -0.2141
+bndcflux   104   125     -0.2141
+bndcflux    80   219     -0.2141
+bndcflux   117   230     -0.2141
+bndcflux    83   255     -0.2141
+bndcflux    29   268     -0.2141
+bndcflux   143   268     -0.2141
+bndcflux    74   143     -0.1821
+bndcflux    95   118     -0.1821
+bndcflux    95   141     -0.1821
+bndcflux   117   226     -0.1542
+bndcflux    32   212     -0.1542
+bndcflux    33   212     -0.1542
+bndcflux    34   212     -0.1542
+bndcflux    35   212     -0.1542
+bndcflux    39   212     -0.1542
+bndcflux    41   212     -0.1542
+bndcflux    43   212     -0.1542
+bndcflux    44   212     -0.1542
+bndcflux    45   212     -0.1542
+bndcflux    49   212     -0.1542
+bndcflux    83   254     -0.1850
+bndcflux   147   249     -0.1850
+bndcflux   149   249     -0.1850
+bndcflux   185   216     -0.1850
+bndcflux   192   218     -0.1466
+bndcflux    33   171     -0.1466
+bndcflux    34   171     -0.1466
+bndcflux    35   171     -0.1466
+bndcflux    43   171     -0.1466
+bndcflux    53   171     -0.1466
+bndcflux    29   240     -0.1359
+bndcflux    30   240     -0.1359
+bndcflux   165   240     -0.1359
+bndcflux    74   219     -0.1359
+bndcflux    76   225     -0.1359
+bndcflux    77   225     -0.1359
+bndcflux    78   225     -0.1359
+bndcflux    79   225     -0.1359
+bndcflux    88   225     -0.1359
+bndcflux    89   225     -0.1359
+bndcflux    96   225     -0.1359
+bndcflux   100   243     -0.1359
+bndcflux   141   240     -0.1359
+bndcflux   183   218     -0.1359
+bndcflux   184   218     -0.1405
+bndcflux   116   267     -0.1405
+bndcflux    33   203     -0.1405
+bndcflux    34   203     -0.1405
+bndcflux    35   203     -0.1405
+bndcflux    41   203     -0.1405
+bndcflux    44   203     -0.1405
+bndcflux   200   206     -0.1130
+bndcflux   200   207     -0.1130
+bndcflux   200   210     -0.1130
+bndcflux    33   179     -0.1130
+bndcflux    34   179     -0.1130
+bndcflux    35   179     -0.1130
+bndcflux    39   179     -0.1130
+bndcflux    44   179     -0.1130
+bndcflux    53   179     -0.1130
+bndcflux    34   181     -0.1130
+bndcflux    35   174     -0.1130
+bndcflux    35   176     -0.1130
+bndcflux    35   180     -0.1130
+bndcflux    35   181     -0.1130
+bndcflux    35   199     -0.1130
+bndcflux    43   174     -0.1130
+bndcflux    47   176     -0.1130
+bndcflux    92   172     -0.1148
+bndcflux   108   108     -0.1133
+bndcflux   108   109     -0.1133
+bndcflux   109   109     -0.1133
+bndcflux   185   218     -0.1133
+bndcflux   114   263     -0.1133
+bndcflux    34   172     -0.1133
+bndcflux    39   172     -0.1133
+bndcflux    50   172     -0.1133
+bndcflux    51   172     -0.1133
+bndcflux   116   248     -0.1133
+bndcflux    34   253     -0.1133
+bndcflux    34   256     -0.1133
+bndcflux    34   263     -0.1133
+bndcflux    35   253     -0.1133
+bndcflux   117   120     -0.1031
+bndcflux    34   255     -0.0671
+bndcflux    28   202     -0.0461
+bndcflux   169   200     -0.0461
+bndcflux   200   200     -0.0461
+bndcflux   200   202     -0.0461
+bndcflux    66   172     -0.0461
+bndcflux    33   252     -0.0461
+bndcflux    34   252     -0.0461
+bndcflux    35   252     -0.0461
+bndcflux    39   252     -0.0461
+bndcflux    45   252     -0.0461
+bndcflux    28   204     -0.0652
+bndcflux    28   207     -0.0652
+bndcflux    28   210     -0.0652
+bndcflux    34   108     -0.0652
+bndcflux    34   110     -0.0652
+bndcflux    35   108     -0.0652
+bndcflux    35   110     -0.0652
+bndcflux   102   193     -0.0584
+bndcflux    35   207     -0.0604
+bndcflux    34   225     -0.0604
+bndcflux    34   244     -0.0604
+bndcflux    24   179     -0.0604
+bndcflux   115   267     -0.0604
+bndcflux    35   169     -0.0522
+bndcflux    24   174     -0.0522
+bndcflux    24   176     -0.0522
+bndcflux    24   180     -0.0522
+bndcflux    24   182     -0.0522
+bndcflux    24   197     -0.0522
+bndcflux    24   199     -0.0522
+bndcflux    27   178     -0.0522
+bndcflux   154   155     -0.0701
+bndcflux    29   228     -0.0701
+bndcflux   107   193     -0.0701
+bndcflux   158   159     -0.0701
+bndcflux    29   110     -0.0493
+bndcflux    29    33     -0.0493
+bndcflux    29    34     -0.0493
+bndcflux    29    35     -0.0493
+bndcflux    29    39     -0.0493
+bndcflux    29    44     -0.0493
+bndcflux    29    47     -0.0493
+bndcflux    29    54     -0.0493
+bndcflux    29    64     -0.0493
+bndcflux    30    34     -0.0493
+bndcflux    30    35     -0.0493
+bndcflux   210   210     -0.0249
+bndcflux   210   211     -0.0249
+bndcflux   103   192     -0.0274
+bndcflux    28   203     -0.0149
+bndcflux   123   203     -0.0697
+bndcflux   128   203     -0.0697
+bndcflux   130   203     -0.0697
+bndcflux   134   203     -0.0697
+bndcflux   137   203     -0.0697
+bndcflux   138   203     -0.0697
+bndcflux   139   203     -0.0697
+bndcflux   140   203     -0.0697
+bndcflux   117   228     -0.0697
+bndcflux   114   188     -0.0309
+bndcflux   245   246     -0.0294
+bndcflux    32    32     -0.0120
+bndcflux    32    34     -0.0120
+bndcflux    32    35     -0.0120
+bndcflux    33    33     -0.0120
+bndcflux    33    34     -0.0120
+bndcflux    33    35     -0.0120
+bndcflux    34    34     -0.0120
+bndcflux    34    35     -0.0120
+bndcflux    34    39     -0.0120
+bndcflux    34    41     -0.0120
+bndcflux    34    44     -0.0120
+bndcflux    34    45     -0.0120
+bndcflux    34    49     -0.0120
+bndcflux    34    53     -0.0120
+bndcflux    34    58     -0.0120
+bndcflux    34    62     -0.0120
+bndcflux    34    64     -0.0120
+bndcflux    35    35     -0.0120
+bndcflux    35    39     -0.0120
+bndcflux    35    43     -0.0120
+bndcflux    35    45     -0.0120
+bndcflux    35    53     -0.0120
+bndcflux    35    54     -0.0120
+bndcflux    35    58     -0.0120
+bndcflux    35    62     -0.0120
+bndcflux    39    39     -0.0120
+bndcflux    39    41     -0.0120
+bndcflux    39    50     -0.0120
+bndcflux    41    41     -0.0120
+bndcflux    43    43     -0.0120
+bndcflux    43    49     -0.0120
+bndcflux    44    44     -0.0120
+bndcflux    45    45     -0.0120
+bndcflux    45    46     -0.0120
+bndcflux    47    47     -0.0120
+bndcflux    49    49     -0.0120
+bndcflux    58    58     -0.0120
+bndcflux    62    62     -0.0120
+bndcflux    33   147     -0.0210
+bndcflux    33   150     -0.0210
+bndcflux    34   147     -0.0210
+bndcflux    34   150     -0.0210
+bndcflux    35   144     -0.0210
+bndcflux    35   145     -0.0210
+bndcflux    44   130     -0.0210
+bndcflux   117   203     -0.0210
+bndcflux    34   183     -0.0119
+bndcflux    19   108     -0.0194
+bndcflux    34    60     -0.0194
+bndcflux    17   214     -0.0214
+bndcflux    17   217     -0.0214
+bndcflux    17   229     -0.0214
+bndcflux    17   236     -0.0214
+bndcflux    17   246     -0.0214
+bndcflux    56   265     -0.0125
+bndcflux    34   122     -0.0124
+bndcflux    35   122     -0.0124
+bndcflux    24   193     -0.0124
+bndcflux    27   193     -0.0124
+bndcflux    17   218     -0.0090
+bndcflux   102   192     -0.0090
+bndcflux    34    52     -0.0092
+bndcflux   130   169     -0.0092
+bndcflux   133   169     -0.0092
+bndcflux   114   264     -0.0013
+bndcflux    34   194      0.0002
+bndcflux    35   194      0.0002
+bndcflux    27   194      0.0000
+bndcflux    30   124      0.0000
+bndcflux    15    16      0.0000
+bndcflux    24   177      0.0000
+bndcflux    27   170      0.0000
+bndcflux    27   173      0.0000
+bndcflux    27   175      0.0000
+bndcflux    27   198      0.0000
+bndcflux    29   191      0.0000
+bndcflux    29   198      0.0000
+bndcflux    33   170      0.0000
+bndcflux    33   251      0.0000
+bndcflux    34   170      0.0000
+bndcflux    34   173      0.0000
+bndcflux    34   175      0.0000
+bndcflux    34   251      0.0000
+bndcflux    35   170      0.0000
+bndcflux    35   173      0.0000
+bndcflux    35   175      0.0000
+bndcflux    35   251      0.0000
+bndcflux    39   173      0.0000
+bndcflux    43   170      0.0000
+bndcflux    43   175      0.0000
+bndcflux    50   173      0.0000
+bndcflux    53   170      0.0000
+bndcflux    74   251      0.0000
+bndcflux   107   194      0.0000
+bndcflux   116   116      0.0000
+bndcflux   189   190      0.0000
+bndcflux   190   190      0.0000
+bndcflux   190   191      0.0000
+bndcflux   215   272      0.0000
+bndcflux   215   273      0.0000
+bndcflux   215   275      0.0000
+bndcflux   215   276      0.0000
+bndcflux   215   278      0.0000
+bndcflux   215   279      0.0000
+bndcflux   231   259      0.0000
+bndcflux   235   261      0.0000
+bndcflux   243   244      0.0000
+bndcflux   256   256      0.0000
+bndcflux    34    56      0.0000
+bndcflux    35    56      0.0000
+bndcflux    24   172      0.0026
+bndcflux    60   265      0.0026
+bndcflux   120   155     -0.0065
+bndcflux    35   119      0.0026
+bndcflux    34   141      0.0026
+bndcflux    17   212      0.0003
+bndcflux    34   265     -0.0034
+bndcflux   122   202     -0.0034
+bndcflux    29   142     -0.0034
+bndcflux    30   142     -0.0034
+bndcflux   121   142     -0.0034
+bndcflux   121   207      0.0261
+bndcflux   127   201      0.0261
+bndcflux   130   201      0.0261
+bndcflux   133   201      0.0261
+bndcflux   134   201      0.0261
+bndcflux   137   204      0.0261
+bndcflux   138   204      0.0261
+bndcflux   139   204      0.0261
+bndcflux   145   206      0.0261
+bndcflux   145   207      0.0261
+bndcflux   147   208      0.0261
+bndcflux   148   208      0.0261
+bndcflux   150   209      0.0261
+bndcflux   151   209      0.0261
+bndcflux   160   207      0.0261
+bndcflux   161   206      0.0261
+bndcflux   161   207      0.0261
+bndcflux   163   209      0.0261
+bndcflux   168   211      0.0261
+bndcflux    35   118      0.0080
+bndcflux    35   142      0.0080
+bndcflux    29   120      0.0080
+bndcflux    30   120      0.0080
+bndcflux    34   192      0.0080
+bndcflux    35   192      0.0080
+bndcflux    47   192      0.0080
+bndcflux    17   225     -0.0019
+bndcflux   119   135      0.0000
+bndcflux   129   202      0.0074
+bndcflux   132   202      0.0074
+bndcflux   133   202      0.0074
+bndcflux   157   202      0.0074
+bndcflux    39   117      0.0091
+bndcflux    44   117      0.0091
+bndcflux    31   122      0.0136
+bndcflux    24   192      0.0136
+bndcflux   135   137      0.0136
+bndcflux    26   270      0.0136
+bndcflux    34   135      0.0136
+bndcflux    35   135      0.0136
+bndcflux    24   171      0.0107
+bndcflux    29   141      0.0107
+bndcflux   118   207      0.0168
+bndcflux    33   258      0.0168
+bndcflux    34   258      0.0168
+bndcflux    35   258      0.0168
+bndcflux   122   203      0.0168
+bndcflux    29   155      0.0168
+bndcflux   120   122      0.0168
+bndcflux   155   169      0.0151
+bndcflux   120   124      0.0094
+bndcflux    35   116      0.0238
+bndcflux   115   116      0.0238
+bndcflux    33   257      0.0238
+bndcflux    34   257      0.0238
+bndcflux    34   259      0.0238
+bndcflux    34   260      0.0238
+bndcflux    35   257      0.0238
+bndcflux    35   260      0.0238
+bndcflux    29    60      0.0257
+bndcflux   142   165      0.0257
+bndcflux    31   120      0.0204
+bndcflux    29   118      0.0343
+bndcflux    31    31      0.0343
+bndcflux   117   117      0.0343
+bndcflux   118   118      0.0343
+bndcflux   120   120      0.0343
+bndcflux    29    56      0.0343
+bndcflux   119   120      0.0343
+bndcflux    31   153      0.0343
+bndcflux   118   122      0.0343
+bndcflux   118   146      0.0343
+bndcflux   118   124      0.0273
+bndcflux   123   135      0.0273
+bndcflux    29   153      0.0334
+bndcflux   159   169      0.0334
+bndcflux   155   202      0.0325
+bndcflux   124   202      0.0332
+bndcflux   118   169      0.0332
+bndcflux   141   142      0.0404
+bndcflux   158   200      0.0404
+bndcflux    29    31      0.0255
+bndcflux    30    31      0.0255
+bndcflux    22   116      0.0255
+bndcflux   118   200      0.0255
+bndcflux    29   189      0.0478
+bndcflux    29   190      0.0478
+bndcflux   117   135      0.0489
+bndcflux    29   184      0.0489
+bndcflux    29   119      0.0484
+bndcflux    29    29      0.0484
+bndcflux    29    30      0.0484
+bndcflux    29   121      0.0484
+bndcflux    29   123      0.0484
+bndcflux    29   127      0.0484
+bndcflux    29   143      0.0484
+bndcflux    29   144      0.0484
+bndcflux    29   156      0.0484
+bndcflux    29   160      0.0484
+bndcflux    29   162      0.0484
+bndcflux    29   164      0.0484
+bndcflux    29   166      0.0484
+bndcflux    29   167      0.0484
+bndcflux    30    30      0.0484
+bndcflux   121   127      0.0484
+bndcflux   121   133      0.0484
+bndcflux   125   129      0.0484
+bndcflux   133   136      0.0484
+bndcflux   136   140      0.0484
+bndcflux   143   144      0.0484
+bndcflux   145   146      0.0484
+bndcflux   148   149      0.0484
+bndcflux   151   152      0.0484
+bndcflux   156   157      0.0484
+bndcflux   162   163      0.0484
+bndcflux   164   165      0.0484
+bndcflux   166   167      0.0484
+bndcflux    33    66      0.0484
+bndcflux    34    66      0.0484
+bndcflux    35    66      0.0484
+bndcflux    66    67      0.0624
+bndcflux   159   200      0.0624
+bndcflux    23   124      0.0589
+bndcflux    29   117      0.0589
+bndcflux    29   154      0.0575
+bndcflux    66    68      0.0602
+bndcflux   220   272      0.0602
+bndcflux   220   273      0.0602
+bndcflux   220   274      0.0602
+bndcflux   220   275      0.0602
+bndcflux   220   276      0.0602
+bndcflux   220   277      0.0602
+bndcflux   220   278      0.0602
+bndcflux   220   279      0.0602
+bndcflux    75    80      0.0602
+bndcflux    17   213      0.0684
+bndcflux    23   118      0.0684
+bndcflux    66    66      0.0684
+bndcflux    67    67      0.0684
+bndcflux    67    72      0.0684
+bndcflux    80    80      0.0684
+bndcflux    25   250      0.0675
+bndcflux    25   253      0.0675
+bndcflux    25   254      0.0675
+bndcflux   120   123      0.0953
+bndcflux   120   128      0.0953
+bndcflux   233   266      0.0953
+bndcflux    23   141      0.0953
+bndcflux    12    29      0.0685
+bndcflux    12    30      0.0685
+bndcflux    23   142      0.0685
+bndcflux    52    76      0.0685
+bndcflux    52    69      0.0685
+bndcflux    32    80      0.0685
+bndcflux    33    80      0.0685
+bndcflux    34    80      0.0685
+bndcflux    35    80      0.0685
+bndcflux    44    80      0.0685
+bndcflux    53    80      0.0685
+bndcflux    23   119      0.0836
+bndcflux   121   200      0.0836
+bndcflux   125   200      0.0836
+bndcflux   127   200      0.0836
+bndcflux   130   200      0.0836
+bndcflux   132   200      0.0836
+bndcflux   133   200      0.0836
+bndcflux   136   200      0.0836
+bndcflux   138   200      0.0836
+bndcflux   145   200      0.0836
+bndcflux   156   200      0.0836
+bndcflux   157   200      0.0836
+bndcflux   160   200      0.0836
+bndcflux   161   200      0.0836
+bndcflux   162   200      0.0836
+bndcflux   164   200      0.0836
+bndcflux   167   200      0.0836
+bndcflux   168   200      0.0836
+bndcflux    33    69      0.0836
+bndcflux    34    69      0.0836
+bndcflux    35    69      0.0836
+bndcflux    52    80      0.0967
+bndcflux    14    32      0.0967
+bndcflux    14    33      0.0967
+bndcflux    14    34      0.0967
+bndcflux    14    35      0.0967
+bndcflux   233   265      0.0967
+bndcflux    23   120      0.0967
+bndcflux    23   117      0.0967
+bndcflux    34   102      0.0967
+bndcflux    35   102      0.0967
+bndcflux    52    74      0.1235
+bndcflux    14    29      0.1235
+bndcflux    23   135      0.1235
+bndcflux    68    74      0.1235
+bndcflux    33    74      0.1235
+bndcflux    34    74      0.1235
+bndcflux    35    74      0.1235
+bndcflux    33    76      0.1235
+bndcflux    33    87      0.1235
+bndcflux    33   101      0.1235
+bndcflux    34    75      0.1235
+bndcflux    34    76      0.1235
+bndcflux    34    87      0.1235
+bndcflux    34    97      0.1235
+bndcflux    34    98      0.1235
+bndcflux    34    99      0.1235
+bndcflux    34   100      0.1235
+bndcflux    35    68      0.1235
+bndcflux    35    76      0.1235
+bndcflux    35    87      0.1235
+bndcflux    35   100      0.1235
+bndcflux    35   101      0.1235
+bndcflux    35   103      0.1235
+bndcflux    39    82      0.1235
+bndcflux    43    81      0.1235
+bndcflux    43    94      0.1235
+bndcflux    47    48      0.1235
+bndcflux    53    76      0.1235
+bndcflux    33    83      0.1235
+bndcflux    34    83      0.1235
+bndcflux    35    83      0.1235
+bndcflux   117   200      0.1081
+bndcflux    52    83      0.1081
+bndcflux   232   258      0.1081
+bndcflux   232   265      0.1081
+bndcflux    23    29      0.1081
+bndcflux    23   123      0.1081
+bndcflux    23   130      0.1081
+bndcflux    23   132      0.1081
+bndcflux    23   143      0.1081
+bndcflux    23   144      0.1081
+bndcflux    23   145      0.1081
+bndcflux    23   146      0.1081
+bndcflux    23   147      0.1081
+bndcflux    23   148      0.1081
+bndcflux    23   149      0.1081
+bndcflux    23   150      0.1081
+bndcflux    23   151      0.1081
+bndcflux    23   152      0.1081
+bndcflux    23   168      0.1081
+bndcflux    13    62      0.1274
+bndcflux    13    63      0.1274
+bndcflux    13    64      0.1274
+bndcflux    13    65      0.1274
+bndcflux    13    29      0.1274
+bndcflux    11    97      0.1274
+bndcflux    33    92      0.1274
+bndcflux    34    92      0.1274
+bndcflux    35    92      0.1274
+bndcflux    39    92      0.1274
+bndcflux    44    92      0.1274
+bndcflux    47    92      0.1274
+bndcflux    11    29      0.1274
+bndcflux    11    30      0.1274
+bndcflux    29    74      0.1304
+bndcflux    22    67      0.1304
+bndcflux    22    92      0.1304
+bndcflux   110   187      0.1304
+bndcflux    68    68      0.1304
+bndcflux    68    72      0.1304
+bndcflux    68    77      0.1304
+bndcflux    68    84      0.1304
+bndcflux    71    71      0.1304
+bndcflux    75    76      0.1304
+bndcflux    79    79      0.1304
+bndcflux    79    86      0.1304
+bndcflux    86    86      0.1304
+bndcflux    22    80      0.1304
+bndcflux    29   264      0.1205
+bndcflux    22   102      0.1205
+bndcflux    22    69      0.1205
+bndcflux    22    68      0.1205
+bndcflux    22    70      0.1205
+bndcflux    22    71      0.1205
+bndcflux    22    72      0.1205
+bndcflux    22    73      0.1205
+bndcflux    22    76      0.1205
+bndcflux    22   106      0.1205
+bndcflux   233   258      0.1205
+bndcflux    22    66      0.1287
+bndcflux   232   257      0.1287
+bndcflux   232   266      0.1287
+bndcflux   237   260      0.1287
+bndcflux   237   262      0.1287
+bndcflux    29    73      0.1287
+bndcflux    29    78      0.1287
+bndcflux    29    85      0.1287
+bndcflux    29    95      0.1287
+bndcflux    29   103      0.1287
+bndcflux    29   105      0.1287
+bndcflux   171   266      0.1287
+bndcflux    12    60      0.1287
+bndcflux   171   258      0.1421
+bndcflux    12    58      0.1421
+bndcflux    12    59      0.1421
+bndcflux    12    61      0.1421
+bndcflux    12    98      0.1460
+bndcflux    29   261      0.1346
+bndcflux    29   262      0.1346
+bndcflux    29   266      0.1346
+bndcflux   132   266      0.1346
+bndcflux   143   266      0.1346
+bndcflux    11    56      0.1474
+bndcflux    29   265      0.1474
+bndcflux    11    33      0.1671
+bndcflux    11    34      0.1671
+bndcflux    11    35      0.1671
+bndcflux    11    44      0.1671
+bndcflux    11    55      0.1671
+bndcflux    11    57      0.1671
+bndcflux    19    60      0.1787
+bndcflux    19    56      0.1787
+bndcflux   214   272      0.1787
+bndcflux   214   273      0.1787
+bndcflux   214   274      0.1787
+bndcflux   214   275      0.1787
+bndcflux   214   276      0.1787
+bndcflux   221   275      0.1787
+bndcflux   221   276      0.1787
+bndcflux   221   277      0.1787
+bndcflux   221   278      0.1787
+bndcflux   222   278      0.1787
+bndcflux   222   279      0.1787
+bndcflux    19    52      0.2076
+bndcflux    20    52      0.2076
+bndcflux    13    99      0.2076
+bndcflux   217   260      0.2294
+bndcflux   234   260      0.2294
+bndcflux   236   262      0.2294
+bndcflux   238   260      0.2294
+bndcflux    18    36      0.2294
+bndcflux    19    33      0.2294
+bndcflux    19    37      0.2294
+bndcflux    19    39      0.2294
+bndcflux    19    41      0.2294
+bndcflux    19    42      0.2294
+bndcflux    19    43      0.2294
+bndcflux    19    44      0.2294
+bndcflux    19    45      0.2294
+bndcflux    19    46      0.2294
+bndcflux    19    47      0.2294
+bndcflux    19    49      0.2294
+bndcflux    19    50      0.2294
+bndcflux    19    51      0.2294
+bndcflux    19    53      0.2294
+bndcflux    19    54      0.2294
+bndcflux    19    55      0.2294
+bndcflux    19    58      0.2294
+bndcflux    19    59      0.2294
+bndcflux    19    62      0.2294
+bndcflux    19    63      0.2294
+bndcflux    19    64      0.2294
+bndcflux    19   115      0.2294
+bndcflux    20    34      0.2294
+bndcflux    20    37      0.2294
+bndcflux    20    39      0.2294
+bndcflux    20    41      0.2294
+bndcflux    20    42      0.2294
+bndcflux    20    43      0.2294
+bndcflux    20    44      0.2294
+bndcflux    20    45      0.2294
+bndcflux    20    46      0.2294
+bndcflux    20    47      0.2294
+bndcflux    20    49      0.2294
+bndcflux    20    50      0.2294
+bndcflux    20    51      0.2294
+bndcflux    20    53      0.2294
+bndcflux    20    54      0.2294
+bndcflux    20    55      0.2294
+bndcflux    20    58      0.2294
+bndcflux    20    59      0.2294
+bndcflux    20    62      0.2294
+bndcflux    20    63      0.2294
+bndcflux    20   115      0.2294
+bndcflux    21    35      0.2294
+bndcflux    21    58      0.2294
+bndcflux    21    62      0.2294
+angcflux    35   179    35     -0.2313     -0.2313     -0.0409     -0.0409
+angcflux    34   179    39     -0.2313     -0.2313     -0.0409     -0.0409
+angcflux    34   179    35     -0.2313     -0.2313     -0.0409     -0.0409
+angcflux    35   223    35     -0.2313     -0.2313     -0.2014     -0.2014
+angcflux    34   223    34     -0.2313     -0.2313     -0.2014     -0.2014
+angcflux    34   223    37     -0.2313     -0.2313     -0.2014     -0.2014
+angcflux    41   239    42     -0.2313     -0.2313     -0.2014     -0.2014
+angcflux    41   223    42     -0.2313     -0.2313     -0.2014     -0.2014
+angcflux    49   224    49     -0.2313     -0.2313     -0.2014     -0.2014
+angcflux    41   223    41     -0.2313     -0.2313     -0.2014     -0.2014
+angcflux    33   223    33     -0.2313     -0.2313     -0.2014     -0.2014
+angcflux    33   223    35     -0.2313     -0.2313     -0.2014     -0.2014
+angcflux    33   223    34     -0.2313     -0.2313     -0.2014     -0.2014
+angcflux    45   223    46     -0.2313     -0.2313     -0.2014     -0.2014
+angcflux    45   223    45     -0.2313     -0.2313     -0.2014     -0.2014
+angcflux    34   223    35     -0.2313     -0.2313     -0.2014     -0.2014
+angcflux    35   171    35     -0.1378     -0.1378     -0.0130     -0.0130
+angcflux    34   171    34     -0.1378     -0.1378     -0.0130     -0.0130
+angcflux    34   181    35     -0.1534     -0.1534      0.0052      0.0052
+angcflux    35   176    47     -0.1534     -0.1534      0.0052      0.0052
+angcflux    43   174    43     -0.1534     -0.1534      0.0052      0.0052
+angcflux    35   174    43     -0.1534     -0.1534      0.0052      0.0052
+angcflux   209   163   269     -0.1534     -0.0863      0.0391      0.1982
+angcflux   209   150   269     -0.1534     -0.0863      0.0391      0.1982
+angcflux    95   130   169     -0.1534      0.0869     -0.2103     -0.1123
+angcflux    95   132   202     -0.1570      0.1029     -0.2103     -0.1014
+angcflux    22    66    35     -0.1570      0.0219      0.0052     -0.0152
+angcflux    22    66    34     -0.1570      0.0219      0.0052     -0.0152
+angcflux    22    66    33     -0.1570      0.0219      0.0052     -0.0152
+angcflux   104   125   200     -0.1570      0.0653     -0.1976     -0.1052
+angcflux    95   132   200     -0.1570      0.0653     -0.1976     -0.1052
+angcflux    95   130   200     -0.1570      0.0653     -0.1976     -0.1052
+angcflux    95   118   169     -0.2343      0.1029     -0.2103     -0.1123
+angcflux    80    53   171     -0.2343      0.0012      0.0775     -0.0062
+angcflux   145   206   200     -0.2343     -0.0067      0.0377     -0.0615
+angcflux   161   206   200     -0.2343     -0.0067      0.0377     -0.0615
+angcflux   161   207   200     -0.2343     -0.0067      0.0377     -0.0615
+angcflux   121   207   200     -0.2343     -0.0067      0.0377     -0.0615
+angcflux   145   207   200     -0.2343     -0.0067      0.0377     -0.0615
+angcflux   160   207   200     -0.2343     -0.0067      0.0377     -0.0615
+angcflux    22    80   213     -0.1444      0.0219     -0.0318     -0.0002
+angcflux   117   203   130     -0.1394     -0.0661     -0.1851     -0.0159
+angcflux   117   203   138     -0.1394     -0.0661     -0.1851     -0.0159
+angcflux   135   117   226     -0.1394      0.0955      0.1156      0.1512
+angcflux   214   273   214     -0.1394     -0.1394      0.0183      0.0183
+angcflux   214   274   214     -0.1394     -0.1394      0.0183      0.0183
+angcflux   214   275   221     -0.1394     -0.1394      0.0183      0.0183
+angcflux   214   275   214     -0.1394     -0.1394      0.0183      0.0183
+angcflux   221   276   221     -0.1394     -0.1394      0.0183      0.0183
+angcflux   214   276   221     -0.1394     -0.1394      0.0183      0.0183
+angcflux   221   277   221     -0.1394     -0.1394      0.0183      0.0183
+angcflux   221   278   222     -0.1394     -0.1394      0.0183      0.0183
+angcflux   222   279   222     -0.1394     -0.1394      0.0183      0.0183
+angcflux    29    29   171     -0.1230      0.0790      0.1920      0.1512
+angcflux   166    29   171     -0.1230      0.0790      0.1920      0.1512
+angcflux    29   230    34     -0.1230      0.0408     -0.1304     -0.0947
+angcflux    30   230    35     -0.1230      0.0408     -0.1304     -0.0947
+angcflux    29   230    35     -0.1230      0.0408     -0.1304     -0.0947
+angcflux    34    83   255     -0.1230      0.1394      0.1509      0.0000
+angcflux    35    83   255     -0.1230      0.1394      0.1509      0.0000
+angcflux    21    35   169     -0.1230      0.0869      0.0659      0.0245
+angcflux   117   200   158     -0.1009     -0.0147     -0.1123     -0.1014
+angcflux   117   200   127     -0.1009      0.0255     -0.1971     -0.0787
+angcflux   117   200   138     -0.1009      0.0255     -0.1971     -0.0787
+angcflux   117   200   161     -0.1009      0.0255     -0.1971     -0.0787
+angcflux   117   200   121     -0.1009      0.0255     -0.1971     -0.0787
+angcflux   117   200   162     -0.1009      0.0255     -0.1971     -0.0787
+angcflux   117   200   167     -0.1009      0.0255     -0.1971     -0.0787
+angcflux   117   200   130     -0.1009      0.0255     -0.1971     -0.0787
+angcflux   117   200   156     -0.1009      0.0255     -0.1971     -0.0787
+angcflux   117   200   160     -0.1009      0.0255     -0.1971     -0.0787
+angcflux   117   200   164     -0.1009      0.0255     -0.1971     -0.0787
+angcflux    21    35   207     -0.1009      0.0938      0.0882      0.0178
+angcflux    95   147   208     -0.1009      0.0541     -0.2014     -0.1014
+angcflux    95   150   209     -0.1009      0.0541     -0.2014     -0.1014
+angcflux   147   249   149     -0.0863     -0.0863     -0.0074     -0.0074
+angcflux    30   239    42     -0.0863      0.0791     -0.1052     -0.0787
+angcflux    22    69    35     -0.0863     -0.0054     -0.0028     -0.0002
+angcflux    19    69    34     -0.0863     -0.0054     -0.0028     -0.0002
+angcflux    22    69    34     -0.0863     -0.0054     -0.0028     -0.0002
+angcflux    22    69    33     -0.0863     -0.0054     -0.0028     -0.0002
+angcflux    35    83   254     -0.0863      0.0955      0.1490      0.0010
+angcflux    33    83   254     -0.0863      0.0955      0.1490      0.0010
+angcflux    29   268   143     -0.0863     -0.0863      0.0178      0.0178
+angcflux    29   268    29     -0.0863     -0.0863      0.0178      0.0178
+angcflux    22    69    52     -0.0863     -0.0329      0.0023     -0.0041
+angcflux   136   140   226     -0.1187      0.0544      0.1168      0.2839
+angcflux    29    29   184     -0.1187      0.0274     -0.0621     -0.0737
+angcflux    20    34    66     -0.1187      0.0020     -0.0903     -0.0094
+angcflux    21    35    66     -0.1187      0.0020     -0.0903     -0.0094
+angcflux    19    33    66     -0.1187      0.0020     -0.0903     -0.0094
+angcflux   135   137   226     -0.1187      0.0501      0.0775      0.2371
+angcflux    39    41   203     -0.1187      0.0169      0.1035     -0.0947
+angcflux    35    34   203     -0.1187      0.0169      0.1035     -0.0947
+angcflux    44    44   203     -0.1187      0.0169      0.1035     -0.0947
+angcflux    35    33   203     -0.1187      0.0169      0.1035     -0.0947
+angcflux    29   230    60     -0.1187      0.0696     -0.1014     -0.0621
+angcflux    21    35   203     -0.1187      0.0890      0.0998      0.0178
+angcflux    19    41   203     -0.1187      0.0890      0.0998      0.0178
+angcflux    20    41   203     -0.1187      0.0890      0.0998      0.0178
+angcflux    20    34   203     -0.1187      0.0890      0.0998      0.0178
+angcflux    19    44   203     -0.1187      0.0890      0.0998      0.0178
+angcflux    20    44   203     -0.1187      0.0890      0.0998      0.0178
+angcflux    19    33   203     -0.1187      0.0890      0.0998      0.0178
+angcflux    29   171    35     -0.0872     -0.0414     -0.0130     -0.0903
+angcflux    92   179   143     -0.0872      0.0501     -0.0484      0.0704
+angcflux   122   202   124     -0.0872     -0.0545     -0.0787     -0.0987
+angcflux    21    35   212     -0.0872      0.1378     -0.0902      0.0983
+angcflux    20    34   212     -0.0872      0.1378     -0.0902      0.0983
+angcflux    19    33   212     -0.0872      0.1378     -0.0902      0.0983
+angcflux    19    43   212     -0.0872      0.1378     -0.0902      0.0983
+angcflux    20    43   212     -0.0872      0.1378     -0.0902      0.0983
+angcflux    19    49   212     -0.0872      0.1378     -0.0902      0.0983
+angcflux    20    49   212     -0.0872      0.1378     -0.0902      0.0983
+angcflux    19    39   212     -0.0872      0.1378     -0.0902      0.0983
+angcflux    20    39   212     -0.0872      0.1378     -0.0902      0.0983
+angcflux    19    41   212     -0.0872      0.1378     -0.0902      0.0983
+angcflux    20    41   212     -0.0872      0.1378     -0.0902      0.0983
+angcflux    29   230    56     -0.0872      0.0696     -0.1123     -0.0586
+angcflux   219    83   254     -0.0872      0.0613      0.1127      0.1270
+angcflux    27   193   107     -0.0872      0.1054     -0.1123     -0.0130
+angcflux   102   192   218     -0.1226      0.0890      0.1542      0.1035
+angcflux   118   200   206     -0.1226     -0.0272      0.1663     -0.0128
+angcflux   118   200   207     -0.1226     -0.0272      0.1663     -0.0128
+angcflux   130   200   202     -0.1226     -0.0150      0.1156     -0.0484
+angcflux   130   200   169     -0.1226     -0.0150      0.1156     -0.0484
+angcflux   145   200   207     -0.1226     -0.0150      0.1156     -0.0484
+angcflux   118   207   200     -0.1226     -0.0150      0.1156     -0.0484
+angcflux    29    29   154     -0.1226     -0.0218     -0.1823     -0.0984
+angcflux    22   102    35     -0.1226     -0.0309      0.0104     -0.0028
+angcflux    22   102    34     -0.1226     -0.0309      0.0104     -0.0028
+angcflux    29   199    35     -0.1226     -0.2029     -0.0128      0.0388
+angcflux    29   176    35     -0.1226     -0.2029     -0.0128      0.0388
+angcflux    29   174    43     -0.1226     -0.2029     -0.0128      0.0388
+angcflux   124   202   124     -0.1226     -0.1226     -0.0736     -0.0736
+angcflux   106   196   129     -0.1226      0.0665     -0.0029      0.0391
+angcflux    20    34   192     -0.1226      0.0588      0.0201      0.0584
+angcflux    21    35   192     -0.1226      0.0588      0.0201      0.0584
+angcflux    20    47   192     -0.1226      0.0588      0.0201      0.0584
+angcflux   219    83   255     -0.1226      0.0630      0.1542      0.1174
+angcflux    34   150   269     -0.1226      0.1029      0.0584      0.0072
+angcflux    33   150   269     -0.1226      0.1029      0.0584      0.0072
+angcflux   130   169   133     -0.0983     -0.0983     -0.0947     -0.0947
+angcflux    34    34   171     -0.0983     -0.0329      0.1542      0.0659
+angcflux    35    53   171     -0.0983     -0.0329      0.1542      0.0659
+angcflux    35    34   171     -0.0983     -0.0329      0.1542      0.0659
+angcflux    34    53   171     -0.0983     -0.0329      0.1542      0.0659
+angcflux    35    33   171     -0.0983     -0.0329      0.1542      0.0659
+angcflux    33    34   171     -0.0983     -0.0329      0.1542      0.0659
+angcflux    34    33   171     -0.0983     -0.0329      0.1542      0.0659
+angcflux    43    43   171     -0.0983     -0.0329      0.1542      0.0659
+angcflux    39    34   171     -0.0983     -0.0329      0.1542      0.0659
+angcflux    29    29   117     -0.0983     -0.0120     -0.1923     -0.1052
+angcflux    35    74    52     -0.0983     -0.0061     -0.0690     -0.0902
+angcflux    34    74    52     -0.0983     -0.0061     -0.0690     -0.0902
+angcflux    29   117   230     -0.0983      0.1029      0.1920      0.1542
+angcflux   118   169   118     -0.0661     -0.0661     -0.0902     -0.0902
+angcflux   171   258   232     -0.0661      0.0163     -0.0103     -0.0076
+angcflux   171   266   232     -0.0661      0.0163     -0.0103     -0.0076
+angcflux    30   240    30     -0.0661     -0.0661     -0.0094     -0.0094
+angcflux    29   240   165     -0.0661     -0.0661     -0.0094     -0.0094
+angcflux    29    29    31     -0.0661      0.0145     -0.1642     -0.1052
+angcflux    52    83   255     -0.0661      0.0790      0.1542      0.0355
+angcflux   118   169   155     -0.0661     -0.0983     -0.0610     -0.0787
+angcflux    29   179    35     -0.0661     -0.1609     -0.0241      0.0704
+angcflux   118   207   160     -0.0661     -0.0661     -0.0947     -0.0947
+angcflux   122   202   132     -0.0661     -0.0661     -0.0787     -0.0787
+angcflux   122   202   157     -0.0661     -0.0661     -0.0787     -0.0787
+angcflux    29    29   229     -0.0661      0.0541      0.2371      0.1174
+angcflux    30    30   239     -0.0661      0.0541      0.2371      0.1174
+angcflux    29    30   239     -0.0661      0.0541      0.2371      0.1174
+angcflux    30    30   142     -0.0661     -0.0545     -0.0610     -0.0586
+angcflux    29   121   142     -0.0661     -0.0545     -0.0610     -0.0586
+angcflux    29    29   142     -0.0661     -0.0545     -0.0610     -0.0586
+angcflux    24   192   102     -0.0584      0.1305     -0.1123     -0.0129
+angcflux   117   203   117     -0.0584     -0.0584     -0.0164     -0.0164
+angcflux    27   193    27     -0.0584     -0.0584      0.0110      0.0110
+angcflux    24   193    24     -0.0584     -0.0584      0.0110      0.0110
+angcflux    30   240   141     -0.0584     -0.1230     -0.0007      0.0082
+angcflux    29   240   141     -0.0584     -0.1230     -0.0007      0.0082
+angcflux   171   266   233     -0.0584     -0.0218      0.0134      0.0131
+angcflux    95   150   269     -0.0584      0.0748      0.0584     -0.0303
+angcflux    66    33   212     -0.0584      0.0748      0.0104      0.0023
+angcflux    35   199   117     -0.0584      0.0869      0.0777     -0.0152
+angcflux   122   203   137     -0.0368     -0.0983     -0.0947     -0.0902
+angcflux    92    33   212     -0.0368      0.0748      0.0378      0.0265
+angcflux    76    34   212     -0.0368      0.0588     -0.0074      0.0258
+angcflux    76    33   212     -0.0368      0.0588     -0.0074      0.0258
+angcflux    81    43   212     -0.0368      0.0588     -0.0074      0.0258
+angcflux    82    39   212     -0.0368      0.0588     -0.0074      0.0258
+angcflux   124   202   132     -0.0368     -0.0872     -0.0902     -0.0610
+angcflux   214   272   220     -0.0368     -0.0375     -0.0117      0.0777
+angcflux   214   273   220     -0.0368     -0.0375     -0.0117      0.0777
+angcflux   214   274   220     -0.0368     -0.0375     -0.0117      0.0777
+angcflux   214   275   220     -0.0368     -0.0375     -0.0117      0.0777
+angcflux   214   276   220     -0.0368     -0.0375     -0.0117      0.0777
+angcflux   117   200   117     -0.0368     -0.0368     -0.1642     -0.1642
+angcflux   171   258   233     -0.0368     -0.0187      0.0308      0.0134
+angcflux   168   211   210     -0.0368      0.0169      0.1127     -0.0504
+angcflux    35   179   143     -0.0506      0.1029      0.0391      0.0010
+angcflux   130   200   200     -0.0506     -0.0218      0.0998     -0.0668
+angcflux   168   200   200     -0.0506     -0.0218      0.0998     -0.0668
+angcflux   129   202   132     -0.0506     -0.0506     -0.1014     -0.1014
+angcflux   132   202   133     -0.0506     -0.0506     -0.1014     -0.1014
+angcflux   118   200   132     -0.0667     -0.1226     -0.0002     -0.0902
+angcflux   118   200   130     -0.0667     -0.1226     -0.0002     -0.0902
+angcflux   118   200   157     -0.0667     -0.1226     -0.0002     -0.0902
+angcflux    23   124   202     -0.0667      0.0890     -0.2579     -0.0736
+angcflux    20    34    83     -0.0667      0.0450     -0.0610     -0.0902
+angcflux    21    35    83     -0.0667      0.0450     -0.0610     -0.0902
+angcflux    19    33    83     -0.0667      0.0450     -0.0610     -0.0902
+angcflux    34    66    35     -0.0667     -0.0667     -0.0902     -0.0902
+angcflux    33    66    35     -0.0667     -0.0667     -0.0902     -0.0902
+angcflux    35    66    35     -0.0667     -0.0667     -0.0902     -0.0902
+angcflux   125   200   132     -0.0667     -0.0667     -0.0902     -0.0902
+angcflux   132   200   136     -0.0667     -0.0667     -0.0902     -0.0902
+angcflux   121   200   130     -0.0667     -0.0667     -0.0902     -0.0902
+angcflux   130   200   133     -0.0667     -0.0667     -0.0902     -0.0902
+angcflux   127   200   130     -0.0667     -0.0667     -0.0902     -0.0902
+angcflux   130   200   136     -0.0667     -0.0667     -0.0902     -0.0902
+angcflux   232   258   232     -0.0667     -0.0667      0.0110      0.0110
+angcflux   232   265   232     -0.0667     -0.0667      0.0110      0.0110
+angcflux    35    34   252     -0.0667      0.0369      0.0735     -0.0207
+angcflux    35    33   252     -0.0667      0.0369      0.0735     -0.0207
+angcflux    45    45   252     -0.0667      0.0369      0.0735     -0.0207
+angcflux    34    45   252     -0.0667      0.0369      0.0735     -0.0207
+angcflux    39    39   252     -0.0667      0.0369      0.0735     -0.0207
+angcflux   124   202   155     -0.0667     -0.0983     -0.0736     -0.0787
+angcflux    34   102    34     -0.0667     -0.0667     -0.0787     -0.0787
+angcflux    35   102    35     -0.0667     -0.0667     -0.0787     -0.0787
+angcflux    34   102    35     -0.0667     -0.0667     -0.0787     -0.0787
+angcflux   123   203   139     -0.0303     -0.0303     -0.0159     -0.0159
+angcflux   123   203   137     -0.0303     -0.0303     -0.0159     -0.0159
+angcflux   134   203   140     -0.0303     -0.0303     -0.0159     -0.0159
+angcflux   128   203   138     -0.0303     -0.0303     -0.0159     -0.0159
+angcflux    35    34   265     -0.0303      0.0000     -0.0129     -0.0103
+angcflux   118   169   130     -0.0303     -0.0983     -0.0902     -0.0787
+angcflux   120    30   229     -0.0303      0.0653      0.1512      0.1542
+angcflux    92   179   141     -0.0303      0.0665     -0.0222      0.0323
+angcflux   117    29   127     -0.0303     -0.1187     -0.1642      0.0355
+angcflux   223    37   223     -0.0303     -0.0303     -0.0350     -0.0350
+angcflux   239    42   239     -0.0303     -0.0303     -0.0350     -0.0350
+angcflux   223    42   239     -0.0303     -0.0303     -0.0350     -0.0350
+angcflux   223    42   223     -0.0303     -0.0303     -0.0350     -0.0350
+angcflux    66    34   227     -0.0303      0.0588      0.0163      0.0368
+angcflux    35    34    80     -0.0992      0.0297     -0.1052     -0.0128
+angcflux    35    53    80     -0.0992      0.0297     -0.1052     -0.0128
+angcflux    34    32    80     -0.0992      0.0297     -0.1052     -0.0128
+angcflux    32    34    80     -0.0992      0.0297     -0.1052     -0.0128
+angcflux    34    33    80     -0.0992      0.0297     -0.1052     -0.0128
+angcflux    33    34    80     -0.0992      0.0297     -0.1052     -0.0128
+angcflux    34    53    80     -0.0992      0.0297     -0.1052     -0.0128
+angcflux    35    33    80     -0.0992      0.0297     -0.1052     -0.0128
+angcflux    44    44    80     -0.0992      0.0297     -0.1052     -0.0128
+angcflux    34    34    80     -0.0992      0.0297     -0.1052     -0.0128
+angcflux    33    33    80     -0.0992      0.0297     -0.1052     -0.0128
+angcflux   200   210   211     -0.0992     -0.0174      0.0430      0.0377
+angcflux    35   135   117     -0.0992      0.0450     -0.1642     -0.0159
+angcflux    35    34   257     -0.0992      0.0418     -0.0201     -0.0241
+angcflux    35    34   260     -0.0992      0.0418     -0.0201     -0.0241
+angcflux    35    34   259     -0.0992      0.0418     -0.0201     -0.0241
+angcflux    35    33   257     -0.0992      0.0418     -0.0201     -0.0241
+angcflux    33    34   257     -0.0992      0.0418     -0.0201     -0.0241
+angcflux    34    34   257     -0.0992      0.0418     -0.0201     -0.0241
+angcflux    33    34   260     -0.0992      0.0418     -0.0201     -0.0241
+angcflux    33    34   259     -0.0992      0.0418     -0.0201     -0.0241
+angcflux   142   141   179     -0.0992      0.0790      0.1827      0.1982
+angcflux    34    30   240     -0.0992      0.0541      0.0377     -0.0013
+angcflux   117    29   117     -0.0992     -0.0992     -0.1304     -0.1304
+angcflux   118   200   159     -0.0992     -0.0667     -0.0222     -0.0987
+angcflux    66    66   223     -0.0992      0.0341      0.0735      0.0368
+angcflux   117    29   119     -0.0992     -0.0226     -0.1304     -0.1304
+angcflux   203    41   223     -0.0992     -0.2343      0.0354      0.0493
+angcflux    29    29   153     -0.0992     -0.0040     -0.1304     -0.1052
+angcflux   124    30   230     -0.0528      0.0748      0.1512      0.1270
+angcflux    29    31   120     -0.0528     -0.0147     -0.1123     -0.1304
+angcflux   233   258   233     -0.0528     -0.0528      0.0201      0.0201
+angcflux    74   143   268     -0.0528      0.1029      0.0391     -0.0586
+angcflux    95   147   249     -0.0528      0.0621      0.0391     -0.0343
+angcflux   120    30   230     -0.0528      0.0501      0.1512      0.1542
+angcflux   233   266   233     -0.0528     -0.0528     -0.0209     -0.0209
+angcflux   233   265   233     -0.0545     -0.0545     -0.0237     -0.0237
+angcflux    29   117   199     -0.0545      0.1103      0.1512      0.2169
+angcflux   124    30   229     -0.0545      0.0501      0.1512      0.1490
+angcflux    35   122   118     -0.0545      0.0341     -0.0984     -0.0130
+angcflux   120   155   154     -0.0414     -0.0414     -0.1642     -0.1642
+angcflux    29    29   120     -0.0414     -0.0147     -0.0984     -0.1123
+angcflux   141    29   142     -0.0414     -0.0329     -0.1052     -0.1052
+angcflux   120   119   135     -0.0414     -0.0040     -0.1123     -0.0984
+angcflux    50   172    50     -0.0414     -0.0414     -0.0129     -0.0129
+angcflux    34   172    39     -0.0414     -0.0414     -0.0129     -0.0129
+angcflux    31   122   120     -0.0414     -0.0138     -0.1267     -0.1449
+angcflux    29   153    31     -0.0414     -0.0139     -0.0984     -0.1052
+angcflux    34   122   120     -0.0414      0.0163     -0.0984     -0.0128
+angcflux    31    30   124     -0.0414     -0.0182     -0.0984     -0.1267
+angcflux    31   120   124     -0.0414     -0.0147     -0.0984     -0.0984
+angcflux    29    31   153     -0.0390     -0.0174     -0.0984     -0.1052
+angcflux    23   118   200     -0.0390     -0.0293     -0.2506     -0.0903
+angcflux    34   102   192     -0.0390      0.0408     -0.0504     -0.0621
+angcflux    35   102   192     -0.0390      0.0408     -0.0504     -0.0621
+angcflux    34    34    35     -0.0390     -0.0390     -0.0130     -0.0130
+angcflux    34    34    34     -0.0390     -0.0390     -0.0130     -0.0130
+angcflux    35    32    35     -0.0390     -0.0390     -0.0130     -0.0130
+angcflux    39    39    39     -0.0390     -0.0390     -0.0130     -0.0130
+angcflux    39    39    50     -0.0390     -0.0390     -0.0130     -0.0130
+angcflux    35    33    35     -0.0390     -0.0390     -0.0130     -0.0130
+angcflux    43    43    43     -0.0390     -0.0390     -0.0130     -0.0130
+angcflux    43    43    49     -0.0390     -0.0390     -0.0130     -0.0130
+angcflux    34    49    43     -0.0390     -0.0390     -0.0130     -0.0130
+angcflux    39    39    41     -0.0390     -0.0390     -0.0130     -0.0130
+angcflux    34    41    39     -0.0390     -0.0390     -0.0130     -0.0130
+angcflux    33    33    35     -0.0390     -0.0390     -0.0130     -0.0130
+angcflux    34    32    35     -0.0390     -0.0390     -0.0130     -0.0130
+angcflux    32    34    35     -0.0390     -0.0390     -0.0130     -0.0130
+angcflux    34    33    34     -0.0390     -0.0390     -0.0130     -0.0130
+angcflux    33    34    35     -0.0390     -0.0390     -0.0130     -0.0130
+angcflux    32    32    35     -0.0390     -0.0390     -0.0130     -0.0130
+angcflux    35    34    35     -0.0390     -0.0390     -0.0130     -0.0130
+angcflux    58    58    58     -0.0390     -0.0390     -0.0130     -0.0130
+angcflux    62    62    62     -0.0390     -0.0390     -0.0130     -0.0130
+angcflux    34    34    58     -0.0390     -0.0390     -0.0130     -0.0130
+angcflux    34    32    34     -0.0390     -0.0390     -0.0130     -0.0130
+angcflux    34    34    53     -0.0390     -0.0390     -0.0130     -0.0130
+angcflux    34    33    35     -0.0390     -0.0390     -0.0130     -0.0130
+angcflux    35    58    35     -0.0390     -0.0390     -0.0130     -0.0130
+angcflux    44    44    44     -0.0390     -0.0390     -0.0130     -0.0130
+angcflux    45    45    45     -0.0390     -0.0390     -0.0130     -0.0130
+angcflux    35    34    64     -0.0390     -0.0390     -0.0130     -0.0130
+angcflux    47    47    47     -0.0390     -0.0390     -0.0130     -0.0130
+angcflux    35    43    43     -0.0390     -0.0390     -0.0130     -0.0130
+angcflux    34    44    44     -0.0390     -0.0390     -0.0130     -0.0130
+angcflux    35    34    44     -0.0390     -0.0390     -0.0130     -0.0130
+angcflux    34    45    45     -0.0390     -0.0390     -0.0130     -0.0130
+angcflux    35    34    45     -0.0390     -0.0390     -0.0130     -0.0130
+angcflux    45    45    46     -0.0390     -0.0390     -0.0130     -0.0130
+angcflux    34    45    46     -0.0390     -0.0390     -0.0130     -0.0130
+angcflux    35    45    46     -0.0390     -0.0390     -0.0130     -0.0130
+angcflux    35    45    45     -0.0390     -0.0390     -0.0130     -0.0130
+angcflux    34    45    35     -0.0390     -0.0390     -0.0130     -0.0130
+angcflux    34    39    39     -0.0390     -0.0390     -0.0130     -0.0130
+angcflux    35    34    39     -0.0390     -0.0390     -0.0130     -0.0130
+angcflux    58    34    62     -0.0390     -0.0390     -0.0130     -0.0130
+angcflux    34    34    62     -0.0390     -0.0390     -0.0130     -0.0130
+angcflux    33    33    33     -0.0390     -0.0390     -0.0130     -0.0130
+angcflux    33    33    34     -0.0390     -0.0390     -0.0130     -0.0130
+angcflux    35    39    39     -0.0390     -0.0390     -0.0130     -0.0130
+angcflux    35    39    50     -0.0390     -0.0390     -0.0130     -0.0130
+angcflux    35   142   141     -0.0390      0.0408     -0.1304     -0.0209
+angcflux    35    30   142     -0.0390      0.0408     -0.1304     -0.0209
+angcflux    34   141   142     -0.0390      0.0408     -0.1304     -0.0209
+angcflux    35   119   135     -0.0390      0.0408     -0.1304     -0.0350
+angcflux   237   260   237     -0.0390     -0.0390      0.0508      0.0508
+angcflux   237   262   237     -0.0390     -0.0390      0.0508      0.0508
+angcflux   232   266   232     -0.0390     -0.0390      0.0508      0.0508
+angcflux    29   154   155     -0.0390      0.0174     -0.0002     -0.0903
+angcflux    80    80   227     -0.0390      0.0163      0.0704      0.0188
+angcflux   117   120   128     -0.0390     -0.0528     -0.1851     -0.0984
+angcflux    29    29   155     -0.0390     -0.0390     -0.0902     -0.1304
+angcflux   120    31   122     -0.0390     -0.0545     -0.0947     -0.0984
+angcflux    23   151   209     -0.0390      0.0408     -0.2526     -0.0712
+angcflux    23   145   207     -0.0390      0.0408     -0.2526     -0.0712
+angcflux    23   148   208     -0.0390      0.0408     -0.2526     -0.0712
+angcflux    23   147   208     -0.0390      0.0408     -0.2526     -0.0712
+angcflux    23   150   209     -0.0390      0.0408     -0.2526     -0.0712
+angcflux    23   168   211     -0.0390      0.0408     -0.2526     -0.0712
+angcflux   137   204   139     -0.0265     -0.0265     -0.0984     -0.0984
+angcflux   133   201   134     -0.0265     -0.0265     -0.0984     -0.0984
+angcflux   127   201   130     -0.0265     -0.0265     -0.0984     -0.0984
+angcflux   137   204   138     -0.0265     -0.0265     -0.0984     -0.0984
+angcflux   145   206   161     -0.0265     -0.0265     -0.0984     -0.0984
+angcflux   145   207   161     -0.0265     -0.0265     -0.0984     -0.0984
+angcflux   151   209   163     -0.0265     -0.0265     -0.0984     -0.0984
+angcflux   121   207   145     -0.0265     -0.0265     -0.0984     -0.0984
+angcflux   147   208   148     -0.0265     -0.0265     -0.0984     -0.0984
+angcflux   150   209   151     -0.0265     -0.0265     -0.0984     -0.0984
+angcflux    35   179   141     -0.0265      0.0653      0.0391      0.0308
+angcflux    95   143   268     -0.0265      0.0665      0.0377     -0.0903
+angcflux    73   143   268     -0.0265      0.0665      0.0377     -0.0903
+angcflux    29    31    31     -0.0265     -0.0138     -0.0984     -0.1052
+angcflux    34   135   119     -0.0265      0.0450     -0.1304     -0.0209
+angcflux    35   135   119     -0.0265      0.0450     -0.1304     -0.0209
+angcflux   200   161   206     -0.0265      0.1029      0.0451      0.0508
+angcflux   200   161   207     -0.0265      0.1029      0.0451      0.0508
+angcflux   200   168   211     -0.0265      0.1029      0.0451      0.0508
+angcflux   200   160   207     -0.0265      0.1029      0.0451      0.0508
+angcflux    35    34   253     -0.0265      0.0621      0.1035      0.0374
+angcflux    35    34   256     -0.0265      0.0621      0.1035      0.0374
+angcflux    35    34   263     -0.0265      0.0621      0.1035      0.0374
+angcflux    34    34   253     -0.0265      0.0621      0.1035      0.0374
+angcflux    34    34   256     -0.0265      0.0621      0.1035      0.0374
+angcflux    53    34   253     -0.0265      0.0621      0.1035      0.0374
+angcflux    33    34   256     -0.0265      0.0621      0.1035      0.0374
+angcflux    35    92   179     -0.0265     -0.0329     -0.0279     -0.0504
+angcflux    34    92   179     -0.0265     -0.0329     -0.0279     -0.0504
+angcflux    33    92   179     -0.0265     -0.0329     -0.0279     -0.0504
+angcflux    44    92   179     -0.0265     -0.0329     -0.0279     -0.0504
+angcflux    39    92   179     -0.0265     -0.0329     -0.0279     -0.0504
+angcflux    35   118   124     -0.0265      0.0530     -0.1304     -0.0128
+angcflux    28   207   200     -0.0265      0.0696     -0.0736     -0.0409
+angcflux    28   210   200     -0.0265      0.0696     -0.0736     -0.0409
+angcflux    29   120   122     -0.0265     -0.0272     -0.0984     -0.1052
+angcflux    23   132   202     -0.0265      0.0621     -0.2526     -0.0504
+angcflux   119   120   122     -0.0246     -0.0246     -0.0984     -0.0984
+angcflux   212    49   224     -0.0246     -0.0368     -0.0013     -0.0076
+angcflux   212    41   223     -0.0246     -0.0368     -0.0013     -0.0076
+angcflux   200   200   210     -0.0246     -0.0265      0.0584      0.0430
+angcflux    21    35   223     -0.0246      0.0955     -0.0033     -0.0237
+angcflux    20    34   223     -0.0246      0.0955     -0.0033     -0.0237
+angcflux    20    34   227     -0.0246      0.0955     -0.0033     -0.0237
+angcflux    19    37   223     -0.0246      0.0955     -0.0033     -0.0237
+angcflux    20    37   223     -0.0246      0.0955     -0.0033     -0.0237
+angcflux    19    42   239     -0.0246      0.0955     -0.0033     -0.0237
+angcflux    20    42   239     -0.0246      0.0955     -0.0033     -0.0237
+angcflux    19    41   239     -0.0246      0.0955     -0.0033     -0.0237
+angcflux    20    41   239     -0.0246      0.0955     -0.0033     -0.0237
+angcflux    19    41   223     -0.0246      0.0955     -0.0033     -0.0237
+angcflux    20    41   223     -0.0246      0.0955     -0.0033     -0.0237
+angcflux    19    42   223     -0.0246      0.0955     -0.0033     -0.0237
+angcflux    20    42   223     -0.0246      0.0955     -0.0033     -0.0237
+angcflux    20    34   238     -0.0246      0.0955     -0.0033     -0.0237
+angcflux    19    49   224     -0.0246      0.0955     -0.0033     -0.0237
+angcflux    20    49   224     -0.0246      0.0955     -0.0033     -0.0237
+angcflux    20    34   221     -0.0246      0.0955     -0.0033     -0.0237
+angcflux    19    33   223     -0.0246      0.0955     -0.0033     -0.0237
+angcflux    19    33   227     -0.0246      0.0955     -0.0033     -0.0237
+angcflux    21    35   221     -0.0246      0.0955     -0.0033     -0.0237
+angcflux    21    35   227     -0.0246      0.0955     -0.0033     -0.0237
+angcflux    19    43   221     -0.0246      0.0955     -0.0033     -0.0237
+angcflux    20    43   221     -0.0246      0.0955     -0.0033     -0.0237
+angcflux    19    44   227     -0.0246      0.0955     -0.0033     -0.0237
+angcflux    20    44   227     -0.0246      0.0955     -0.0033     -0.0237
+angcflux    19    46   223     -0.0246      0.0955     -0.0033     -0.0237
+angcflux    20    46   223     -0.0246      0.0955     -0.0033     -0.0237
+angcflux    19    45   223     -0.0246      0.0955     -0.0033     -0.0237
+angcflux    20    45   223     -0.0246      0.0955     -0.0033     -0.0237
+angcflux    19   115   248     -0.0246      0.0955     -0.0033     -0.0237
+angcflux    20   115   248     -0.0246      0.0955     -0.0033     -0.0237
+angcflux    19    49   227     -0.0246      0.0955     -0.0033     -0.0237
+angcflux    20    49   227     -0.0246      0.0955     -0.0033     -0.0237
+angcflux    19    41   227     -0.0246      0.0955     -0.0033     -0.0237
+angcflux    20    41   227     -0.0246      0.0955     -0.0033     -0.0237
+angcflux    19    33   221     -0.0246      0.0955     -0.0033     -0.0237
+angcflux    35   145   146     -0.0246      0.0613     -0.0987     -0.0504
+angcflux    35    29   123     -0.0246      0.0613     -0.0987     -0.0504
+angcflux    35    29   156     -0.0246      0.0613     -0.0987     -0.0504
+angcflux    28   210   211     -0.0246      0.0274     -0.0615     -0.0164
+angcflux    28   202   132     -0.0319     -0.0303     -0.1851     -0.0902
+angcflux    28   202   129     -0.0319     -0.0303     -0.1851     -0.0902
+angcflux    28   202   133     -0.0319     -0.0303     -0.1851     -0.0902
+angcflux    28   202   157     -0.0319     -0.0303     -0.1851     -0.0902
+angcflux   144   143   179     -0.0319      0.0890      0.1827      0.1920
+angcflux    29    29   179     -0.0319      0.0890      0.1827      0.1920
+angcflux    29   143   179     -0.0319      0.0890      0.1827      0.1920
+angcflux    19    52    76     -0.0319      0.0539     -0.0736     -0.0690
+angcflux    20    52    76     -0.0319      0.0539     -0.0736     -0.0690
+angcflux   118   169   159     -0.0319     -0.0872     -0.0586     -0.0787
+angcflux    35    29   119     -0.0319      0.0530     -0.0984     -0.0129
+angcflux    23   118   169     -0.0319      0.1029     -0.2526     -0.0586
+angcflux   118   146   145     -0.0319     -0.0667     -0.0987     -0.0984
+angcflux    29   155   154     -0.0319     -0.0390     -0.1267     -0.1267
+angcflux    29   119   135     -0.0319     -0.0319     -0.0787     -0.1014
+angcflux    35    29   117     -0.0319      0.0450     -0.1052     -0.0029
+angcflux   119   120   123     -0.0319     -0.0414     -0.0984     -0.0984
+angcflux    23    29   154     -0.0040      0.0408     -0.0712     -0.0504
+angcflux    28   203   122     -0.0040     -0.1444     -0.1971     -0.0690
+angcflux    28   204   137     -0.0040     -0.0661     -0.2103     -0.0615
+angcflux    28   204   139     -0.0040     -0.0661     -0.2103     -0.0615
+angcflux    28   204   138     -0.0040     -0.0661     -0.2103     -0.0615
+angcflux    28   207   145     -0.0040     -0.0661     -0.2103     -0.0615
+angcflux    23   120    29     -0.0040      0.0601     -0.0586     -0.0668
+angcflux    23   120   123     -0.0040      0.0601     -0.0586     -0.0668
+angcflux    23   120   128     -0.0040      0.0601     -0.0586     -0.0668
+angcflux    23   120    30     -0.0040      0.0601     -0.0586     -0.0668
+angcflux    19    52    69     -0.0040      0.0696     -0.0615     -0.0690
+angcflux    20    52    69     -0.0040      0.0696     -0.0615     -0.0690
+angcflux   117   135   137     -0.0040     -0.0303     -0.1014     -0.0987
+angcflux   200   202   200     -0.0040     -0.0040      0.0704      0.0704
+angcflux   200   200   202     -0.0040     -0.0040      0.0704      0.0704
+angcflux   200   169   200     -0.0040     -0.0040      0.0704      0.0704
+angcflux   169   200   200     -0.0040     -0.0040      0.0704      0.0704
+angcflux   210   210   211     -0.0040     -0.0040      0.0704      0.0704
+angcflux   142   165   164     -0.0147     -0.0545     -0.1304     -0.1304
+angcflux    35    30   124     -0.0147      0.0134     -0.1123     -0.0118
+angcflux    28   202   122     -0.0147     -0.0863     -0.1971     -0.0987
+angcflux    28   202   124     -0.0147     -0.0303     -0.1971     -0.0947
+angcflux    29   103    35     -0.0147     -0.0182      0.0163      0.0111
+angcflux    30   120   124     -0.0147     -0.0390     -0.0984     -0.1304
+angcflux   116   116   267     -0.0147      0.0630      0.1168      0.0659
+angcflux    34   141   240     -0.0147      0.0601      0.0323     -0.0033
+angcflux    29    29   118     -0.0138     -0.0414     -0.0787     -0.1014
+angcflux    11    56   265     -0.0138      0.0541      0.0111      0.0010
+angcflux   119   135   137     -0.0138     -0.0272     -0.1052     -0.1123
+angcflux    35    74   143     -0.0138      0.0341      0.0410     -0.0022
+angcflux    35    74    35     -0.0138     -0.0138     -0.0987     -0.0987
+angcflux    34    74    35     -0.0138     -0.0138     -0.0987     -0.0987
+angcflux    34    74    34     -0.0138     -0.0138     -0.0987     -0.0987
+angcflux    33    74    35     -0.0138     -0.0138     -0.0987     -0.0987
+angcflux    33    74    34     -0.0138     -0.0138     -0.0987     -0.0987
+angcflux    80    34   212     -0.0061      0.0407     -0.0033      0.0000
+angcflux    80    32   212     -0.0061      0.0407     -0.0033      0.0000
+angcflux    80    33   212     -0.0061      0.0407     -0.0033      0.0000
+angcflux    23   118   207     -0.0061      0.0588     -0.2526     -0.0164
+angcflux    35    34   258     -0.0061      0.0025     -0.0164     -0.0128
+angcflux    35    33   258     -0.0061      0.0025     -0.0164     -0.0128
+angcflux    33    34   258     -0.0061      0.0025     -0.0164     -0.0128
+angcflux    34    34   258     -0.0061      0.0025     -0.0164     -0.0128
+angcflux    28   202   200     -0.0174      0.0302     -0.0586     -0.0209
+angcflux    35   207   200     -0.0174      0.0219     -0.0103     -0.0303
+angcflux   153    29   197     -0.0174      0.0869      0.1920      0.1982
+angcflux    34   192   103     -0.0174     -0.1444      0.0308      0.0374
+angcflux    47   192   103     -0.0174     -0.1444      0.0308      0.0374
+angcflux   120   120   155     -0.0174     -0.0265     -0.0787     -0.1123
+angcflux    23   130   169     -0.0174      0.0501     -0.2526     -0.0737
+angcflux    80    53   179     -0.0329      0.0000      0.1003     -0.0303
+angcflux   101   245   246     -0.0329      0.0362      0.0493     -0.0103
+angcflux    29   153    29     -0.0329     -0.0329     -0.0984     -0.0984
+angcflux   123   135   137     -0.0329     -0.0329     -0.1014     -0.1014
+angcflux    35    34   179     -0.0329     -0.0992      0.1127      0.0584
+angcflux    35    33   179     -0.0329     -0.0992      0.1127      0.0584
+angcflux    35    53   179     -0.0329     -0.0992      0.1127      0.0584
+angcflux    44    44   179     -0.0329     -0.0992      0.1127      0.0584
+angcflux    39    39   179     -0.0329     -0.0992      0.1127      0.0584
+angcflux    23   132   200     -0.0139      0.0653     -0.2526     -0.0668
+angcflux    23   130   200     -0.0139      0.0653     -0.2526     -0.0668
+angcflux    23   168   200     -0.0139      0.0653     -0.2526     -0.0668
+angcflux    29    31   122     -0.0139     -0.0992     -0.1304     -0.1267
+angcflux    30    31   122     -0.0139     -0.0992     -0.1304     -0.1267
+angcflux    35    34   183     -0.0139      0.0184     -0.0084      0.0134
+angcflux    33    34   183     -0.0139      0.0184     -0.0084      0.0134
+angcflux    34   192   102     -0.0139     -0.1444     -0.0171     -0.0207
+angcflux    35   192   102     -0.0139     -0.1444     -0.0171     -0.0207
+angcflux    21    35   252     -0.0139      0.0621     -0.0062     -0.0152
+angcflux    20    34   252     -0.0139      0.0621     -0.0062     -0.0152
+angcflux    19    33   252     -0.0139      0.0621     -0.0062     -0.0152
+angcflux    19    45   252     -0.0139      0.0621     -0.0062     -0.0152
+angcflux    20    45   252     -0.0139      0.0621     -0.0062     -0.0152
+angcflux    19    39   252     -0.0139      0.0621     -0.0062     -0.0152
+angcflux    20    39   252     -0.0139      0.0621     -0.0062     -0.0152
+angcflux    34   147   249     -0.0272      0.0696      0.0308     -0.0094
+angcflux    33   147   249     -0.0272      0.0696      0.0308     -0.0094
+angcflux   203   139   226     -0.0272      0.0501      0.2371      0.3086
+angcflux   203   137   226     -0.0272      0.0501      0.2371      0.3086
+angcflux   203   140   226     -0.0272      0.0501      0.2371      0.3086
+angcflux   203   138   226     -0.0272      0.0501      0.2371      0.3086
+angcflux   203   130   226     -0.0272      0.0501      0.2371      0.3086
+angcflux    23   118   146     -0.0272      0.0407     -0.0787     -0.0201
+angcflux    23   118    29     -0.0272      0.0407     -0.0787     -0.0201
+angcflux    23   117   200     -0.0272      0.0372     -0.2506     -0.0152
+angcflux    34   258   171     -0.0272      0.0135      0.0574      0.0000
+angcflux    35   258   171     -0.0272      0.0135      0.0574      0.0000
+angcflux    28   202   155     -0.0272     -0.1009     -0.1971     -0.0902
+angcflux    29   141   179     -0.0272      0.0665      0.1920      0.1920
+angcflux    35    34    98     -0.0272      0.0516     -0.1304     -0.0737
+angcflux    35    34    97     -0.0272      0.0516     -0.1304     -0.0737
+angcflux    35    34    99     -0.0272      0.0516     -0.1304     -0.0737
+angcflux    35    34    76     -0.0272      0.0516     -0.1304     -0.0737
+angcflux    35    34    75     -0.0272      0.0516     -0.1304     -0.0737
+angcflux    34    34    75     -0.0272      0.0516     -0.1304     -0.0737
+angcflux    34    34    76     -0.0272      0.0516     -0.1304     -0.0737
+angcflux    35    33    87     -0.0272      0.0516     -0.1304     -0.0737
+angcflux    35    53    76     -0.0272      0.0516     -0.1304     -0.0737
+angcflux    35    33    76     -0.0272      0.0516     -0.1304     -0.0737
+angcflux    47    47    48     -0.0272      0.0516     -0.1304     -0.0737
+angcflux    43    43    81     -0.0272      0.0516     -0.1304     -0.0737
+angcflux    43    43    94     -0.0272      0.0516     -0.1304     -0.0737
+angcflux    39    39    82     -0.0272      0.0516     -0.1304     -0.0737
+angcflux    34    34    97     -0.0272      0.0516     -0.1304     -0.0737
+angcflux    34    34    98     -0.0272      0.0516     -0.1304     -0.0737
+angcflux    34    34    99     -0.0272      0.0516     -0.1304     -0.0737
+angcflux    33    34    87     -0.0272      0.0516     -0.1304     -0.0737
+angcflux    35    33   101     -0.0272      0.0516     -0.1304     -0.0737
+angcflux    35    34   100     -0.0272      0.0516     -0.1304     -0.0737
+angcflux   117   135   119     -0.0309     -0.0061     -0.1052     -0.0343
+angcflux   124    30   197     -0.0309      0.0869      0.1920      0.1982
+angcflux    35   252    35     -0.0309     -0.0309     -0.0222     -0.0222
+angcflux    34   252    35     -0.0309     -0.0309     -0.0222     -0.0222
+angcflux    33   252    33     -0.0309     -0.0309     -0.0222     -0.0222
+angcflux    45   252    45     -0.0309     -0.0309     -0.0222     -0.0222
+angcflux    39   252    39     -0.0309     -0.0309     -0.0222     -0.0222
+angcflux    22    66    68     -0.0309      0.0869     -0.0209     -0.0586
+angcflux   119    29   123     -0.0309     -0.0390     -0.1304     -0.1123
+angcflux    22    66   223     -0.0309      0.0516      0.0269      0.0010
+angcflux    35   179    92     -0.0120      0.0184     -0.2128     -0.1851
+angcflux    34   179    92     -0.0120      0.0184     -0.2128     -0.1851
+angcflux    33   179    92     -0.0120      0.0184     -0.2128     -0.1851
+angcflux    53   179    92     -0.0120      0.0184     -0.2128     -0.1851
+angcflux    44   179    92     -0.0120      0.0184     -0.2128     -0.1851
+angcflux    39   179    92     -0.0120      0.0184     -0.2128     -0.1851
+angcflux   120   120   124     -0.0120     -0.0414     -0.0947     -0.1052
+angcflux    35   230   145     -0.0120     -0.0272     -0.0902     -0.0094
+angcflux    21    35   135     -0.0120      0.0163     -0.0002      0.0493
+angcflux    20    34   135     -0.0120      0.0163     -0.0002      0.0493
+angcflux    22    70   219     -0.0120      0.0653     -0.0201     -0.0241
+angcflux    22    72   219     -0.0120      0.0653     -0.0201     -0.0241
+angcflux    22    73   219     -0.0120      0.0653     -0.0201     -0.0241
+angcflux    22    71   219     -0.0120      0.0653     -0.0201     -0.0241
+angcflux    23   123   203     -0.0120      0.0501     -0.2526     -0.0164
+angcflux    35    34    56     -0.0136     -0.0120     -0.0484     -0.0484
+angcflux    60    34    60     -0.0136     -0.0136     -0.0209     -0.0209
+angcflux    29    29   230     -0.0136      0.1029      0.2169      0.1509
+angcflux   146   145   230     -0.0136      0.1029      0.2169      0.1509
+angcflux    22    69   219     -0.0136      0.0501     -0.0318      0.0114
+angcflux   152   269   163     -0.0067     -0.0067     -0.0063     -0.0063
+angcflux   150   269   152     -0.0067     -0.0067     -0.0063     -0.0063
+angcflux    35    34    60     -0.0067     -0.0120     -0.0128     -0.0484
+angcflux    20    34   265     -0.0067      0.0302     -0.0164     -0.0350
+angcflux    28   203   123     -0.0226      0.0012     -0.1923     -0.0903
+angcflux    28   203   139     -0.0226      0.0012     -0.1923     -0.0903
+angcflux    28   203   137     -0.0226      0.0012     -0.1923     -0.0903
+angcflux    28   203   140     -0.0226      0.0012     -0.1923     -0.0903
+angcflux    28   203   134     -0.0226      0.0012     -0.1923     -0.0903
+angcflux    28   203   128     -0.0226      0.0012     -0.1923     -0.0903
+angcflux    28   203   138     -0.0226      0.0012     -0.1923     -0.0903
+angcflux    35    34   255     -0.0226      0.0407      0.0659      0.0122
+angcflux    35    34   223     -0.0226      0.0255      0.1270     -0.0022
+angcflux    35    34   227     -0.0226      0.0255      0.1270     -0.0022
+angcflux    41    41   239     -0.0226      0.0255      0.1270     -0.0022
+angcflux    41    41   223     -0.0226      0.0255      0.1270     -0.0022
+angcflux    35    34   238     -0.0226      0.0255      0.1270     -0.0022
+angcflux    43    49   224     -0.0226      0.0255      0.1270     -0.0022
+angcflux    34    49   224     -0.0226      0.0255      0.1270     -0.0022
+angcflux    39    41   223     -0.0226      0.0255      0.1270     -0.0022
+angcflux    34    41   223     -0.0226      0.0255      0.1270     -0.0022
+angcflux    41    34   221     -0.0226      0.0255      0.1270     -0.0022
+angcflux    35    33   223     -0.0226      0.0255      0.1270     -0.0022
+angcflux    35    33   227     -0.0226      0.0255      0.1270     -0.0022
+angcflux    49    49   224     -0.0226      0.0255      0.1270     -0.0022
+angcflux    35    34   221     -0.0226      0.0255      0.1270     -0.0022
+angcflux    43    43   221     -0.0226      0.0255      0.1270     -0.0022
+angcflux    44    44   227     -0.0226      0.0255      0.1270     -0.0022
+angcflux    45    46   223     -0.0226      0.0255      0.1270     -0.0022
+angcflux    45    45   223     -0.0226      0.0255      0.1270     -0.0022
+angcflux    43    49   227     -0.0226      0.0255      0.1270     -0.0022
+angcflux    39    41   227     -0.0226      0.0255      0.1270     -0.0022
+angcflux    34    45   223     -0.0226      0.0255      0.1270     -0.0022
+angcflux    34    34   223     -0.0226      0.0255      0.1270     -0.0022
+angcflux    35    33   221     -0.0226      0.0255      0.1270     -0.0022
+angcflux    34    49   227     -0.0226      0.0255      0.1270     -0.0022
+angcflux    12    60   230     -0.0226      0.0450      0.0430      0.0163
+angcflux    56    34    56     -0.0226     -0.0226     -0.0164     -0.0164
+angcflux    35    34    52     -0.0218     -0.0309     -0.0159     -0.0209
+angcflux    47   176    92     -0.0218      0.0341     -0.2128     -0.1642
+angcflux    35   176    92     -0.0218      0.0341     -0.2128     -0.1642
+angcflux   179   143   268     -0.0218     -0.0329      0.0082      0.1035
+angcflux    23   124   120     -0.0182      0.0621     -0.0902     -0.0504
+angcflux    24   171    35     -0.0182      0.0219     -0.0409      0.0777
+angcflux    24   171    34     -0.0182      0.0219     -0.0409      0.0777
+angcflux    24   171    53     -0.0182      0.0219     -0.0409      0.0777
+angcflux    24   171    33     -0.0182      0.0219     -0.0409      0.0777
+angcflux    24   171    43     -0.0182      0.0219     -0.0409      0.0777
+angcflux   266   143   268     -0.0182      0.0665      0.0265     -0.0209
+angcflux    22    73    29     -0.0182      0.0938     -0.0028      0.0134
+angcflux    22    73   143     -0.0182      0.0938     -0.0028      0.0134
+angcflux    29    74    35     -0.0128     -0.0067      0.0015      0.0308
+angcflux    21    35    69     -0.0128      0.0588     -0.0610     -0.0902
+angcflux    20    34    69     -0.0128      0.0588     -0.0610     -0.0902
+angcflux    19    33    69     -0.0128      0.0588     -0.0610     -0.0902
+angcflux    29   117   228     -0.0128     -0.0182      0.0493      0.0752
+angcflux    35   103   192     -0.0128      0.0588     -0.0118     -0.0409
+angcflux    19    52    74     -0.0128      0.0407     -0.0409     -0.0736
+angcflux    20    52    74     -0.0128      0.0407     -0.0409     -0.0736
+angcflux    20    34   258     -0.0171      0.0450     -0.0409     -0.0343
+angcflux    19    33   258     -0.0171      0.0450     -0.0409     -0.0343
+angcflux    21    35   258     -0.0171      0.0450     -0.0409     -0.0343
+angcflux    17   225    96     -0.0171     -0.0155     -0.0318      0.0134
+angcflux    34   172    92     -0.0171     -0.0528     -0.1052     -0.0736
+angcflux    39   172    92     -0.0171     -0.0528     -0.1052     -0.0736
+angcflux    35    34   192     -0.0193     -0.0152      0.0508     -0.0002
+angcflux    34    34   192     -0.0193     -0.0152      0.0508     -0.0002
+angcflux    34   216   185     -0.0193      0.0119     -0.1642     -0.0128
+angcflux    29   228   117     -0.0193      0.0169     -0.0484     -0.0164
+angcflux    20    34   255     -0.0193      0.0938     -0.0117     -0.0060
+angcflux    35   135   123     -0.0193      0.0341     -0.1304     -0.0350
+angcflux    35   135   137     -0.0193      0.0341     -0.1304     -0.0350
+angcflux    34   135   137     -0.0193      0.0341     -0.1304     -0.0350
+angcflux    20    34   216     -0.0193      0.0890     -0.0164      0.0188
+angcflux    11    56    29     -0.0193      0.0696      0.0323      0.0104
+angcflux    23   124    30     -0.0144      0.0407     -0.0947     -0.0712
+angcflux    51   172    66     -0.0144     -0.0138     -0.0903     -0.0164
+angcflux   116   116   248     -0.0144      0.0012      0.0998      0.1035
+angcflux    23    29    29     -0.0062      0.0226     -0.0586     -0.0343
+angcflux    23    29   127     -0.0062      0.0226     -0.0586     -0.0343
+angcflux    23    29    30     -0.0062      0.0226     -0.0586     -0.0343
+angcflux    23   146   145     -0.0062      0.0226     -0.0586     -0.0343
+angcflux    23    29   121     -0.0062      0.0226     -0.0586     -0.0343
+angcflux    23    29   162     -0.0062      0.0226     -0.0586     -0.0343
+angcflux    23   152   151     -0.0062      0.0226     -0.0586     -0.0343
+angcflux    23   151   152     -0.0062      0.0226     -0.0586     -0.0343
+angcflux    23   145   146     -0.0062      0.0226     -0.0586     -0.0343
+angcflux    23    29   166     -0.0062      0.0226     -0.0586     -0.0343
+angcflux    23    29   167     -0.0062      0.0226     -0.0586     -0.0343
+angcflux    23   149   148     -0.0062      0.0226     -0.0586     -0.0343
+angcflux    23   148   149     -0.0062      0.0226     -0.0586     -0.0343
+angcflux    23   144    29     -0.0062      0.0226     -0.0586     -0.0343
+angcflux    23   144   143     -0.0062      0.0226     -0.0586     -0.0343
+angcflux    23    29   144     -0.0062      0.0226     -0.0586     -0.0343
+angcflux    23   143   144     -0.0062      0.0226     -0.0586     -0.0343
+angcflux    23   123    29     -0.0062      0.0226     -0.0586     -0.0343
+angcflux    23    29   160     -0.0062      0.0226     -0.0586     -0.0343
+angcflux    23    29   164     -0.0062      0.0226     -0.0586     -0.0343
+angcflux    23    29   143     -0.0062      0.0226     -0.0586     -0.0343
+angcflux    20    34   183     -0.0062      0.0696     -0.0076      0.0131
+angcflux    22   106   195     -0.0062     -0.0186     -0.0171      0.0000
+angcflux    22   106   196     -0.0062     -0.0186     -0.0171      0.0000
+angcflux   116   115   267     -0.0176      0.0297      0.0410     -0.0237
+angcflux   115   248   116     -0.0176     -0.0992     -0.0007      0.0097
+angcflux   188   114   264     -0.0176      0.0418      0.0493      0.0010
+angcflux   179   141   240     -0.0176     -0.0545     -0.0237      0.0493
+angcflux    23    29    31     -0.0165      0.0134     -0.0737     -0.0209
+angcflux    23   120   120     -0.0165      0.0653     -0.0787     -0.0484
+angcflux    29    31    30     -0.0165     -0.0165     -0.1014     -0.1014
+angcflux    29    31    29     -0.0165     -0.0165     -0.1014     -0.1014
+angcflux    22    67    67     -0.0165      0.0869     -0.0128     -0.0209
+angcflux    17   218   192     -0.0056      0.0362     -0.0947     -0.0201
+angcflux    23    29   153     -0.0056      0.0630     -0.0610     -0.0164
+angcflux   178   102   192     -0.0228      0.0790      0.0775      0.0391
+angcflux    21    35   142     -0.0228      0.0168     -0.0138      0.0183
+angcflux    24   180    35     -0.0054      0.0530     -0.1014      0.0023
+angcflux    24   176    47     -0.0054      0.0530     -0.1014      0.0023
+angcflux    24   174    43     -0.0054      0.0530     -0.1014      0.0023
+angcflux    29    29    29     -0.0152     -0.0152     -0.0984     -0.0984
+angcflux    29    29   127     -0.0152     -0.0152     -0.0984     -0.0984
+angcflux   133   136   140     -0.0152     -0.0152     -0.0984     -0.0984
+angcflux    29    30    30     -0.0152     -0.0152     -0.0984     -0.0984
+angcflux    29    29    30     -0.0152     -0.0152     -0.0984     -0.0984
+angcflux   127   121   133     -0.0152     -0.0152     -0.0984     -0.0984
+angcflux    30    30    30     -0.0152     -0.0152     -0.0984     -0.0984
+angcflux    29    29   121     -0.0152     -0.0152     -0.0984     -0.0984
+angcflux    29   162   163     -0.0152     -0.0152     -0.0984     -0.0984
+angcflux    29    29   162     -0.0152     -0.0152     -0.0984     -0.0984
+angcflux    29   121    29     -0.0152     -0.0152     -0.0984     -0.0984
+angcflux    29   166   167     -0.0152     -0.0152     -0.0984     -0.0984
+angcflux    29   166    29     -0.0152     -0.0152     -0.0984     -0.0984
+angcflux    29   167   166     -0.0152     -0.0152     -0.0984     -0.0984
+angcflux    29    29   166     -0.0152     -0.0152     -0.0984     -0.0984
+angcflux    29    29   167     -0.0152     -0.0152     -0.0984     -0.0984
+angcflux    29   144   143     -0.0152     -0.0152     -0.0984     -0.0984
+angcflux    29    29   144     -0.0152     -0.0152     -0.0984     -0.0984
+angcflux    29   156   157     -0.0152     -0.0152     -0.0984     -0.0984
+angcflux    29    29   156     -0.0152     -0.0152     -0.0984     -0.0984
+angcflux    29    29   160     -0.0152     -0.0152     -0.0984     -0.0984
+angcflux    29   164   165     -0.0152     -0.0152     -0.0984     -0.0984
+angcflux    29    29   164     -0.0152     -0.0152     -0.0984     -0.0984
+angcflux    29   144    29     -0.0152     -0.0152     -0.0984     -0.0984
+angcflux   143    29   144     -0.0152     -0.0152     -0.0984     -0.0984
+angcflux    23    29   120     -0.0152      0.0541     -0.0787     -0.0737
+angcflux    23   123   120     -0.0152      0.0541     -0.0787     -0.0737
+angcflux    20    34   141     -0.0375     -0.0144     -0.0041      0.0163
+angcflux   120    30   124     -0.0375     -0.0545     -0.0987     -0.1052
+angcflux    22    92   179     -0.0375      0.0145      0.0000     -0.0033
+angcflux    29   142   121     -0.0014     -0.0014     -0.1052     -0.1052
+angcflux    29   142   165     -0.0014     -0.0014     -0.1052     -0.1052
+angcflux    29   142    29     -0.0014     -0.0014     -0.1052     -0.1052
+angcflux    22    68    68     -0.0014      0.0501     -0.0484     -0.0129
+angcflux    22    68    72     -0.0014      0.0501     -0.0484     -0.0129
+angcflux    22    72    68     -0.0014      0.0501     -0.0484     -0.0129
+angcflux    22    68    84     -0.0014      0.0501     -0.0484     -0.0129
+angcflux    22    68    77     -0.0014      0.0501     -0.0484     -0.0129
+angcflux    22    71    71     -0.0014      0.0501     -0.0484     -0.0129
+angcflux    29    29   189     -0.0014     -0.0309     -0.0737     -0.0201
+angcflux    29    29   190     -0.0014     -0.0309     -0.0737     -0.0201
+angcflux    21    35   119     -0.0186     -0.0062     -0.0042      0.0163
+angcflux   193   107   194     -0.0186      0.0000     -0.0018      0.0000
+angcflux    27   194    35     -0.0186      0.0043      0.0082      0.0000
+angcflux    27   194    34     -0.0186      0.0043      0.0082      0.0000
+angcflux    23   118   122     -0.0186      0.0407     -0.0610     -0.0504
+angcflux   188   114   263      0.0011      0.0174      0.0178      0.0114
+angcflux    23   135   137      0.0011      0.0621     -0.0902     -0.0668
+angcflux    23   135   123      0.0011      0.0621     -0.0902     -0.0668
+angcflux    22    92   219     -0.0081      0.0653     -0.0029      0.0000
+angcflux    18    36    18     -0.0081     -0.0081     -0.0947     -0.0947
+angcflux    21    35    21     -0.0081     -0.0081     -0.0947     -0.0947
+angcflux    20    34    20     -0.0081     -0.0081     -0.0947     -0.0947
+angcflux    20    39    20     -0.0081     -0.0081     -0.0947     -0.0947
+angcflux    20    50    20     -0.0081     -0.0081     -0.0947     -0.0947
+angcflux    20    55    20     -0.0081     -0.0081     -0.0947     -0.0947
+angcflux    20    59    20     -0.0081     -0.0081     -0.0947     -0.0947
+angcflux    20    63    20     -0.0081     -0.0081     -0.0947     -0.0947
+angcflux    20    58    20     -0.0081     -0.0081     -0.0947     -0.0947
+angcflux    21    58    21     -0.0081     -0.0081     -0.0947     -0.0947
+angcflux    20    62    20     -0.0081     -0.0081     -0.0947     -0.0947
+angcflux    21    62    21     -0.0081     -0.0081     -0.0947     -0.0947
+angcflux    20    43    20     -0.0081     -0.0081     -0.0947     -0.0947
+angcflux    20    37    20     -0.0081     -0.0081     -0.0947     -0.0947
+angcflux    20    42    20     -0.0081     -0.0081     -0.0947     -0.0947
+angcflux    20    41    20     -0.0081     -0.0081     -0.0947     -0.0947
+angcflux    20    49    20     -0.0081     -0.0081     -0.0947     -0.0947
+angcflux    20    53    20     -0.0081     -0.0081     -0.0947     -0.0947
+angcflux    20    44    20     -0.0081     -0.0081     -0.0947     -0.0947
+angcflux    20    45    20     -0.0081     -0.0081     -0.0947     -0.0947
+angcflux    20    54    20     -0.0081     -0.0081     -0.0947     -0.0947
+angcflux    20    47    20     -0.0081     -0.0081     -0.0947     -0.0947
+angcflux    20    46    20     -0.0081     -0.0081     -0.0947     -0.0947
+angcflux    20   115    20     -0.0081     -0.0081     -0.0947     -0.0947
+angcflux    95   141   240     -0.0081      0.0530      0.0269     -0.0201
+angcflux    24   193   102     -0.0081     -0.0337     -0.1123     -0.0586
+angcflux   115   267   116     -0.0081     -0.0174      0.0323      0.0110
+angcflux    23   146   118     -0.0155      0.0665     -0.0902     -0.0409
+angcflux    23    29   118     -0.0155      0.0665     -0.0902     -0.0409
+angcflux    23   119    29     -0.0155      0.0501     -0.0903     -0.0128
+angcflux    35   194   107      0.0059      0.0000      0.0000      0.0000
+angcflux    34   194   107      0.0059      0.0000      0.0000      0.0000
+angcflux    22   116   115      0.0059     -0.0147      0.0058      0.0000
+angcflux   200   132   266      0.0059     -0.0545     -0.0130     -0.0947
+angcflux   120   128   197      0.0103      0.0955      0.1920      0.2416
+angcflux   120    30   197      0.0103      0.0955      0.1920      0.2416
+angcflux    29   110   187      0.0103     -0.0120     -0.0736     -0.0130
+angcflux   234   260   234      0.0086      0.0086      0.0735      0.0735
+angcflux   234   260   238      0.0086      0.0086      0.0735      0.0735
+angcflux    20    34   181      0.0086      0.0748      0.0584      0.0377
+angcflux    21    35   181      0.0086      0.0748      0.0584      0.0377
+angcflux    21    35   180      0.0086      0.0748      0.0584      0.0377
+angcflux    21    35   199      0.0086      0.0748      0.0584      0.0377
+angcflux    19    47   176      0.0086      0.0748      0.0584      0.0377
+angcflux    20    47   176      0.0086      0.0748      0.0584      0.0377
+angcflux    21    35   176      0.0086      0.0748      0.0584      0.0377
+angcflux    19    43   174      0.0086      0.0748      0.0584      0.0377
+angcflux    20    43   174      0.0086      0.0748      0.0584      0.0377
+angcflux    21    35   174      0.0086      0.0748      0.0584      0.0377
+angcflux    23   141   142      0.0003      0.0791     -0.0902     -0.0668
+angcflux    21    35   118      0.0003     -0.0144     -0.0113      0.0163
+angcflux    19    52    34      0.0020      0.0408     -0.0586     -0.0128
+angcflux    30   142   141      0.0020     -0.0147     -0.1304     -0.1304
+angcflux   121   142   141      0.0020     -0.0147     -0.1304     -0.1304
+angcflux    29   142   141      0.0020     -0.0147     -0.1304     -0.1304
+angcflux    35    34   244     -0.0170      0.0255      0.0574      0.0378
+angcflux    35    34   225     -0.0170      0.0255      0.0574      0.0378
+angcflux   208   147   249     -0.0170     -0.2343      0.0378      0.0659
+angcflux    19   115   267     -0.0019      0.0541      0.0103      0.0508
+angcflux    20   115   267     -0.0019      0.0541      0.0103      0.0508
+angcflux    29    34   171     -0.0012     -0.0155      0.0000      0.0000
+angcflux   172    92   219     -0.0012     -0.0337      0.0752      0.1035
+angcflux    80   227    80     -0.0119     -0.0119     -0.2103     -0.2103
+angcflux    23   117   117     -0.0015      0.0588     -0.0610     -0.0668
+angcflux    13    64    29     -0.0024      0.0233      0.0097      0.0015
+angcflux    23   119   120     -0.0120      0.0407     -0.0690     -0.0504
+angcflux    29    34   230     -0.0041      0.0059      0.0374      0.0001
+angcflux    23   120   119     -0.0007      0.0407     -0.0690     -0.0504
+angcflux    35   108   108     -0.0013     -0.0054      0.1127      0.0430
+angcflux    34   108   108     -0.0013     -0.0054      0.1127      0.0430
+angcflux    34   108   109     -0.0013     -0.0054      0.1127      0.0430
+angcflux    23   120    31     -0.0004      0.0621     -0.0690     -0.0164
+angcflux    35   110   187      0.0004     -0.0150     -0.0987     -0.0610
+angcflux    34   110   187      0.0004     -0.0150     -0.0987     -0.0610
+angcflux    27   194   107      0.0004      0.0000     -0.0017      0.0000
+angcflux    24   172    50     -0.0001      0.0036      0.0000      0.0015
+angcflux    24   172    51     -0.0001      0.0036      0.0000      0.0015
+angcflux    20    34    60     -0.0001      0.0450     -0.0712     -0.0350
+angcflux   116   115   248      0.0000     -0.0272     -0.0279      0.0354
+angcflux    29    29   228      0.0000     -0.0107      0.0010      0.1490
+angcflux    20    34    52      0.0000      0.0450     -0.0903     -0.0350
+angcflux    19    52    80      0.0000      0.0613     -0.0586     -0.0615
+angcflux    20    52    80      0.0000      0.0613     -0.0586     -0.0615
+angcflux    23   123   135      0.0000      0.0621     -0.0690     -0.0668
+angcflux    16    15    16      0.0000      0.0000      0.0000      0.0000
+angcflux    24   177    24      0.0000      0.0000      0.0000      0.0000
+angcflux   214   272   215      0.0000      0.0000      0.0000      0.0000
+angcflux   215   272   215      0.0000      0.0000      0.0000      0.0000
+angcflux   215   272   220      0.0000      0.0000      0.0000      0.0000
+angcflux   220   272   220      0.0000      0.0000      0.0000      0.0000
+angcflux   214   273   215      0.0000      0.0000      0.0000      0.0000
+angcflux   215   273   220      0.0000      0.0000      0.0000      0.0000
+angcflux   220   273   220      0.0000      0.0000      0.0000      0.0000
+angcflux    27   170    27      0.0000      0.0000      0.0000      0.0000
+angcflux    27   170    35      0.0000      0.0000      0.0000      0.0000
+angcflux    21    35   170      0.0000      0.0000      0.0000      0.0000
+angcflux    66    66   172      0.0000      0.0000      0.0000      0.0000
+angcflux    22    66   172      0.0000      0.0000      0.0000      0.0000
+angcflux    24   172    66      0.0000      0.0000      0.0000      0.0000
+angcflux   172    51   172      0.0000      0.0000      0.0000      0.0000
+angcflux    35    76   225      0.0000      0.0000      0.0000      0.0000
+angcflux   225    76   225      0.0000      0.0000      0.0000      0.0000
+angcflux    19   108   108      0.0000      0.0000      0.0000     -0.0118
+angcflux    35   170    35      0.0000      0.0000      0.0000      0.0000
+angcflux    22    76   225      0.0000      0.0000      0.0000      0.0000
+angcflux    29    29   110      0.0000      0.0000      0.0704      0.0430
+angcflux    34    76   225      0.0000      0.0000      0.0000      0.0000
+angcflux   225    79   225      0.0000      0.0000      0.0000      0.0000
+angcflux    86    79   225      0.0000      0.0000      0.0000      0.0000
+angcflux    79    79   225      0.0000      0.0000      0.0000      0.0000
+angcflux    52    76   225      0.0000      0.0000      0.0000      0.0000
+angcflux    75    76   225      0.0000      0.0000      0.0000      0.0000
+angcflux   225    96   225      0.0000      0.0000      0.0000      0.0000
+angcflux    29   191   190      0.0000      0.0000      0.0000      0.0000
+angcflux    29   190   191      0.0000      0.0000      0.0000      0.0000
+angcflux    29    29   191      0.0000      0.0000      0.0000      0.0000
+angcflux   231   259   231      0.0000      0.0000      0.0000      0.0000
+angcflux    34   259   231      0.0000      0.0000      0.0000      0.0000
+angcflux   235   261   235      0.0000      0.0000      0.0000      0.0000
+angcflux    29   261   235      0.0000      0.0000      0.0000      0.0000
+angcflux   225    78   225      0.0000      0.0000      0.0000      0.0000
+angcflux    29    78   225      0.0000      0.0000      0.0000      0.0000
+angcflux   225    77   225      0.0000      0.0000      0.0000      0.0000
+angcflux    68    77   225      0.0000      0.0000      0.0000      0.0000
+angcflux   215   278   222      0.0000      0.0000      0.0000      0.0000
+angcflux   215   278   220      0.0000      0.0000      0.0000      0.0000
+angcflux   220   278   220      0.0000      0.0000      0.0000      0.0000
+angcflux   215   278   215      0.0000      0.0000      0.0000      0.0000
+angcflux   278   222   278      0.0000      0.0000      0.0000      0.0000
+angcflux    27   198    29      0.0000      0.0000      0.0000      0.0000
+angcflux    27   198    27      0.0000      0.0000      0.0000      0.0000
+angcflux    29    29   198      0.0000      0.0000      0.0000      0.0000
+angcflux    34   170    34      0.0000      0.0000      0.0000      0.0000
+angcflux    27   170    34      0.0000      0.0000      0.0000      0.0000
+angcflux    35    34   170      0.0000      0.0000      0.0000      0.0000
+angcflux    20    34   170      0.0000      0.0000      0.0000      0.0000
+angcflux   215   275   221      0.0000      0.0000      0.0000      0.0000
+angcflux   215   275   215      0.0000      0.0000      0.0000      0.0000
+angcflux   215   275   220      0.0000      0.0000      0.0000      0.0000
+angcflux   220   275   220      0.0000      0.0000      0.0000      0.0000
+angcflux    34   170    35      0.0000      0.0000      0.0000      0.0000
+angcflux   215   278   221      0.0000      0.0000      0.0000      0.0000
+angcflux   215   279   222      0.0000      0.0000      0.0000      0.0000
+angcflux   215   279   220      0.0000      0.0000      0.0000      0.0000
+angcflux   215   279   215      0.0000      0.0000      0.0000      0.0000
+angcflux   278   222   279      0.0000      0.0000      0.0000      0.0000
+angcflux    53    76   225      0.0000      0.0000      0.0000      0.0000
+angcflux    27   170    53      0.0000      0.0000      0.0000      0.0000
+angcflux    35    53   170      0.0000      0.0000      0.0000      0.0000
+angcflux    80    53   170      0.0000      0.0000      0.0000      0.0000
+angcflux    19    53   170      0.0000      0.0000      0.0000      0.0000
+angcflux    20    53   170      0.0000      0.0000      0.0000      0.0000
+angcflux    76    53   170      0.0000      0.0000      0.0000      0.0000
+angcflux    33    76   225      0.0000      0.0000      0.0000      0.0000
+angcflux   214   275   215      0.0000      0.0000      0.0000      0.0000
+angcflux   215   276   221      0.0000      0.0000      0.0000      0.0000
+angcflux   215   276   220      0.0000      0.0000      0.0000      0.0000
+angcflux   215   276   215      0.0000      0.0000      0.0000      0.0000
+angcflux    21    35   251      0.0000      0.0000      0.0000      0.0000
+angcflux    35    34   251      0.0000      0.0000      0.0000      0.0000
+angcflux    20    34   251      0.0000      0.0000      0.0000      0.0000
+angcflux    35    33   251      0.0000      0.0000      0.0000      0.0000
+angcflux    19    33   251      0.0000      0.0000      0.0000      0.0000
+angcflux    27   170    33      0.0000      0.0000      0.0000      0.0000
+angcflux    35    33   170      0.0000      0.0000      0.0000      0.0000
+angcflux    19    33   170      0.0000      0.0000      0.0000      0.0000
+angcflux   219    74   251      0.0000      0.0000      0.0000      0.0000
+angcflux    35    74   251      0.0000      0.0000      0.0000      0.0000
+angcflux    34   244   243      0.0000      0.0000      0.0000      0.0000
+angcflux   100   243   244      0.0000      0.0000      0.0000      0.0000
+angcflux    35   100   243      0.0000      0.0000      0.0000      0.0000
+angcflux    39   173    39      0.0000      0.0000      0.0000      0.0000
+angcflux    27   173    39      0.0000      0.0000      0.0000      0.0000
+angcflux    27   173    27      0.0000      0.0000      0.0000      0.0000
+angcflux    39    39   173      0.0000      0.0000      0.0000      0.0000
+angcflux    19    39   173      0.0000      0.0000      0.0000      0.0000
+angcflux    20    39   173      0.0000      0.0000      0.0000      0.0000
+angcflux    50   173    50      0.0000      0.0000      0.0000      0.0000
+angcflux    34   173    50      0.0000      0.0000      0.0000      0.0000
+angcflux    27   173    50      0.0000      0.0000      0.0000      0.0000
+angcflux    27   173    34      0.0000      0.0000      0.0000      0.0000
+angcflux    39    50   173      0.0000      0.0000      0.0000      0.0000
+angcflux    19    50   173      0.0000      0.0000      0.0000      0.0000
+angcflux    20    50   173      0.0000      0.0000      0.0000      0.0000
+angcflux    35    34   173      0.0000      0.0000      0.0000      0.0000
+angcflux    20    34   173      0.0000      0.0000      0.0000      0.0000
+angcflux    43   175    43      0.0000      0.0000      0.0000      0.0000
+angcflux    27   175    43      0.0000      0.0000      0.0000      0.0000
+angcflux    27   175    27      0.0000      0.0000      0.0000      0.0000
+angcflux    43    43   175      0.0000      0.0000      0.0000      0.0000
+angcflux    19    43   175      0.0000      0.0000      0.0000      0.0000
+angcflux    20    43   175      0.0000      0.0000      0.0000      0.0000
+angcflux    34   175    43      0.0000      0.0000      0.0000      0.0000
+angcflux    35   175    43      0.0000      0.0000      0.0000      0.0000
+angcflux    34   175    35      0.0000      0.0000      0.0000      0.0000
+angcflux    35    34   175      0.0000      0.0000      0.0000      0.0000
+angcflux    20    34   175      0.0000      0.0000      0.0000      0.0000
+angcflux    21    35   175      0.0000      0.0000      0.0000      0.0000
+angcflux   225    88   225      0.0000      0.0000      0.0000      0.0000
+angcflux   225    89   225      0.0000      0.0000      0.0000      0.0000
+angcflux   213    89   225      0.0000      0.0000      0.0000      0.0000
+angcflux    34    34   170      0.0000      0.0000      0.0000      0.0000
+angcflux    33    34   251      0.0000      0.0000      0.0000      0.0000
+angcflux    33    74   251      0.0000      0.0000      0.0000      0.0000
+angcflux    27   170    43      0.0000      0.0000      0.0000      0.0000
+angcflux    43    43   170      0.0000      0.0000      0.0000      0.0000
+angcflux    19    43   170      0.0000      0.0000      0.0000      0.0000
+angcflux    34   100   243      0.0000      0.0000      0.0000      0.0000
+angcflux    35   173    50      0.0000      0.0000      0.0000      0.0000
+angcflux    27   173    35      0.0000      0.0000      0.0000      0.0000
+angcflux    21    35   173      0.0000      0.0000      0.0000      0.0000
+angcflux    23   124   118      0.0000      0.0588     -0.0787     -0.0409
+angcflux    21    35    56      0.0000      0.0369     -0.0712     -0.0343
+angcflux    20    34    56      0.0000      0.0369     -0.0712     -0.0343
+angcflux    21    35   194      0.0007      0.0000     -0.0076      0.0000
+angcflux    20    34   194      0.0007      0.0000     -0.0076      0.0000
+angcflux   144   143   268     -0.0046      0.0163      0.1003      0.1127
+angcflux    29    29   268     -0.0046      0.0163      0.1003      0.1127
+angcflux    29   143   268     -0.0046      0.0163      0.1003      0.1127
+angcflux   144    29   268     -0.0046      0.0163      0.1003      0.1127
+angcflux    17   214   272     -0.0107     -0.0983     -0.0668     -0.0736
+angcflux    17   214   273     -0.0107     -0.0983     -0.0668     -0.0736
+angcflux    17   214   274     -0.0107     -0.0983     -0.0668     -0.0736
+angcflux    17   214   275     -0.0107     -0.0983     -0.0668     -0.0736
+angcflux    17   214   276     -0.0107     -0.0983     -0.0668     -0.0736
+angcflux    21    35   122      0.0076      0.0174     -0.0018      0.0110
+angcflux    20    34   122      0.0076      0.0174     -0.0018      0.0110
+angcflux    19    44   117      0.0028     -0.0128     -0.0062      0.0104
+angcflux    20    44   117      0.0028     -0.0128     -0.0062      0.0104
+angcflux    19    39   117      0.0028     -0.0128     -0.0062      0.0104
+angcflux    76    53   171      0.0011      0.0135      0.0882     -0.0076
+angcflux    76    53   179      0.0011      0.0135      0.0882     -0.0076
+angcflux    48    47   176      0.0011      0.0135      0.0882     -0.0076
+angcflux    25   253    35      0.0025      0.0541      0.0097      0.0000
+angcflux    25   253    34      0.0025      0.0541      0.0097      0.0000
+angcflux   216   185   218      0.0085     -0.0152      0.1542      0.1490
+angcflux    23   142    29      0.0085      0.0630     -0.0787     -0.0130
+angcflux    23   142   165      0.0085      0.0630     -0.0787     -0.0130
+angcflux   181    96   227     -0.0058      0.0065      0.0265      0.0040
+angcflux    29   117    44      0.0067     -0.0067      0.0584      0.0410
+angcflux    29   117    39      0.0067     -0.0067      0.0584      0.0410
+angcflux    22   116   267      0.0036      0.0890     -0.0060      0.0245
+angcflux   108   109   109      0.0021      0.0021     -0.1052     -0.1052
+angcflux    29    34    60      0.0233     -0.0056     -0.0094     -0.0241
+angcflux    21    35   257      0.0233      0.0588     -0.0586     -0.0129
+angcflux    20    34   257      0.0233      0.0588     -0.0586     -0.0129
+angcflux    20    34   260      0.0233      0.0588     -0.0586     -0.0129
+angcflux    20    34   259      0.0233      0.0588     -0.0586     -0.0129
+angcflux    21    35   260      0.0233      0.0588     -0.0586     -0.0129
+angcflux    19    33   257      0.0233      0.0588     -0.0586     -0.0129
+angcflux   200   117   228      0.0233      0.0306     -0.0117      0.1168
+angcflux    80   227    87      0.0020      0.0134     -0.1449     -0.1449
+angcflux    34    34   194      0.0020     -0.0081      0.0000      0.0000
+angcflux    34   263   114      0.0127     -0.0309     -0.0350     -0.0303
+angcflux    20    34   244      0.0168      0.0955     -0.0113      0.0704
+angcflux    20    34   225      0.0168      0.0955     -0.0113      0.0704
+angcflux    23   118   118      0.0168      0.0516     -0.0787     -0.0712
+angcflux    23    29   141      0.0145      0.0653     -0.0690     -0.0668
+angcflux    29   105    29      0.0063      0.0063      0.1920      0.1920
+angcflux    34   265   233      0.0063      0.0501      0.1035      0.0178
+angcflux    11    56   230      0.0072      0.0791      0.0410      0.0368
+angcflux    56   265   233      0.0072      0.0665      0.1035      0.0178
+angcflux    26   270    26      0.0072      0.0072      0.0023      0.0023
+angcflux    29    34    56      0.0135     -0.0165     -0.0094     -0.0241
+angcflux   169   159   200     -0.0123      0.0274      0.0191     -0.0033
+angcflux    23   142   141     -0.0123      0.0407     -0.0586     -0.0737
+angcflux    60   265   233      0.0109      0.0588      0.0775      0.0245
+angcflux    25   250    25      0.0109      0.0109      0.0000      0.0000
+angcflux    34   258   232     -0.0187      0.0653      0.0775      0.0178
+angcflux    33   258   232     -0.0187      0.0653      0.0775      0.0178
+angcflux    35   258   232     -0.0187      0.0653      0.0775      0.0178
+angcflux    34   265   232     -0.0187      0.0653      0.0775      0.0178
+angcflux    56   265   232     -0.0187      0.0653      0.0775      0.0178
+angcflux    60   265   232     -0.0187      0.0653      0.0775      0.0178
+angcflux    23    29   155     -0.0187      0.0621     -0.0902     -0.0164
+angcflux    35   203   130     -0.0187     -0.1394     -0.1823     -0.1823
+angcflux    35   203   138     -0.0187     -0.1394     -0.1823     -0.1823
+angcflux    41   203   130     -0.0187     -0.1394     -0.1823     -0.1823
+angcflux   193   102   193      0.0065      0.0065      0.1270      0.1270
+angcflux    92   182    92      0.0065      0.0065     -0.0787     -0.0787
+angcflux    22    68    66      0.0065      0.0541     -0.0279     -0.0668
+angcflux    29   189   190      0.0065      0.0174      0.0000      0.0188
+angcflux    29   190   190      0.0065      0.0174      0.0000      0.0188
+angcflux    29    34   223      0.0086      0.0020      0.0023      0.0010
+angcflux    29    85   213      0.0086      0.0544     -0.0903     -0.0094
+angcflux   180    96   213      0.0086      0.0004      0.0000      0.0000
+angcflux    17   246   245      0.0086     -0.0165      0.0355      0.0163
+angcflux    23   119   135      0.0194      0.0539     -0.0902     -0.0737
+angcflux    23    29   119      0.0194      0.0530     -0.0902     -0.0159
+angcflux    34   256   256      0.0194     -0.0337      0.0097     -0.0241
+angcflux    22    67    66      0.0163      0.0613     -0.0737     -0.0586
+angcflux    22   116   248      0.0174      0.0869     -0.0084      0.0122
+angcflux    34   183   218      0.0174      0.1103      0.0131      0.0004
+angcflux    23   117   135      0.0160      0.0544     -0.0902     -0.0586
+angcflux    29   262   236      0.0160     -0.0062      0.0104      0.0086
+angcflux    29    34    76      0.0160     -0.0004      0.0104     -0.0063
+angcflux    23   117   120      0.0160      0.1305     -0.0903     -0.0504
+angcflux    35   179    95      0.0160     -0.0187     -0.2506     -0.1642
+angcflux    29    29   264      0.0184      0.0372      0.0111     -0.0504
+angcflux    23   120   155      0.0184      0.0791     -0.0787     -0.0130
+angcflux    29   119    35      0.0184     -0.0272      0.0377     -0.0207
+angcflux    23   117   203      0.0184      0.0869     -0.2579     -0.0018
+angcflux    29    29    60      0.0119     -0.0120      0.0574     -0.0318
+angcflux   193   107   193      0.0119      0.0119      0.0983      0.0983
+angcflux    47    48   176      0.0119     -0.0144     -0.0787     -0.0737
+angcflux    35   103   176      0.0119     -0.0144     -0.0787     -0.0737
+angcflux    43    94   174      0.0119     -0.0144     -0.0787     -0.0737
+angcflux    92    47   192      0.0119      0.0020     -0.0029     -0.0118
+angcflux    22    66    67      0.0142      0.0407     -0.0029     -0.0504
+angcflux    74    52    83      0.0142      0.0407     -0.0621     -0.0504
+angcflux    30   142    35      0.0169     -0.0128      0.0659     -0.0033
+angcflux    29   142    35      0.0169     -0.0128      0.0659     -0.0033
+angcflux    35   257   232      0.0169      0.0588      0.0983      0.0377
+angcflux    34   257   232      0.0169      0.0588      0.0983      0.0377
+angcflux    34   260   237      0.0169      0.0588      0.0983      0.0377
+angcflux    33   257   232      0.0169      0.0588      0.0983      0.0377
+angcflux    23   120   122      0.0169      0.0601     -0.0736     -0.0504
+angcflux    35   230   117      0.0362     -0.0265     -0.0947     -0.0029
+angcflux   162   163   269      0.0362      0.1378      0.1003     -0.0409
+angcflux   151   152   269      0.0362      0.1378      0.1003     -0.0409
+angcflux    17   234   260      0.0226     -0.0265     -0.0586     -0.0736
+angcflux    17   217   260      0.0226     -0.0265     -0.0586     -0.0736
+angcflux    17   236   262      0.0226     -0.0265     -0.0586     -0.0736
+angcflux    29    34   212      0.0418     -0.0193      0.0183      0.0103
+angcflux    21    35    92      0.0418      0.0653     -0.0615     -0.0787
+angcflux    20    34    92      0.0418      0.0653     -0.0615     -0.0787
+angcflux    19    33    92      0.0418      0.0653     -0.0615     -0.0787
+angcflux    19    47    92      0.0418      0.0653     -0.0615     -0.0787
+angcflux    20    47    92      0.0418      0.0653     -0.0615     -0.0787
+angcflux    19    44    92      0.0418      0.0653     -0.0615     -0.0787
+angcflux    20    44    92      0.0418      0.0653     -0.0615     -0.0787
+angcflux    19    39    92      0.0418      0.0653     -0.0615     -0.0787
+angcflux    20    39    92      0.0418      0.0653     -0.0615     -0.0787
+angcflux    23   118   124      0.0372      0.0630     -0.0902     -0.0737
+angcflux    22    68    74      0.0372      0.0341     -0.0504     -0.0409
+angcflux    23   120   124      0.0372      0.0541     -0.0902     -0.0409
+angcflux    35    34   181      0.0219     -0.0138      0.0983      0.0775
+angcflux    47    47   176      0.0219     -0.0138      0.0983      0.0775
+angcflux    43    43   174      0.0219     -0.0138      0.0983      0.0775
+angcflux    35    43   174      0.0219     -0.0138      0.0983      0.0775
+angcflux    29    34    80      0.0219     -0.0013      0.0041      0.0019
+angcflux    34   258   233      0.0219      0.0630      0.1168      0.0410
+angcflux    33   258   233      0.0219      0.0630      0.1168      0.0410
+angcflux    35   258   233      0.0219      0.0630      0.1168      0.0410
+angcflux    34    34   110      0.0219     -0.0171     -0.0094     -0.0105
+angcflux    35    34   108      0.0219     -0.0171     -0.0094     -0.0105
+angcflux    33    34   110      0.0219     -0.0171     -0.0094     -0.0105
+angcflux    21    35    34      0.0219      0.0407     -0.0164     -0.0117
+angcflux    20    34    35      0.0219      0.0407     -0.0164     -0.0117
+angcflux    20    34    34      0.0219      0.0407     -0.0164     -0.0117
+angcflux    21    35    32      0.0219      0.0407     -0.0164     -0.0117
+angcflux    19    39    39      0.0219      0.0407     -0.0164     -0.0117
+angcflux    20    39    39      0.0219      0.0407     -0.0164     -0.0117
+angcflux    19    50    39      0.0219      0.0407     -0.0164     -0.0117
+angcflux    20    50    39      0.0219      0.0407     -0.0164     -0.0117
+angcflux    19    39    50      0.0219      0.0407     -0.0164     -0.0117
+angcflux    20    39    50      0.0219      0.0407     -0.0164     -0.0117
+angcflux    21    35    35      0.0219      0.0407     -0.0164     -0.0117
+angcflux    19    33    35      0.0219      0.0407     -0.0164     -0.0117
+angcflux    21    35    33      0.0219      0.0407     -0.0164     -0.0117
+angcflux    19    43    43      0.0219      0.0407     -0.0164     -0.0117
+angcflux    20    43    43      0.0219      0.0407     -0.0164     -0.0117
+angcflux    19    41    41      0.0219      0.0407     -0.0164     -0.0117
+angcflux    20    41    41      0.0219      0.0407     -0.0164     -0.0117
+angcflux    19    53    35      0.0219      0.0407     -0.0164     -0.0117
+angcflux    20    53    35      0.0219      0.0407     -0.0164     -0.0117
+angcflux    21    35    53      0.0219      0.0407     -0.0164     -0.0117
+angcflux    19    43    49      0.0219      0.0407     -0.0164     -0.0117
+angcflux    20    43    49      0.0219      0.0407     -0.0164     -0.0117
+angcflux    19    49    43      0.0219      0.0407     -0.0164     -0.0117
+angcflux    20    49    43      0.0219      0.0407     -0.0164     -0.0117
+angcflux    19    49    34      0.0219      0.0407     -0.0164     -0.0117
+angcflux    20    49    34      0.0219      0.0407     -0.0164     -0.0117
+angcflux    20    34    49      0.0219      0.0407     -0.0164     -0.0117
+angcflux    19    39    41      0.0219      0.0407     -0.0164     -0.0117
+angcflux    20    39    41      0.0219      0.0407     -0.0164     -0.0117
+angcflux    19    41    39      0.0219      0.0407     -0.0164     -0.0117
+angcflux    20    41    39      0.0219      0.0407     -0.0164     -0.0117
+angcflux    19    41    34      0.0219      0.0407     -0.0164     -0.0117
+angcflux    20    41    34      0.0219      0.0407     -0.0164     -0.0117
+angcflux    20    34    41      0.0219      0.0407     -0.0164     -0.0117
+angcflux    19    58    35      0.0219      0.0407     -0.0164     -0.0117
+angcflux    20    58    35      0.0219      0.0407     -0.0164     -0.0117
+angcflux    21    58    35      0.0219      0.0407     -0.0164     -0.0117
+angcflux    21    35    58      0.0219      0.0407     -0.0164     -0.0117
+angcflux    19    62    35      0.0219      0.0407     -0.0164     -0.0117
+angcflux    20    62    35      0.0219      0.0407     -0.0164     -0.0117
+angcflux    21    62    35      0.0219      0.0407     -0.0164     -0.0117
+angcflux    21    35    62      0.0219      0.0407     -0.0164     -0.0117
+angcflux    19    33    33      0.0219      0.0407     -0.0164     -0.0117
+angcflux    20    34    32      0.0219      0.0407     -0.0164     -0.0117
+angcflux    19    33    34      0.0219      0.0407     -0.0164     -0.0117
+angcflux    20    34    33      0.0219      0.0407     -0.0164     -0.0117
+angcflux    19    58    58      0.0219      0.0407     -0.0164     -0.0117
+angcflux    20    58    58      0.0219      0.0407     -0.0164     -0.0117
+angcflux    21    58    58      0.0219      0.0407     -0.0164     -0.0117
+angcflux    19    62    62      0.0219      0.0407     -0.0164     -0.0117
+angcflux    20    62    62      0.0219      0.0407     -0.0164     -0.0117
+angcflux    21    62    62      0.0219      0.0407     -0.0164     -0.0117
+angcflux    20    34    58      0.0219      0.0407     -0.0164     -0.0117
+angcflux    19    58    34      0.0219      0.0407     -0.0164     -0.0117
+angcflux    20    58    34      0.0219      0.0407     -0.0164     -0.0117
+angcflux    21    58    34      0.0219      0.0407     -0.0164     -0.0117
+angcflux    19    53    34      0.0219      0.0407     -0.0164     -0.0117
+angcflux    20    53    34      0.0219      0.0407     -0.0164     -0.0117
+angcflux    21    53    34      0.0219      0.0407     -0.0164     -0.0117
+angcflux    20    34    53      0.0219      0.0407     -0.0164     -0.0117
+angcflux    19    49    49      0.0219      0.0407     -0.0164     -0.0117
+angcflux    20    49    49      0.0219      0.0407     -0.0164     -0.0117
+angcflux    19    44    44      0.0219      0.0407     -0.0164     -0.0117
+angcflux    20    44    44      0.0219      0.0407     -0.0164     -0.0117
+angcflux    19    45    45      0.0219      0.0407     -0.0164     -0.0117
+angcflux    20    45    45      0.0219      0.0407     -0.0164     -0.0117
+angcflux    20    34    64      0.0219      0.0407     -0.0164     -0.0117
+angcflux    19    54    35      0.0219      0.0407     -0.0164     -0.0117
+angcflux    20    54    35      0.0219      0.0407     -0.0164     -0.0117
+angcflux    21    35    54      0.0219      0.0407     -0.0164     -0.0117
+angcflux    19    47    47      0.0219      0.0407     -0.0164     -0.0117
+angcflux    20    47    47      0.0219      0.0407     -0.0164     -0.0117
+angcflux    19    43    35      0.0219      0.0407     -0.0164     -0.0117
+angcflux    20    43    35      0.0219      0.0407     -0.0164     -0.0117
+angcflux    21    35    43      0.0219      0.0407     -0.0164     -0.0117
+angcflux    19    44    34      0.0219      0.0407     -0.0164     -0.0117
+angcflux    20    44    34      0.0219      0.0407     -0.0164     -0.0117
+angcflux    20    34    44      0.0219      0.0407     -0.0164     -0.0117
+angcflux    19    45    34      0.0219      0.0407     -0.0164     -0.0117
+angcflux    20    45    34      0.0219      0.0407     -0.0164     -0.0117
+angcflux    20    34    45      0.0219      0.0407     -0.0164     -0.0117
+angcflux    19    46    45      0.0219      0.0407     -0.0164     -0.0117
+angcflux    20    46    45      0.0219      0.0407     -0.0164     -0.0117
+angcflux    21    35    45      0.0219      0.0407     -0.0164     -0.0117
+angcflux    19    39    34      0.0219      0.0407     -0.0164     -0.0117
+angcflux    20    39    34      0.0219      0.0407     -0.0164     -0.0117
+angcflux    20    34    39      0.0219      0.0407     -0.0164     -0.0117
+angcflux    20    34    62      0.0219      0.0407     -0.0164     -0.0117
+angcflux    20    62    34      0.0219      0.0407     -0.0164     -0.0117
+angcflux    19    39    35      0.0219      0.0407     -0.0164     -0.0117
+angcflux    21    35    39      0.0219      0.0407     -0.0164     -0.0117
+angcflux    29    54    29      0.0219      0.0219     -0.0504     -0.0504
+angcflux   179    95   219      0.0219     -0.0667      0.1827      0.1982
+angcflux    22   102   192      0.0055      0.0544      0.0297      0.0009
+angcflux    23    29   142      0.0055      0.0407     -0.0902     -0.0129
+angcflux    29   103   192      0.0306     -0.0218      0.0354     -0.0159
+angcflux    25   254    83      0.0306      0.0362      0.0000     -0.0130
+angcflux    29   176    92      0.0306     -0.0120     -0.1923     -0.0737
+angcflux    39    92   172      0.0255      0.0501     -0.0017     -0.0138
+angcflux   200   132   202      0.0255      0.0297     -0.0201      0.0378
+angcflux   200   157   202      0.0255      0.0297     -0.0201      0.0378
+angcflux    22    70    22      0.0255      0.0255     -0.0033     -0.0033
+angcflux    29   127   197      0.0255      0.1394      0.2169      0.1982
+angcflux   125   129   196      0.0255      0.1394      0.2169      0.1982
+angcflux    29    29   197      0.0255      0.1394      0.2169      0.1982
+angcflux   121   127   197      0.0255      0.1394      0.2169      0.1982
+angcflux    29    29   199      0.0255      0.1394      0.2169      0.1982
+angcflux    29    29   176      0.0255      0.1394      0.2169      0.1982
+angcflux   166    29   197      0.0255      0.1394      0.2169      0.1982
+angcflux    29    29   174      0.0255      0.1394      0.2169      0.1982
+angcflux    34   255    83      0.0255     -0.0983     -0.0737     -0.0060
+angcflux    29   154    29      0.0255      0.0255     -0.1267     -0.1267
+angcflux    29    29    56      0.0274     -0.0139      0.0178     -0.0152
+angcflux    31    30    35      0.0012     -0.0171      0.0574     -0.0022
+angcflux   219    96   225      0.0012      0.0450      0.0998      0.1127
+angcflux   219    88   225      0.0012      0.0450      0.0998      0.1127
+angcflux   219    89   225      0.0012      0.0450      0.0998      0.1127
+angcflux   200   117   230      0.0012     -0.0043      0.0178      0.0391
+angcflux   202   132   266      0.0134     -0.0667     -0.0621     -0.0787
+angcflux    12    60    29      0.0134      0.0297      0.0508     -0.0668
+angcflux   200   138   226      0.0134      0.0169      0.1920      0.2839
+angcflux    23   141   240      0.0134      0.0541      0.0122     -0.0318
+angcflux   104   195   106      0.0134      0.0134     -0.0902     -0.0902
+angcflux    11    44    92      0.0134      0.0000      0.0000      0.0058
+angcflux    29    34    35      0.0452     -0.0056     -0.0343     -0.0129
+angcflux    29    33    35      0.0452     -0.0056     -0.0343     -0.0129
+angcflux    30    34    35      0.0452     -0.0056     -0.0343     -0.0129
+angcflux    29    34    64      0.0452     -0.0056     -0.0343     -0.0129
+angcflux    29    54    35      0.0452     -0.0056     -0.0343     -0.0129
+angcflux    29    47    47      0.0452     -0.0056     -0.0343     -0.0129
+angcflux    29    44    44      0.0452     -0.0056     -0.0343     -0.0129
+angcflux    29    39    39      0.0452     -0.0056     -0.0343     -0.0129
+angcflux    34   227    80      0.0452     -0.2343     -0.2014     -0.1976
+angcflux    35   227    80      0.0452     -0.2343     -0.2014     -0.1976
+angcflux    33   227    80      0.0452     -0.2343     -0.2014     -0.1976
+angcflux    44   227    80      0.0452     -0.2343     -0.2014     -0.1976
+angcflux    19    52    83      0.0452      0.0613     -0.0736     -0.0615
+angcflux    20    52    83      0.0452      0.0613     -0.0736     -0.0615
+angcflux    21    35   253      0.0408      0.0790      0.0001     -0.0118
+angcflux    20    34   253      0.0408      0.0790      0.0001     -0.0118
+angcflux    20    34   256      0.0408      0.0790      0.0001     -0.0118
+angcflux    20    34   263      0.0408      0.0790      0.0001     -0.0118
+angcflux   213    91   227      0.0408      0.0748      0.0508      0.0355
+angcflux    23   120   117      0.0408     -0.0150     -0.1642     -0.0241
+angcflux    21    35    76      0.0408      0.0450     -0.0736     -0.0615
+angcflux    21    35    87      0.0408      0.0450     -0.0736     -0.0615
+angcflux    20    34    98      0.0408      0.0450     -0.0736     -0.0615
+angcflux    20    34    97      0.0408      0.0450     -0.0736     -0.0615
+angcflux    20    34    99      0.0408      0.0450     -0.0736     -0.0615
+angcflux    20    34    76      0.0408      0.0450     -0.0736     -0.0615
+angcflux    20    34    75      0.0408      0.0450     -0.0736     -0.0615
+angcflux    19    33    87      0.0408      0.0450     -0.0736     -0.0615
+angcflux    19    53    76      0.0408      0.0450     -0.0736     -0.0615
+angcflux    20    53    76      0.0408      0.0450     -0.0736     -0.0615
+angcflux    19    33    76      0.0408      0.0450     -0.0736     -0.0615
+angcflux    19    47    48      0.0408      0.0450     -0.0736     -0.0615
+angcflux    20    47    48      0.0408      0.0450     -0.0736     -0.0615
+angcflux    21    35   103      0.0408      0.0450     -0.0736     -0.0615
+angcflux    21    35   100      0.0408      0.0450     -0.0736     -0.0615
+angcflux    21    35   101      0.0408      0.0450     -0.0736     -0.0615
+angcflux    19    43    81      0.0408      0.0450     -0.0736     -0.0615
+angcflux    20    43    81      0.0408      0.0450     -0.0736     -0.0615
+angcflux    19    43    94      0.0408      0.0450     -0.0736     -0.0615
+angcflux    20    43    94      0.0408      0.0450     -0.0736     -0.0615
+angcflux    19    39    82      0.0408      0.0450     -0.0736     -0.0615
+angcflux    20    39    82      0.0408      0.0450     -0.0736     -0.0615
+angcflux    21    35    68      0.0408      0.0450     -0.0736     -0.0615
+angcflux    20    34    87      0.0408      0.0450     -0.0736     -0.0615
+angcflux    19    33   101      0.0408      0.0450     -0.0736     -0.0615
+angcflux    20    34   100      0.0408      0.0450     -0.0736     -0.0615
+angcflux    21    35   179      0.0408      0.0665      0.0584      0.0574
+angcflux    20    34   179      0.0408      0.0665      0.0584      0.0574
+angcflux    19    33   179      0.0408      0.0665      0.0584      0.0574
+angcflux    19    53   179      0.0408      0.0665      0.0584      0.0574
+angcflux    20    53   179      0.0408      0.0665      0.0584      0.0574
+angcflux    19    44   179      0.0408      0.0665      0.0584      0.0574
+angcflux    20    44   179      0.0408      0.0665      0.0584      0.0574
+angcflux    19    39   179      0.0408      0.0665      0.0584      0.0574
+angcflux    20    39   179      0.0408      0.0665      0.0584      0.0574
+angcflux    21    35    30      0.0408      0.0621     -0.0117      0.0201
+angcflux    21    35    29      0.0408      0.0621     -0.0117      0.0201
+angcflux    20    34    29      0.0408      0.0621     -0.0117      0.0201
+angcflux    19    33    29      0.0408      0.0621     -0.0117      0.0201
+angcflux    20    34    30      0.0408      0.0621     -0.0117      0.0201
+angcflux    19    54    29      0.0408      0.0621     -0.0117      0.0201
+angcflux    20    54    29      0.0408      0.0621     -0.0117      0.0201
+angcflux    19    47    29      0.0408      0.0621     -0.0117      0.0201
+angcflux    20    47    29      0.0408      0.0621     -0.0117      0.0201
+angcflux    21    35   145      0.0408      0.0621     -0.0117      0.0201
+angcflux    20    34   147      0.0408      0.0621     -0.0117      0.0201
+angcflux    20    34   150      0.0408      0.0621     -0.0117      0.0201
+angcflux    19    44    29      0.0408      0.0621     -0.0117      0.0201
+angcflux    20    44    29      0.0408      0.0621     -0.0117      0.0201
+angcflux    19    44   130      0.0408      0.0621     -0.0117      0.0201
+angcflux    20    44   130      0.0408      0.0621     -0.0117      0.0201
+angcflux    19    39    29      0.0408      0.0621     -0.0117      0.0201
+angcflux    20    39    29      0.0408      0.0621     -0.0117      0.0201
+angcflux    19    33   147      0.0408      0.0621     -0.0117      0.0201
+angcflux    19    33   150      0.0408      0.0621     -0.0117      0.0201
+angcflux    21    35   144      0.0408      0.0621     -0.0117      0.0201
+angcflux    35   169   118      0.0408     -0.0983     -0.1267     -0.1123
+angcflux    23    29   117      0.0408      0.0302     -0.1014     -0.0159
+angcflux    11    44    80      0.0302     -0.0024      0.0122      0.0023
+angcflux   116   116   116      0.0302      0.0302     -0.0621     -0.0621
+angcflux   179    92   219      0.0302     -0.0528      0.1920      0.2169
+angcflux   241   100   243      0.0302      0.0255      0.0752      0.0659
+angcflux    22    80   219      0.0302      0.0369     -0.0084      0.0163
+angcflux    34   258    34      0.0063      0.0063      0.0000      0.0000
+angcflux    33   258    33      0.0063      0.0063      0.0000      0.0000
+angcflux    95   141   142      0.0063      0.0109     -0.0903     -0.0409
+angcflux    29   141   240      0.0063     -0.0061      0.0752      0.0163
+angcflux    22   102   193      0.0063      0.0621      0.0104     -0.0171
+angcflux    34   227    90      0.0297     -0.1570     -0.2526     -0.1971
+angcflux    34   227    91      0.0297     -0.1570     -0.2526     -0.1971
+angcflux    34   227    96      0.0297     -0.1570     -0.2526     -0.1971
+angcflux    33   227    90      0.0297     -0.1570     -0.2526     -0.1971
+angcflux    35   227    85      0.0297     -0.1570     -0.2526     -0.1971
+angcflux    49   227    81      0.0297     -0.1570     -0.2526     -0.1971
+angcflux    41   227    82      0.0297     -0.1570     -0.2526     -0.1971
+angcflux    33   227    91      0.0297     -0.1570     -0.2526     -0.1971
+angcflux    12    60   265      0.0297      0.0000      0.0000      0.0000
+angcflux    21    35   171      0.0530      0.0653      0.0574      0.0584
+angcflux    20    34   171      0.0530      0.0653      0.0574      0.0584
+angcflux    19    53   171      0.0530      0.0653      0.0574      0.0584
+angcflux    20    53   171      0.0530      0.0653      0.0574      0.0584
+angcflux    19    33   171      0.0530      0.0653      0.0574      0.0584
+angcflux    19    43   171      0.0530      0.0653      0.0574      0.0584
+angcflux    22    66    22      0.0530      0.0530     -0.0013     -0.0013
+angcflux   142   165   240      0.0341     -0.0319      0.0882      0.0058
+angcflux   142    29   240      0.0341     -0.0319      0.0882      0.0058
+angcflux    23   135   119      0.0341      0.0012     -0.0987     -0.0201
+angcflux    29    85   227      0.0341     -0.0040      0.0297      0.0777
+angcflux   142   141   240      0.0341     -0.0414      0.0775      0.0191
+angcflux   218   183   218      0.0341      0.0341      0.0983      0.0983
+angcflux    34    92   182      0.0341      0.0601     -0.0947     -0.0668
+angcflux    47    92   176      0.0341      0.0601     -0.0947     -0.0668
+angcflux    24   171   266      0.0408     -0.0390     -0.0159     -0.0350
+angcflux    29    29    35      0.0408      0.0588      0.0659     -0.0118
+angcflux    29    29    34      0.0408      0.0588      0.0659     -0.0118
+angcflux    29    29    33      0.0408      0.0588      0.0659     -0.0118
+angcflux    30    30    35      0.0408      0.0588      0.0659     -0.0118
+angcflux    30    30    34      0.0408      0.0588      0.0659     -0.0118
+angcflux    29    29    64      0.0408      0.0588      0.0659     -0.0118
+angcflux    29    29    54      0.0408      0.0588      0.0659     -0.0118
+angcflux    29    29    47      0.0408      0.0588      0.0659     -0.0118
+angcflux    29    29    44      0.0408      0.0588      0.0659     -0.0118
+angcflux    29    29    39      0.0408      0.0588      0.0659     -0.0118
+angcflux    29   144    35      0.0408      0.0588      0.0659     -0.0118
+angcflux   203   117   226      0.0163      0.0588      0.1920      0.2416
+angcflux    80    52    80      0.0163      0.0163     -0.0737     -0.0737
+angcflux    14    34    29      0.0163     -0.0165      0.0110      0.0183
+angcflux   207   145   230      0.0163      0.0184      0.0388      0.0110
+angcflux    74   143   144      0.0163      0.0076     -0.0787     -0.0712
+angcflux    29    29    73      0.0450      0.0530     -0.1449     -0.1823
+angcflux    29    29    85      0.0450      0.0530     -0.1449     -0.1823
+angcflux    29    29    78      0.0450      0.0530     -0.1449     -0.1823
+angcflux    29    29    95      0.0450      0.0530     -0.1449     -0.1823
+angcflux    29    29   103      0.0450      0.0530     -0.1449     -0.1823
+angcflux    29    29   105      0.0450      0.0530     -0.1449     -0.1823
+angcflux    29   143    95      0.0450      0.0530     -0.1449     -0.1823
+angcflux    29   143    73      0.0450      0.0530     -0.1449     -0.1823
+angcflux    35    34    83      0.0450      0.0418     -0.1123     -0.0409
+angcflux    35    33    83      0.0450      0.0418     -0.1123     -0.0409
+angcflux    74    52    74      0.0450      0.0450     -0.0712     -0.0712
+angcflux    34   223    66      0.0369     -0.1009     -0.2506     -0.1971
+angcflux    29    29   265      0.0369      0.0000     -0.0737     -0.0690
+angcflux    11    97   219      0.0369      0.0274      0.1156      0.0584
+angcflux    76    52    80      0.0369      0.0369     -0.0504     -0.0504
+angcflux    76    52    76      0.0369      0.0369     -0.0504     -0.0504
+angcflux    74    52    76      0.0369      0.0369     -0.0504     -0.0504
+angcflux    66    34    76      0.0369      0.0369     -0.0504     -0.0504
+angcflux    20    52    20      0.0369      0.0369     -0.0209     -0.0209
+angcflux    23   149   249      0.0369      0.0653     -0.0105      0.0111
+angcflux    23   147   249      0.0369      0.0653     -0.0105      0.0111
+angcflux    29   176    48      0.0601     -0.0303     -0.0984     -0.0343
+angcflux    23   143   268      0.0601      0.0407     -0.0076      0.0010
+angcflux    23    29   268      0.0601      0.0407     -0.0076      0.0010
+angcflux    66    67    67      0.0601      0.0588     -0.0984     -0.0690
+angcflux    21    35   110      0.0601      0.0372      0.0191      0.0000
+angcflux    21    35   108      0.0601      0.0372      0.0191      0.0000
+angcflux    20    34   110      0.0601      0.0372      0.0191      0.0000
+angcflux    20    34   108      0.0601      0.0372      0.0191      0.0000
+angcflux    35   207   145      0.0601     -0.1444     -0.1449     -0.1304
+angcflux    34   171   258      0.0601     -0.1187      0.0188      0.0410
+angcflux    29   141    95      0.0601      0.0021     -0.0984     -0.1851
+angcflux    17   229    29      0.0601     -0.0414     -0.0690     -0.0736
+angcflux    17   229    30      0.0601     -0.0414     -0.0690     -0.0736
+angcflux   169   133   200      0.0601      0.0226      0.0010      0.0103
+angcflux   169   130   200      0.0601      0.0226      0.0010      0.0103
+angcflux    29    29    74      0.0601      0.0163     -0.0984     -0.1923
+angcflux   204   137   226      0.0601      0.1394      0.1920      0.2839
+angcflux   204   139   226      0.0601      0.1394      0.1920      0.2839
+angcflux   201   130   226      0.0601      0.1394      0.1920      0.2839
+angcflux   204   138   226      0.0601      0.1394      0.1920      0.2839
+angcflux    66    34    80      0.0601      0.0063     -0.0409     -0.0668
+angcflux    20    34   102      0.0696      0.0613     -0.0610     -0.0610
+angcflux    21    35   102      0.0696      0.0613     -0.0610     -0.0610
+angcflux   203   139   204      0.0696      0.0653     -0.0117     -0.0303
+angcflux   203   138   204      0.0696      0.0653     -0.0117     -0.0303
+angcflux    20    34   230      0.0696      0.0955     -0.0159      0.0368
+angcflux    21    35   230      0.0696      0.0955     -0.0159      0.0368
+angcflux    24   171   258      0.0696     -0.0368     -0.0343     -0.0128
+angcflux   201   133   202      0.0696      0.0516     -0.0118      0.0354
+angcflux    35   257    35      0.0696      0.0696     -0.0159     -0.0159
+angcflux    34   257    35      0.0696      0.0696     -0.0159     -0.0159
+angcflux    33   257    33      0.0696      0.0696     -0.0159     -0.0159
+angcflux    34   257    34      0.0696      0.0696     -0.0159     -0.0159
+angcflux    52    80   227      0.0696      0.0665      0.1174      0.0377
+angcflux    35    34   216      0.0696     -0.0144      0.1035      0.0378
+angcflux   104   125   129      0.0696      0.0043     -0.0902     -0.0610
+angcflux    95   143   144      0.0696      0.0043     -0.0902     -0.0610
+angcflux   182    92   219      0.0539     -0.0329      0.1920      0.2371
+angcflux   176    92   219      0.0539     -0.0329      0.1920      0.2371
+angcflux    21    35    74      0.0539      0.0274     -0.0787     -0.0787
+angcflux    20    34    74      0.0539      0.0274     -0.0787     -0.0787
+angcflux    19    33    74      0.0539      0.0274     -0.0787     -0.0787
+angcflux    23   135   117      0.0613      0.0748     -0.1014     -0.0484
+angcflux    69    52    69      0.0613      0.0613     -0.0504     -0.0504
+angcflux   180    96   225      0.0613      0.0890     -0.0118     -0.0318
+angcflux    34   260   217      0.0613      0.0408      0.0998      0.0188
+angcflux    35   260   238      0.0613      0.0408      0.0998      0.0188
+angcflux    35   260   234      0.0613      0.0408      0.0998      0.0188
+angcflux    34   260   238      0.0613      0.0408      0.0998      0.0188
+angcflux    34   260   234      0.0613      0.0408      0.0998      0.0188
+angcflux    29   264   114      0.0613     -0.0119     -0.0094     -0.0303
+angcflux    68    68    84      0.0516      0.0516     -0.1267     -0.1267
+angcflux    68    68    72      0.0516      0.0516     -0.1267     -0.1267
+angcflux    13    63    13      0.0516      0.0516      0.0998      0.0998
+angcflux    13    64    13      0.0516      0.0516      0.0998      0.0998
+angcflux    13    65    13      0.0516      0.0516      0.0998      0.0998
+angcflux    39    50   172      0.0516      0.0063      0.0430      0.0058
+angcflux    35    34   172      0.0516      0.0063      0.0430      0.0058
+angcflux    39    39   172      0.0516      0.0063      0.0430      0.0058
+angcflux    23   152   269      0.0516      0.0938     -0.0712      0.0000
+angcflux    23   150   269      0.0516      0.0938     -0.0712      0.0000
+angcflux    29   118    95      0.0516     -0.0186     -0.1304     -0.1971
+angcflux    34   225    96      0.0630     -0.0506      0.0451     -0.0712
+angcflux    35   169   155      0.0630     -0.1394     -0.1642     -0.1267
+angcflux    29   265    60      0.0630     -0.0058     -0.0074      0.0009
+angcflux    35    87   227      0.0630      0.0665      0.1127      0.0391
+angcflux    33    87   227      0.0630      0.0665      0.1127      0.0391
+angcflux    35   101   245      0.0630      0.0665      0.1127      0.0391
+angcflux    43    81   227      0.0630      0.0665      0.1127      0.0391
+angcflux    39    82   227      0.0630      0.0665      0.1127      0.0391
+angcflux    34    87   227      0.0630      0.0665      0.1127      0.0391
+angcflux    33   101   245      0.0630      0.0665      0.1127      0.0391
+angcflux   200   138   203      0.0630      0.0601     -0.0668     -0.0903
+angcflux    13    62    35      0.0630     -0.0171      0.0493      0.0163
+angcflux    13    62    62      0.0630     -0.0171      0.0493      0.0163
+angcflux    13    64    34      0.0630     -0.0171      0.0493      0.0163
+angcflux    13    62    34      0.0630     -0.0171      0.0493      0.0163
+angcflux    29    29   262      0.0630      0.0226     -0.0159     -0.0712
+angcflux    29    29   261      0.0630      0.0226     -0.0159     -0.0712
+angcflux    29    29   266      0.0630      0.0226     -0.0159     -0.0712
+angcflux   144   143   266      0.0630      0.0226     -0.0159     -0.0712
+angcflux    30    30   240      0.0630     -0.0136      0.1035      0.0163
+angcflux    29    29   240      0.0630     -0.0136      0.1035      0.0163
+angcflux   164   165   240      0.0630     -0.0136      0.1035      0.0163
+angcflux    14    34    34      0.0630     -0.0165      0.0388     -0.0002
+angcflux    14    32    34      0.0630     -0.0165      0.0388     -0.0002
+angcflux    35    34   230      0.0630     -0.0187      0.1168      0.0451
+angcflux    35    34   135      0.0630     -0.0062     -0.0621     -0.1304
+angcflux    14    34    14      0.0630      0.0630      0.0998      0.0998
+angcflux    14    33    14      0.0630      0.0630      0.0998      0.0998
+angcflux    14    32    14      0.0630      0.0630      0.0998      0.0998
+angcflux    34   181    96      0.0630      0.0516     -0.2506     -0.1823
+angcflux    35   181    96      0.0630      0.0516     -0.2506     -0.1823
+angcflux    35   180    96      0.0630      0.0516     -0.2506     -0.1823
+angcflux    47   176    48      0.0630      0.0516     -0.2506     -0.1823
+angcflux    35   176    48      0.0630      0.0516     -0.2506     -0.1823
+angcflux    47   176    95      0.0630      0.0516     -0.2506     -0.1823
+angcflux    47   176   103      0.0630      0.0516     -0.2506     -0.1823
+angcflux    43   174    95      0.0630      0.0516     -0.2506     -0.1823
+angcflux    43   174    94      0.0630      0.0516     -0.2506     -0.1823
+angcflux    68    74    68      0.0630      0.0630     -0.1014     -0.1014
+angcflux   169   133   201      0.0630      0.0630     -0.0103     -0.0103
+angcflux   211   168   211      0.0630      0.0630     -0.0103     -0.0103
+angcflux    23    29   240      0.0407      0.0630      0.0001     -0.0117
+angcflux   179    92   179      0.0407      0.0407      0.0377      0.0377
+angcflux    35   169   133      0.0407     -0.1009     -0.1449     -0.1267
+angcflux    35   169   130      0.0407     -0.1009     -0.1449     -0.1267
+angcflux    44    44   117      0.0407      0.0011     -0.0736     -0.1304
+angcflux    39    39   117      0.0407      0.0011     -0.0736     -0.1304
+angcflux    19    50   172      0.0407      0.0955      0.0704      0.0388
+angcflux    20    50   172      0.0407      0.0955      0.0704      0.0388
+angcflux    19    51   172      0.0407      0.0955      0.0704      0.0388
+angcflux    20    51   172      0.0407      0.0955      0.0704      0.0388
+angcflux    20    34   172      0.0407      0.0955      0.0704      0.0388
+angcflux    20    39   172      0.0407      0.0955      0.0704      0.0388
+angcflux   135   117   203      0.0407     -0.0120     -0.0130     -0.0130
+angcflux    67    67    67      0.0407      0.0407     -0.1304     -0.1304
+angcflux   195   106   196      0.0407      0.0407      0.0178      0.0178
+angcflux    66    68    68      0.0588      0.0588     -0.1823     -0.1267
+angcflux    66    68    72      0.0588      0.0588     -0.1823     -0.1267
+angcflux    66    68    84      0.0588      0.0588     -0.1823     -0.1267
+angcflux    66    68    77      0.0588      0.0588     -0.1823     -0.1267
+angcflux   218   184   218      0.0588      0.0588      0.1156      0.1156
+angcflux    74    52    80      0.0588      0.0621     -0.0621     -0.0903
+angcflux    29   179    92      0.0588     -0.0303     -0.1449     -0.0504
+angcflux    44   130   200      0.0621     -0.0040      0.1127     -0.0079
+angcflux    35   145   200      0.0621     -0.0040      0.1127     -0.0079
+angcflux    22    66    66      0.0621     -0.0376     -0.0128     -0.0409
+angcflux    35    34   141      0.0621     -0.0165     -0.0621     -0.1304
+angcflux   219    87   227      0.0621      0.1378      0.1827      0.1509
+angcflux   219    90   227      0.0621      0.1378      0.1827      0.1509
+angcflux   219    91   227      0.0621      0.1378      0.1827      0.1509
+angcflux   219    96   227      0.0621      0.1378      0.1827      0.1509
+angcflux   219    85   227      0.0621      0.1378      0.1827      0.1509
+angcflux   219    81   227      0.0621      0.1378      0.1827      0.1509
+angcflux   219    82   227      0.0621      0.1378      0.1827      0.1509
+angcflux    34    52    74      0.0621      0.0134     -0.1123     -0.0712
+angcflux    29   265    34      0.0621      0.0184     -0.0084     -0.0074
+angcflux    11    56    35      0.0791      0.0408      0.0659      0.0377
+angcflux    11    56    34      0.0791      0.0408      0.0659      0.0377
+angcflux   158   159   169      0.0791      0.1369     -0.0736     -0.1823
+angcflux    34   238   260      0.0791     -0.1230     -0.1123     -0.1014
+angcflux   227    90   227      0.0791      0.0791      0.0659      0.0659
+angcflux    35   169   159      0.0791     -0.0863     -0.1642     -0.1304
+angcflux    35   145   206      0.0791      0.0255     -0.0117     -0.0241
+angcflux    35   145   207      0.0791      0.0255     -0.0117     -0.0241
+angcflux    34   147   208      0.0791      0.0255     -0.0117     -0.0241
+angcflux    34   150   209      0.0791      0.0255     -0.0117     -0.0241
+angcflux    33   147   208      0.0791      0.0255     -0.0117     -0.0241
+angcflux    33   150   209      0.0791      0.0255     -0.0117     -0.0241
+angcflux    35    80   227      0.0791      0.0890      0.1920      0.0574
+angcflux    34    80   227      0.0791      0.0890      0.1920      0.0574
+angcflux    33    80   227      0.0791      0.0890      0.1920      0.0574
+angcflux    44    80   227      0.0791      0.0890      0.1920      0.0574
+angcflux    35    34   122      0.0791     -0.0228     -0.0586     -0.1304
+angcflux   148   149   249      0.0791      0.0748      0.1168     -0.0094
+angcflux   171   104   195      0.0791      0.0613      0.0882      0.0752
+angcflux    35   118   200      0.0541     -0.0174      0.0377      0.0001
+angcflux    35    34    66      0.0541      0.0255     -0.0902     -0.0209
+angcflux    35    33    66      0.0541      0.0255     -0.0902     -0.0209
+angcflux    22   116   116      0.0541      0.0790     -0.0504      0.0188
+angcflux   120   122   202      0.0541      0.1054     -0.0129     -0.1304
+angcflux    29   265    56      0.0541      0.0142     -0.0222     -0.0013
+angcflux    35    34    69      0.0541      0.0174     -0.1014     -0.0504
+angcflux    34    34    69      0.0541      0.0174     -0.1014     -0.0504
+angcflux    35    33    69      0.0541      0.0174     -0.1014     -0.0504
+angcflux    12    60    34      0.0541     -0.0171     -0.0279     -0.0343
+angcflux    34    66    68      0.0541      0.1137      0.0574      0.0410
+angcflux    35    66    68      0.0541      0.1137      0.0574      0.0410
+angcflux    29   266   171      0.0541      0.0219      0.1490      0.0410
+angcflux   132   266   171      0.0541      0.0219      0.1490      0.0410
+angcflux   143   266   171      0.0541      0.0219      0.1490      0.0410
+angcflux    35   122   202      0.0501     -0.0061      0.0574      0.0009
+angcflux   125   129   202      0.0501      0.1137     -0.0409     -0.1052
+angcflux   136   133   202      0.0501      0.1137     -0.0409     -0.1052
+angcflux   156   157   202      0.0501      0.1137     -0.0409     -0.1052
+angcflux    34   122   203      0.0501     -0.0329      0.0735     -0.0138
+angcflux    35   203   117      0.0501     -0.1009     -0.1971     -0.1923
+angcflux    41   203   117      0.0501     -0.1009     -0.1971     -0.1923
+angcflux    34   203   117      0.0501     -0.1009     -0.1971     -0.1923
+angcflux    44   203   117      0.0501     -0.1009     -0.1971     -0.1923
+angcflux    33   203   117      0.0501     -0.1009     -0.1971     -0.1923
+angcflux    44   117   200      0.0501     -0.0040      0.0584      0.0114
+angcflux    39   117   200      0.0501     -0.0040      0.0584      0.0114
+angcflux    29   265   232      0.0501      0.1975      0.0323      0.0775
+angcflux    29   184   218      0.0501      0.0541      0.0391      0.0178
+angcflux   217   260   237      0.0501      0.0613      0.0178      0.0410
+angcflux   236   262   237      0.0501      0.0613      0.0178      0.0410
+angcflux    19   115   116      0.0653      0.0450      0.0004      0.0188
+angcflux    20   115   116      0.0653      0.0450      0.0004      0.0188
+angcflux    21    35   116      0.0653      0.0450      0.0004      0.0188
+angcflux   242   101   245      0.0653      0.0869      0.1270      0.1542
+angcflux   180    96   219      0.0653      0.0025      0.1663      0.1982
+angcflux   181    96   219      0.0653      0.0025      0.1663      0.1982
+angcflux   176    48   219      0.0653      0.0025      0.1663      0.1982
+angcflux   176    95   219      0.0653      0.0025      0.1663      0.1982
+angcflux   174    95   219      0.0653      0.0025      0.1663      0.1982
+angcflux   174    94   219      0.0653      0.0025      0.1663      0.1982
+angcflux   201   134   203      0.0653      0.1103     -0.0103     -0.1052
+angcflux   201   130   203      0.0653      0.1103     -0.0103     -0.1052
+angcflux    35   171   266      0.0653     -0.0863      0.0355      0.0391
+angcflux    29   266   233      0.0653      0.0890      0.0777      0.0775
+angcflux   132   266   233      0.0653      0.0890      0.0777      0.0775
+angcflux   143   266   233      0.0653      0.0890      0.0777      0.0775
+angcflux    11    34    35      0.0653      0.0452      0.1168      0.0882
+angcflux    11    33    34      0.0653      0.0452      0.1168      0.0882
+angcflux    11    34    33      0.0653      0.0452      0.1168      0.0882
+angcflux    11    34    34      0.0653      0.0452      0.1168      0.0882
+angcflux    11    44    44      0.0653      0.0452      0.1168      0.0882
+angcflux    12    98   219      0.0653     -0.0414      0.1270      0.0777
+angcflux    35    34    74      0.0748      0.0408     -0.0947     -0.0128
+angcflux    35    33    74      0.0748      0.0408     -0.0947     -0.0128
+angcflux    34    34    74      0.0748      0.0408     -0.0947     -0.0128
+angcflux    29   262   237      0.0748      0.1968      0.0704      0.1168
+angcflux    29   266   232      0.0748      0.1968      0.0704      0.1168
+angcflux   132   266   232      0.0748      0.1968      0.0704      0.1168
+angcflux   143   266   232      0.0748      0.1968      0.0704      0.1168
+angcflux    34    66    66      0.0748      0.0544      0.0245      0.0001
+angcflux    35    66    66      0.0748      0.0544      0.0245      0.0001
+angcflux    33    66    66      0.0748      0.0544      0.0245      0.0001
+angcflux    68    68    74      0.0748      0.0630     -0.1304     -0.1267
+angcflux    17   213    91      0.0748      0.0790     -0.1014     -0.0903
+angcflux    17   213    86      0.0748      0.0790     -0.1014     -0.0903
+angcflux    17   213    96      0.0748      0.0790     -0.1014     -0.0903
+angcflux    17   213    85      0.0748      0.0790     -0.1014     -0.0903
+angcflux    17   213    84      0.0748      0.0790     -0.1014     -0.0903
+angcflux    17   213    89      0.0748      0.0790     -0.1014     -0.0903
+angcflux    12    58    35      0.0748     -0.0062     -0.0117      0.0009
+angcflux    12    58    58      0.0748     -0.0062     -0.0117      0.0009
+angcflux    12    58    34      0.0748     -0.0062     -0.0117      0.0009
+angcflux   154   155   202      0.0748      0.1305     -0.0621     -0.1449
+angcflux    24   179    35      0.0938      0.0302     -0.1123      0.0000
+angcflux    24   179    34      0.0938      0.0302     -0.1123      0.0000
+angcflux    24   179    33      0.0938      0.0302     -0.1123      0.0000
+angcflux    24   179    53      0.0938      0.0302     -0.1123      0.0000
+angcflux    24   179    44      0.0938      0.0302     -0.1123      0.0000
+angcflux    35    34   147      0.0938     -0.0376     -0.0736     -0.1642
+angcflux    35    34   150      0.0938     -0.0376     -0.0736     -0.1642
+angcflux    44    44   130      0.0938     -0.0376     -0.0736     -0.1642
+angcflux    35    33   147      0.0938     -0.0376     -0.0736     -0.1642
+angcflux    35    33   150      0.0938     -0.0376     -0.0736     -0.1642
+angcflux   200   158   200      0.0938      0.0938     -0.0903     -0.0903
+angcflux    34   221   275      0.0938     -0.0144     -0.1923     -0.1851
+angcflux    35   221   276      0.0938     -0.0144     -0.1923     -0.1851
+angcflux    35   221   275      0.0938     -0.0144     -0.1923     -0.1851
+angcflux    35   221   277      0.0938     -0.0144     -0.1923     -0.1851
+angcflux    34   221   276      0.0938     -0.0144     -0.1923     -0.1851
+angcflux    43   221   276      0.0938     -0.0144     -0.1923     -0.1851
+angcflux    35   221   278      0.0938     -0.0144     -0.1923     -0.1851
+angcflux    33   221   275      0.0938     -0.0144     -0.1923     -0.1851
+angcflux    34    66    67      0.0938      0.0869      0.0010      0.0323
+angcflux    33    66    67      0.0938      0.0869      0.0010      0.0323
+angcflux    35    66    67      0.0938      0.0869      0.0010      0.0323
+angcflux   196   129   202      0.0665      0.0408      0.1509      0.0983
+angcflux   219    80   227      0.0665      0.1137      0.1509      0.1920
+angcflux    29   127   200      0.0665      0.1137     -0.0610     -0.1823
+angcflux   129   125   200      0.0665      0.1137     -0.0610     -0.1823
+angcflux   140   136   200      0.0665      0.1137     -0.0610     -0.1823
+angcflux   133   136   200      0.0665      0.1137     -0.0610     -0.1823
+angcflux   121   133   200      0.0665      0.1137     -0.0610     -0.1823
+angcflux   133   121   200      0.0665      0.1137     -0.0610     -0.1823
+angcflux   127   121   200      0.0665      0.1137     -0.0610     -0.1823
+angcflux   121   127   200      0.0665      0.1137     -0.0610     -0.1823
+angcflux    29   121   200      0.0665      0.1137     -0.0610     -0.1823
+angcflux   163   162   200      0.0665      0.1137     -0.0610     -0.1823
+angcflux    29   162   200      0.0665      0.1137     -0.0610     -0.1823
+angcflux   166   167   200      0.0665      0.1137     -0.0610     -0.1823
+angcflux    29   167   200      0.0665      0.1137     -0.0610     -0.1823
+angcflux   156   157   200      0.0665      0.1137     -0.0610     -0.1823
+angcflux   157   156   200      0.0665      0.1137     -0.0610     -0.1823
+angcflux    29   156   200      0.0665      0.1137     -0.0610     -0.1823
+angcflux    29   160   200      0.0665      0.1137     -0.0610     -0.1823
+angcflux   146   145   200      0.0665      0.1137     -0.0610     -0.1823
+angcflux   165   164   200      0.0665      0.1137     -0.0610     -0.1823
+angcflux    29   164   200      0.0665      0.1137     -0.0610     -0.1823
+angcflux   135   137   204      0.0665      0.0653     -0.0159     -0.0902
+angcflux   115   116   116      0.1029     -0.0319      0.0882      0.0097
+angcflux    35   116   116      0.1029     -0.0319      0.0882      0.0097
+angcflux    35    34   102      0.1029      0.0408     -0.1052     -0.0668
+angcflux    34    34   102      0.1029      0.0408     -0.1052     -0.0668
+angcflux    12    30   120      0.1029     -0.0040      0.0574      0.0377
+angcflux   158   159   200      0.1029      0.1394     -0.0947     -0.1449
+angcflux    31   122   202      0.1029      0.0890     -0.0164     -0.0610
+angcflux    29   265   233      0.1029      0.1540      0.0584      0.0998
+angcflux    21    35    80      0.1029      0.0790     -0.0610     -0.0947
+angcflux    20    34    80      0.1029      0.0790     -0.0610     -0.0947
+angcflux    19    53    80      0.1029      0.0790     -0.0610     -0.0947
+angcflux    20    53    80      0.1029      0.0790     -0.0610     -0.0947
+angcflux    19    33    80      0.1029      0.0790     -0.0610     -0.0947
+angcflux    19    44    80      0.1029      0.0790     -0.0610     -0.0947
+angcflux    20    44    80      0.1029      0.0790     -0.0610     -0.0947
+angcflux    24   171    29      0.1029     -0.0246      0.0265     -0.0610
+angcflux    75    80   213      0.1029      0.0869      0.0584      0.1168
+angcflux    12    30   124      0.1029     -0.0061      0.0574      0.0704
+angcflux   120   155   202      0.1029      0.0544     -0.0209     -0.1052
+angcflux   118   118   200      0.0869      0.0869     -0.0712     -0.1304
+angcflux    24   199   117      0.0869     -0.0863     -0.0712     -0.0610
+angcflux   178   102   178      0.0869      0.0869      0.0245      0.0245
+angcflux   213    80   219      0.0869     -0.0228      0.1509      0.0775
+angcflux    35    34    92      0.0869      0.0630     -0.0984     -0.0737
+angcflux    34    34    92      0.0869      0.0630     -0.0984     -0.0737
+angcflux    35    33    92      0.0869      0.0630     -0.0984     -0.0737
+angcflux    47    47    92      0.0869      0.0630     -0.0984     -0.0737
+angcflux    44    44    92      0.0869      0.0630     -0.0984     -0.0737
+angcflux    39    39    92      0.0869      0.0630     -0.0984     -0.0737
+angcflux    24   180    96      0.0869      0.1968     -0.0610     -0.0984
+angcflux    24   176    48      0.0869      0.1968     -0.0610     -0.0984
+angcflux    24   176    95      0.0869      0.1968     -0.0610     -0.0984
+angcflux    24   174    94      0.0869      0.1968     -0.0610     -0.0984
+angcflux    24   179    29      0.0869     -0.1230     -0.0128     -0.0737
+angcflux    24   179   143      0.0869     -0.1230     -0.0128     -0.0737
+angcflux   220   278   222      0.0869     -0.2029      0.1127      0.1003
+angcflux   220   275   221      0.0869     -0.2029      0.1127      0.1003
+angcflux   220   276   221      0.0869     -0.2029      0.1127      0.1003
+angcflux   220   277   221      0.0869     -0.2029      0.1127      0.1003
+angcflux   220   278   221      0.0869     -0.2029      0.1127      0.1003
+angcflux   220   279   222      0.0869     -0.2029      0.1127      0.1003
+angcflux    29   155   169      0.0790      0.1103     -0.0279     -0.0987
+angcflux   154   155   169      0.0790      0.1305     -0.0409     -0.1642
+angcflux    24   179   141      0.0790     -0.1230     -0.0164     -0.0712
+angcflux   197   134   203      0.0790      0.0630      0.0775      0.0983
+angcflux   197   128   203      0.0790      0.0630      0.0775      0.0983
+angcflux    30   124   202      0.0544      0.0653     -0.0209     -0.0984
+angcflux    24   171    24      0.0544      0.0544      0.0777      0.0777
+angcflux    11    97    34      0.0544      0.0539     -0.0013      0.0297
+angcflux    34    74    68      0.0544      0.1369      0.0584      0.0378
+angcflux   117   117   200      0.0544      0.1305     -0.0504     -0.1304
+angcflux    11    30   120      0.0544     -0.0329      0.1168      0.1156
+angcflux   121   133   169      0.0544      0.1103     -0.0164     -0.0610
+angcflux   136   133   169      0.0544      0.1103     -0.0164     -0.0610
+angcflux    75    80   219      0.0544      0.0450     -0.0222     -0.0504
+angcflux   118   124   202      0.0544      0.1103     -0.0222     -0.1014
+angcflux    29   118   169      0.0544      0.0790     -0.0484     -0.0902
+angcflux    13    99   219      0.0544     -0.0992      0.1920      0.1035
+angcflux    34    75    76      0.0544      0.1369      0.0659      0.0374
+angcflux    35    68    84      0.0544      0.1369      0.0659      0.0374
+angcflux    35    68    68      0.0544      0.1369      0.0659      0.0374
+angcflux    11    30   124      0.0955     -0.0272      0.1168      0.0998
+angcflux    35    34   212      0.0955     -0.0528      0.1490      0.0374
+angcflux    35    33   212      0.0955     -0.0528      0.1490      0.0374
+angcflux    43    43   212      0.0955     -0.0528      0.1490      0.0374
+angcflux    49    43   212      0.0955     -0.0528      0.1490      0.0374
+angcflux    43    49   212      0.0955     -0.0528      0.1490      0.0374
+angcflux    49    34   212      0.0955     -0.0528      0.1490      0.0374
+angcflux    41    39   212      0.0955     -0.0528      0.1490      0.0374
+angcflux    39    39   212      0.0955     -0.0528      0.1490      0.0374
+angcflux    39    41   212      0.0955     -0.0528      0.1490      0.0374
+angcflux    34    33   212      0.0955     -0.0528      0.1490      0.0374
+angcflux    33    34   212      0.0955     -0.0528      0.1490      0.0374
+angcflux    34    34   212      0.0955     -0.0528      0.1490      0.0374
+angcflux    34    32   212      0.0955     -0.0528      0.1490      0.0374
+angcflux    41    34   212      0.0955     -0.0528      0.1490      0.0374
+angcflux    35    32   212      0.0955     -0.0528      0.1490      0.0374
+angcflux    44    44   212      0.0955     -0.0528      0.1490      0.0374
+angcflux    34    44   212      0.0955     -0.0528      0.1490      0.0374
+angcflux    44    34   212      0.0955     -0.0528      0.1490      0.0374
+angcflux    46    45   212      0.0955     -0.0528      0.1490      0.0374
+angcflux    45    45   212      0.0955     -0.0528      0.1490      0.0374
+angcflux    34    45   212      0.0955     -0.0528      0.1490      0.0374
+angcflux    45    34   212      0.0955     -0.0528      0.1490      0.0374
+angcflux    39    34   212      0.0955     -0.0528      0.1490      0.0374
+angcflux    33    33   212      0.0955     -0.0528      0.1490      0.0374
+angcflux    35    68    66      0.0955      0.1540      0.0388      0.0258
+angcflux   118   118   169      0.0955      0.0890     -0.0484     -0.1052
+angcflux    24   179    24      0.0955      0.0955      0.0131      0.0131
+angcflux    86    86   213      0.0955      0.0890      0.0775      0.1127
+angcflux    79    86   213      0.0955      0.0890      0.0775      0.1127
+angcflux    68    84   213      0.0955      0.0890      0.0775      0.1127
+angcflux    35    74   219      0.0955      0.1137     -0.0736     -0.0241
+angcflux    34    74   219      0.0955      0.1137     -0.0736     -0.0241
+angcflux    33    74   219      0.0955      0.1137     -0.0736     -0.0241
+angcflux   124   118   200      0.0955      0.0869     -0.0504     -0.1052
+angcflux   120   124   202      0.0955      0.0665     -0.0279     -0.1014
+angcflux    29   117   203      0.0955      0.1378      0.0659      0.0451
+angcflux    35    68    74      0.0955      0.1540      0.0388      0.0111
+angcflux    27   178   102      0.0890      0.1054     -0.0736     -0.1304
+angcflux   118   122   202      0.0890      0.1137     -0.0130     -0.1304
+angcflux   120   123   203      0.0890      0.1054      0.0001     -0.1449
+angcflux   120   128   203      0.0890      0.1054      0.0001     -0.1449
+angcflux   136   140   203      0.0890      0.0955     -0.0712     -0.1267
+angcflux    29   123   203      0.0890      0.0955     -0.0712     -0.1267
+angcflux   122   118   200      0.0890      0.1137     -0.0164     -0.1304
+angcflux   146   118   207      0.0890      0.1137     -0.0164     -0.1304
+angcflux   120   122   203      0.0890      0.1137     -0.0130     -0.0984
+angcflux    12    29    29      0.0890     -0.0246      0.0391      0.0584
+angcflux    34    75    80      0.0890      0.1054      0.0574      0.0258
+angcflux   135   123   203      0.1103      0.0544     -0.0621     -0.1267
+angcflux   135   137   203      0.1103      0.0544     -0.0621     -0.1267
+angcflux   136   133   201      0.1103      0.1305      0.0493     -0.0902
+angcflux    29   127   201      0.1103      0.1305      0.0493     -0.0902
+angcflux   146   145   206      0.1103      0.1305      0.0493     -0.0902
+angcflux   162   163   209      0.1103      0.1305      0.0493     -0.0902
+angcflux   152   151   209      0.1103      0.1305      0.0493     -0.0902
+angcflux    29   121   207      0.1103      0.1305      0.0493     -0.0902
+angcflux   146   145   207      0.1103      0.1305      0.0493     -0.0902
+angcflux   149   148   208      0.1103      0.1305      0.0493     -0.0902
+angcflux    29   160   207      0.1103      0.1305      0.0493     -0.0902
+angcflux   146   118   200      0.1103      0.0407     -0.0343     -0.1267
+angcflux    80    75   219      0.1103      0.0163     -0.0343     -0.0504
+angcflux    80    80   219      0.0869      0.0408     -0.0350     -0.0668
+angcflux    35    69   219      0.0869      0.1369     -0.0409     -0.0076
+angcflux    34    69   219      0.0869      0.1369     -0.0409     -0.0076
+angcflux    33    69   219      0.0869      0.1369     -0.0409     -0.0076
+angcflux   197   127   200      0.0869      0.0163      0.1663      0.1542
+angcflux    86    86   219      0.0869      0.0169      0.0258     -0.0209
+angcflux    79    86   219      0.0869      0.0169      0.0258     -0.0209
+angcflux    76    75   219      0.0869      0.0169      0.0258     -0.0209
+angcflux    68    72   219      0.0869      0.0169      0.0258     -0.0209
+angcflux    68    84   219      0.0869      0.0169      0.0258     -0.0209
+angcflux    71    71   219      0.0869      0.0169      0.0258     -0.0209
+angcflux    13    63    19      0.0869      0.0219     -0.0159     -0.0159
+angcflux    13    63    20      0.0869      0.0219     -0.0159     -0.0159
+angcflux    13    62    19      0.0869      0.0219     -0.0159     -0.0159
+angcflux    13    62    20      0.0869      0.0219     -0.0159     -0.0159
+angcflux    13    62    21      0.0869      0.0219     -0.0159     -0.0159
+angcflux    13    64    19      0.0869      0.0219     -0.0159     -0.0159
+angcflux    12    98    34      0.0869     -0.0528      0.0134      0.0388
+angcflux   125   104   195      0.0869     -0.0056      0.0777      0.0110
+angcflux    29    95   176      0.0869     -0.0056      0.0777      0.0110
+angcflux    29   103   176      0.0869     -0.0056      0.0777      0.0110
+angcflux    29    95   174      0.0869     -0.0056      0.0777      0.0110
+angcflux    11    29    29      0.1137     -0.0226      0.1156      0.1270
+angcflux    14    35    21      0.1137      0.0613     -0.0007     -0.0737
+angcflux    14    34    20      0.1137      0.0613     -0.0007     -0.0737
+angcflux    14    33    19      0.1137      0.0613     -0.0007     -0.0737
+angcflux    68    74   219      0.1137     -0.0144     -0.0129     -0.0736
+angcflux   120   117   200      0.1137      0.0890     -0.0007      0.0269
+angcflux   197   134   201      0.1137      0.0630      0.1827      0.1827
+angcflux   197   127   201      0.1137      0.0630      0.1827      0.1827
+angcflux   125   104   171      0.1137     -0.0414      0.1168      0.0882
+angcflux    29   117   200      0.1305      0.1103     -0.1449     -0.2103
+angcflux    52    80   213      0.1305      0.0790      0.0752     -0.0094
+angcflux   142   121   200      0.1305      0.0501     -0.0712     -0.1304
+angcflux   199   117   200      0.1305     -0.0128      0.1663      0.1509
+angcflux    24   179    95      0.1305      0.1968     -0.0621     -0.1304
+angcflux    17   213    80      0.1305      0.0696     -0.1052     -0.0610
+angcflux   159   158   200      0.1305      0.0791     -0.0105     -0.0164
+angcflux    24   179    92      0.1305      0.0955     -0.0947     -0.1642
+angcflux    35    80   219      0.1305      0.1137     -0.0209     -0.0343
+angcflux    34    80   219      0.1305      0.1137     -0.0209     -0.0343
+angcflux    53    80   219      0.1305      0.1137     -0.0209     -0.0343
+angcflux    32    80   219      0.1305      0.1137     -0.0209     -0.0343
+angcflux    33    80   219      0.1305      0.1137     -0.0209     -0.0343
+angcflux    44    80   219      0.1305      0.1137     -0.0209     -0.0343
+angcflux   200   130   200      0.1305      0.1305     -0.0987     -0.0987
+angcflux   200   161   200      0.1305      0.1305     -0.0987     -0.0987
+angcflux    12    59    19      0.1394      0.0302     -0.0130     -0.0209
+angcflux    12    59    20      0.1394      0.0302     -0.0130     -0.0209
+angcflux    12    58    19      0.1394      0.0302     -0.0130     -0.0209
+angcflux    12    58    20      0.1394      0.0302     -0.0130     -0.0209
+angcflux    12    58    21      0.1394      0.0302     -0.0130     -0.0209
+angcflux    11    56    19      0.1394      0.0169      0.0355     -0.0042
+angcflux    23   117    29      0.1394      0.1137     -0.1052     -0.1014
+angcflux    12    60    12      0.1394      0.1394     -0.0007     -0.0007
+angcflux    12    60    19      0.1394      0.0160      0.0000     -0.0105
+angcflux    52    74   219      0.1054      0.1054     -0.0484      0.0354
+angcflux    24   182    92      0.1054      0.1394     -0.0504     -0.1304
+angcflux    24   176    92      0.1054      0.1394     -0.0504     -0.1304
+angcflux    52    69   219      0.1054      0.1540     -0.0736     -0.0002
+angcflux    52    80   219      0.1369      0.1378     -0.0712     -0.0103
+angcflux    13    29    29      0.1369     -0.0147      0.1003      0.0882
+angcflux    14    29    29      0.1369     -0.0303      0.1156      0.0377
+angcflux   213    91   219      0.1369      0.0613      0.1827      0.1003
+angcflux   213    86   219      0.1369      0.0613      0.1827      0.1003
+angcflux   213    96   219      0.1369      0.0613      0.1827      0.1003
+angcflux   213    85   219      0.1369      0.0613      0.1827      0.1003
+angcflux   213    84   219      0.1369      0.0613      0.1827      0.1003
+angcflux   213    89   219      0.1369      0.0613      0.1827      0.1003
+angcflux    35    80   213      0.1369      0.1029      0.0998     -0.0117
+angcflux    34    80   213      0.1369      0.1029      0.0998     -0.0117
+angcflux    53    80   213      0.1369      0.1029      0.0998     -0.0117
+angcflux    32    80   213      0.1369      0.1029      0.0998     -0.0117
+angcflux    33    80   213      0.1369      0.1029      0.0998     -0.0117
+angcflux    35    87   219      0.1369      0.1975     -0.0621     -0.0279
+angcflux    34    98   219      0.1369      0.1975     -0.0621     -0.0279
+angcflux    34    97   219      0.1369      0.1975     -0.0621     -0.0279
+angcflux    34    99   219      0.1369      0.1975     -0.0621     -0.0279
+angcflux    34    75   219      0.1369      0.1975     -0.0621     -0.0279
+angcflux    33    87   219      0.1369      0.1975     -0.0621     -0.0279
+angcflux    47    48   219      0.1369      0.1975     -0.0621     -0.0279
+angcflux    43    81   219      0.1369      0.1975     -0.0621     -0.0279
+angcflux    43    94   219      0.1369      0.1975     -0.0621     -0.0279
+angcflux    39    82   219      0.1369      0.1975     -0.0621     -0.0279
+angcflux    34    87   219      0.1369      0.1975     -0.0621     -0.0279
+angcflux    35   100   241      0.1369      0.1378     -0.0736      0.0009
+angcflux    35   101   242      0.1369      0.1378     -0.0736      0.0009
+angcflux    33   101   242      0.1369      0.1378     -0.0736      0.0009
+angcflux    34   100   241      0.1369      0.1378     -0.0736      0.0009
+angcflux    35    92   219      0.1369      0.0869     -0.0350     -0.0138
+angcflux    34    92   219      0.1369      0.0869     -0.0350     -0.0138
+angcflux    33    92   219      0.1369      0.0869     -0.0350     -0.0138
+angcflux    47    92   219      0.1369      0.0869     -0.0350     -0.0138
+angcflux    44    92   219      0.1369      0.0869     -0.0350     -0.0138
+angcflux    39    92   219      0.1369      0.0869     -0.0350     -0.0138
+angcflux    24   171   104      0.1378      0.1968     -0.0902     -0.1823
+angcflux    12    59    12      0.1378      0.1378      0.0245      0.0245
+angcflux    12    61    12      0.1378      0.1378      0.0245      0.0245
+angcflux    11    55    19      0.1378      0.0134      0.0188     -0.0113
+angcflux    11    55    20      0.1378      0.0134      0.0188     -0.0113
+angcflux    11    35    21      0.1378      0.0134      0.0188     -0.0113
+angcflux    11    34    20      0.1378      0.0134      0.0188     -0.0113
+angcflux    11    33    19      0.1378      0.0134      0.0188     -0.0113
+angcflux    52    83   219      0.1378      0.1968     -0.0164     -0.0002
+angcflux    34    83   219      0.1378      0.1892     -0.0615     -0.0062
+angcflux    35    83   219      0.1378      0.1892     -0.0615     -0.0062
+angcflux    33    83   219      0.1378      0.1892     -0.0615     -0.0062
+angcflux   118    95   179      0.1540     -0.0983      0.0777      0.0752
+angcflux   141    95   179      0.1540     -0.0584      0.0377      0.0377
+angcflux    11    55    11      0.1540      0.1540      0.0374      0.0374
+angcflux    11    57    11      0.1540      0.1540      0.0374      0.0374
+angcflux    29    95   179      0.1968     -0.0661      0.0659      0.0659
+angcflux   132    95   179      0.1968     -0.0661      0.0659      0.0659
+angcflux   130    95   179      0.1968     -0.0661      0.0659      0.0659
+angcflux   147    95   179      0.1968     -0.0661      0.0659      0.0659
+angcflux   150    95   179      0.1968     -0.0661      0.0659      0.0659
+angcflux   143    95   179      0.1968     -0.0661      0.0659      0.0659
+angcflux    17   212    35      0.1968     -0.0120     -0.0279     -0.0033
+angcflux    17   212    34      0.1968     -0.0120     -0.0279     -0.0033
+angcflux    17   212    33      0.1968     -0.0120     -0.0279     -0.0033
+angcflux    17   212    43      0.1968     -0.0120     -0.0279     -0.0033
+angcflux    17   212    49      0.1968     -0.0120     -0.0279     -0.0033
+angcflux    17   212    39      0.1968     -0.0120     -0.0279     -0.0033
+angcflux    17   212    41      0.1968     -0.0120     -0.0279     -0.0033
+angcflux    17   212    32      0.1968     -0.0120     -0.0279     -0.0033
+angcflux    17   212    44      0.1968     -0.0120     -0.0279     -0.0033
+angcflux    17   212    45      0.1968     -0.0120     -0.0279     -0.0033
+angcflux    11    56    11      0.1968      0.1968     -0.0318     -0.0318
+angcflux    13    99    34      0.1892     -0.0584      0.0009      0.0735
+angcflux    24   197    24      0.2000      0.2000      0.0451      0.0451
+angcflux    24   180    24      0.2000      0.2000      0.0451      0.0451
+angcflux    27   178    27      0.2000      0.2000      0.0451      0.0451
+angcflux    29    73   219      0.2315      0.0134      0.0391     -0.0018
+angcflux    29    85   219      0.2315      0.0134      0.0391     -0.0018
+angcflux    29    95   219      0.2315      0.0134      0.0391     -0.0018
+angcflux    29   105   219      0.2315      0.0134      0.0391     -0.0018
+angcflux   132    95   219      0.2315      0.0134      0.0391     -0.0018
+angcflux   130    95   219      0.2315      0.0134      0.0391     -0.0018
+angcflux   147    95   219      0.2315      0.0134      0.0391     -0.0018
+angcflux   150    95   219      0.2315      0.0134      0.0391     -0.0018
+angcflux   143    95   219      0.2315      0.0134      0.0391     -0.0018
+angcflux   143    73   219      0.2315      0.0134      0.0391     -0.0018
+angcflux    24   197   127      0.2315      0.0530     -0.0736     -0.0712
+angcflux    24   197   134      0.2315      0.0530     -0.0736     -0.0712
+angcflux    24   197   128      0.2315      0.0530     -0.0736     -0.0712
+angcflux    24   197    29      0.2315      0.0530     -0.0736     -0.0712
+angcflux    24   199    29      0.2315      0.0530     -0.0736     -0.0712
+angcflux    24   176    29      0.2315      0.0530     -0.0736     -0.0712
+angcflux    24   197    30      0.2315      0.0530     -0.0736     -0.0712
+angcflux    29   199    29      0.2536      0.2536     -0.2128     -0.2128
+angcflux    29   199   117      0.2536      0.2315     -0.2506     -0.2128
+angcflux   143    74   219      0.2536      0.0160      0.0704      0.0013
+angcflux    29    74   219      0.2536      0.0160      0.0704      0.0013
+angcflux   141    95   219      0.2536      0.0065      0.0178      0.0134
+angcflux   118    95   219      0.2536      0.0160      0.0178     -0.0022
