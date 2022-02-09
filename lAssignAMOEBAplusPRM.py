@@ -146,85 +146,63 @@ def assignNonbonded(fname, tinkerkey):
   return True
 
 def assignCFlux(fname, tinkerkey):
-  # map from tinker type number to smart type string
-  # this will be used by bndcflux and angcflux
-  # !!! pay attention to the atom type/class
-  # here I am using atom type (index {1}) 
-  ttypes, stypes = np.loadtxt(f"{fname}.type.cf", usecols=(1,3), unpack=True, dtype="str")
-  tinker2smarts = dict(zip(ttypes, stypes))
-  #cflux-b
-  '''bond cflux atom indices are interchangable'''
-  type1, type2, jbonds = np.loadtxt(os.path.join(prmfiledir,"cfbond.prm"), usecols=(-2,-1,1), unpack=True, dtype="str",skiprows=1)
-  types = []
-  for t1, t2 in zip(type1, type2):
-    types.append(t1 + "_" + t2)
-  smartsCFbondDict = dict(zip(types, jbonds))
+  # read in atom classes and short types (stype) 
+  classs, stypes = np.loadtxt(f"{fname}.type.cf", usecols=(2,3), unpack=True, dtype="str")
+  class2stype = dict(zip(classs, stypes))
+  
+  # read in the database CFlux parameters
+  # store two sets of parameters
+  lines = open(os.path.join(prmfiledir,"cflux2022.prm")).readlines()
+  stype2param = {}
+  for line in lines:
+    s = line.split()
+    #bndcflux
+    if len(s) == 2: 
+      key0, value0 = s[0], f"{float(s[1]):10.5f}"
+      k = key0.split("_")
+      key1 = '_'.join([k[1], k[0]])
+      value1 = "%10.5f"%(-float(s[1]))
+      stype2param[key0] = value0
+      stype2param[key1] = value1
+    #angcflux
+    if len(s) == 5: 
+      key0, value0 = s[0], f"{float(s[1]):10.5f}{float(s[2]):10.5f}{float(s[3]):10.5f}{float(s[4]):10.5f}"
+      k = key0.split("_")
+      key1 = '_'.join([k[2], k[1], k[0]])
+      value1 = f"{float(s[2]):10.5f}{float(s[1]):10.5f}{float(s[4]):10.5f}{float(s[3]):10.5f}"
+      stype2param[key0] = value0
+      stype2param[key1] = value1
+  
+  # assign parameters 
   lines = open(tinkerkey).readlines()
-
   with open(tinkerkey + "_cf","w") as f:
-    f.write("# CHGFLX parameters assigned from database\n")
     for line in lines:
       if "bond " in line:
-        dd = line.split()
-        if (dd[1] in ttypes) and (dd[2] in ttypes):
-          s1 = tinker2smarts[dd[1]]
-          s2 = tinker2smarts[dd[2]]
-          comb1 = s1 + "_" + s2
-          comb2 = s2 + "_" + s1
-          if comb1 in smartsCFbondDict:
-            f.write("bndcflux %s %s %10.5f\n"%(dd[1], dd[2], float(smartsCFbondDict[comb1])))
-            print(GREEN + "CFlux parameter assigned for bond %s-%s"%(dd[1], dd[2]) + ENDC)
-          elif comb2 in smartsCFbondDict:
-            f.write("bndcflux %s %s %10.5f\n"%(dd[1], dd[2], float(smartsCFbondDict[comb2])))
-            print(GREEN + "CFlux parameter assigned for bond %s-%s"%(dd[1], dd[2]) + ENDC)
+        d = line.split()
+        if set(d[1:3]).issubset(set(classs)):
+          s1 = class2stype[d[1]]
+          s2 = class2stype[d[2]]
+          comb = s1 + "_" + s2
+          if comb in stype2param:
+            f.write("bndcflux %s %s %s\n"%(d[1], d[2], stype2param[comb]))
+            print(GREEN + "CFlux parameter assigned for bond %s-%s"%(d[1], d[2]) + ENDC)
           else:
-            print(RED + "CFlux parameter NOT found for bond %s-%s"%(dd[1], dd[2]) + ENDC)
-
-  #cflux-a
-  '''angle cflux in parameter file is in the right order for jt1,jt2,jb1,jb2'''
-  '''when assign parameters, need to first sort the angle atom indices, then to match database'''
-  type1, type2, type3  = np.loadtxt(os.path.join(prmfiledir,"cfangle.prm"), usecols=(-3, -2, -1), unpack=True, dtype="str",skiprows=1)
-  jtheta1, jtheta2, jbond1, jbond2  = np.loadtxt(os.path.join(prmfiledir,"cfangle.prm"), usecols=(1, 2, 3, 4), unpack=True, dtype="float",skiprows=1)
-
-  types = []
-  jparams = []
-
-  '''store two sets of parameters considering the assymetry of angle-cflux'''
-  for t1, t2, t3 in zip(type1, type2, type3):
-    types.append(t1 + "_" + t2 + "_" + t3)
-    types.append(t3 + "_" + t2 + "_" + t1)
-
-  for jt1, jt2, jb1, jb2 in zip(jtheta1, jtheta2, jbond1, jbond2):
-    # convert jt unit from e/degree to e/radian
-    '''this will be compatitable with new tinker version >= 8.7'''
-    jt1 *= 57.2958
-    jt2 *= 57.2958
-    jparams.append(" ".join(["%10.5f"%jt1, "%10.5f"%jt2, "%10.5f"%jb1, "%10.5f"%jb2]))
-    jparams.append(" ".join(["%10.5f"%jt2, "%10.5f"%jt1, "%10.5f"%jb2, "%10.5f"%jb1]))
-  
-  smartsCFangleDict = dict(zip(types, jparams))
-  
-  with open(tinkerkey + "_cf", "a") as f:
-    for line in lines:
-      if "angle " in line:
-        dd = line.split()
-        angletype1 = dd[1]
-        angletype2 = dd[2]
-        angletype3 = dd[3]
-        if (angletype1 in ttypes) and (angletype2 in ttypes) and (angletype3 in ttypes):
-          '''always make sure type1 <= type3'''
-          if int(angletype1) > int(angletype3):
-            angletype1, angletype3 = angletype3, angletype1
-            print("flipped angletype1 and angletype3")
-          s1 = tinker2smarts[angletype1]
-          s2 = tinker2smarts[angletype2]
-          s3 = tinker2smarts[angletype3]
-          comb = s1 + "_" + s2 + "_" + s3
-          if comb in smartsCFangleDict:
-            f.write("angcflux %s %s %s %s\n"%(angletype1, angletype2, angletype3, smartsCFangleDict[comb]))
-            print(GREEN + "CFlux parameters found for angle %s-%s-%s"%(angletype1, angletype2, angletype3) + ENDC)
+            print(RED + "CFlux parameter NOT found for bond %s-%s"%(d[1], d[2]) + ENDC)
+      if ("angle " in line) or ("anglep " in line):
+        d = line.split()
+        if set(d[1:4]).issubset(set(classs)):
+          s1 = class2stype[d[1]]
+          s2 = class2stype[d[2]]
+          s3 = class2stype[d[3]]
+          if int(d[1]) > int(d[3]):
+            s1, s3 = s3, s1
+            d[1], d[3] = d[3], d[1]
+          comb = f"{s1}_{s2}_{s3}"
+          if comb in stype2param:
+            f.write("angcflux %s %s %s %s\n"%(d[1], d[2], d[3], stype2param[comb]))
+            print(GREEN + "CFlux parameter assigned for angle %s-%s-%s"%(d[1], d[2], d[3]) + ENDC)
           else:
-            print(RED + "CFlux parameters NOT found for angle %s-%s-%s"%(angletype1, angletype2, angletype3) + ENDC)
+            print(RED + "CFlux parameter NOT found for bond %s-%s-%s"%(d[1], d[2], d[3]) + ENDC)
   return True
 
 def assignBonded(fname, tinkerkey, new_para_method, fitting = "NO"):
