@@ -256,6 +256,7 @@ def assignCFlux(fname, tinkerkey):
   
   # assign parameters 
   lines = open(tinkerkey).readlines()
+  if_error = False
   with open(tinkerkey + "_cf","w") as f:
     for line in lines:
       if "bond " in line:
@@ -270,7 +271,7 @@ def assignCFlux(fname, tinkerkey):
           else:
             print(RED + "CFlux parameter NOT found for bond %s-%s"%(d[1], d[2]) + ENDC)
             print(RED + "Try to find CF parameters in general CF database")
-            assignCFlux_general(fname, tinkerkey)
+            if_error = True
             break
       if ("angle " in line) or ("anglep " in line):
         d = line.split()
@@ -288,8 +289,10 @@ def assignCFlux(fname, tinkerkey):
           else:
             print(RED + "CFlux parameter NOT found for bond %s-%s-%s"%(d[1], d[2], d[3]) + ENDC)
             print(RED + "Try to find CF parameters in general CF database")
-            assignCFlux_general(fname, tinkerkey)
+            if_error = True
             break
+  if(if_error):
+    assignCFlux_general(fname, tinkerkey)
   return True
 
 def assignBonded(fname, tinkerkey, new_para_method, fitting = "NO"):
