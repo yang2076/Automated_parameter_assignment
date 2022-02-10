@@ -223,7 +223,7 @@ def assignCFlux_general(fname, tinkerkey):
             f.write("angcflux %s %s %s %s\n"%(d[1], d[2], d[3], stype2param[comb]))
             print(GREEN + "CFlux parameter assigned for angle %s-%s-%s"%(d[1], d[2], d[3]) + ENDC)
           else:
-            print(RED + "CFlux parameter NOT found for bond %s-%s-%s"%(d[1], d[2], d[3]) + ENDC)
+            print(RED + "CFlux parameter NOT found for angle %s-%s-%s"%(d[1], d[2], d[3]) + ENDC)
   return True
 
 def assignCFlux(fname, tinkerkey):
@@ -270,7 +270,7 @@ def assignCFlux(fname, tinkerkey):
             print(GREEN + "CFlux parameter assigned for bond %s-%s"%(d[1], d[2]) + ENDC)
           else:
             print(RED + "CFlux parameter NOT found for bond %s-%s"%(d[1], d[2]) + ENDC)
-            print(RED + "Try to find CF parameters in general CF database")
+            print(RED + "Try to find CF parameters for this molecule in general CF database")
             if_error = True
             break
       if ("angle " in line) or ("anglep " in line):
@@ -287,8 +287,8 @@ def assignCFlux(fname, tinkerkey):
             f.write("angcflux %s %s %s %s\n"%(d[1], d[2], d[3], cftype2param[comb]))
             print(GREEN + "CFlux parameter assigned for angle %s-%s-%s"%(d[1], d[2], d[3]) + ENDC)
           else:
-            print(RED + "CFlux parameter NOT found for bond %s-%s-%s"%(d[1], d[2], d[3]) + ENDC)
-            print(RED + "Try to find CF parameters in general CF database")
+            print(RED + "CFlux parameter NOT found for angle %s-%s-%s"%(d[1], d[2], d[3]) + ENDC)
+            print(RED + "Try to find CF parameters for this molecule in general CF database")
             if_error = True
             break
   if(if_error):
