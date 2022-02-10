@@ -173,7 +173,7 @@ def assignCFlux_general(fname, tinkerkey):
   
   # read in the database CFlux parameters
   # store two sets of parameters
-  lines = open(os.path.join(prmfiledir,"cflux2022.prm")).readlines()
+  lines = open(os.path.join(prmfiledir,"cflux2022_general.prm")).readlines()
   stype2param = {}
   for line in lines:
     s = line.split()
