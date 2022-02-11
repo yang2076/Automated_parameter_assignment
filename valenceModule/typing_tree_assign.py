@@ -3,14 +3,28 @@ import sys
 import numpy as np
 from valenceModule.typing_tree import typing_tree
 
+def wild_type_check(atoms):
+  for i, j in enumerate(atoms):
+    if(int(j) == 2 ):   atoms[i] = '35' 
+    elif(int(j) == 3 ): atoms[i] = '29' 
+    elif(int(j) == 4 ): atoms[i] = '171' 
+    elif(int(j) == 5 ): atoms[i] = '169' 
+    elif(int(j) == 6 ): atoms[i] = '223' 
+    elif(int(j) == 8 ): atoms[i] = '271' 
+    elif(int(j) == 9 ): atoms[i] = '252' 
+    elif(int(j) == 10): atoms[i] = '252' 
+
 def typing_tree_assign(typing_tree, term, comb, classParameterDict):
 
   # Bond stretching terms
   if(term == 'b'):
     atoms = comb.split('_')
+    # check if there is wild type and assign them a general type
+    wild_type_check(atoms)
+
     lists_1 = typing_tree.search_in_tree(max(int(atoms[0]),int(atoms[1])))
     lists_2 = typing_tree.search_in_tree(min(int(atoms[0]),int(atoms[1])))
-    
+
     # check if there is H (HCH, HCH2, HCH3 and so on)
     if(int(atoms[0]) == 1 or int(atoms[0]) in range(16,29)):
       for i in lists_1:
@@ -95,6 +109,9 @@ def typing_tree_assign(typing_tree, term, comb, classParameterDict):
   # Angle bending terms
   if(term == 'a'):
     atoms = comb.split('_')
+    # check if there is wild type and assign them a general type
+    wild_type_check(atoms)
+
     lists_1 = typing_tree.search_in_tree(int(atoms[0]))
     lists_2 = typing_tree.search_in_tree(int(atoms[1]))
     lists_3 = typing_tree.search_in_tree(int(atoms[2]))
@@ -228,6 +245,9 @@ def typing_tree_assign(typing_tree, term, comb, classParameterDict):
   # strbnd terms
   if(term == 'ba'):
     atoms = comb.split('_')
+    # check if there is wild type and assign them a general type
+    wild_type_check(atoms)
+
     lists_1 = typing_tree.search_in_tree(int(atoms[0]))
     lists_2 = typing_tree.search_in_tree(int(atoms[1]))
     lists_3 = typing_tree.search_in_tree(int(atoms[2]))
@@ -361,6 +381,9 @@ def typing_tree_assign(typing_tree, term, comb, classParameterDict):
   # Opbend terms
   if(term == 'o'):
     atoms = comb.split('_')
+    # check if there is wild type and assign them a general type
+    wild_type_check(atoms)
+
     lists_1 = typing_tree.search_in_tree(max(int(atoms[0]),int(atoms[1])))
     lists_2 = typing_tree.search_in_tree(min(int(atoms[0]),int(atoms[1])))
 
