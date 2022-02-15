@@ -19,6 +19,7 @@ from valenceModule.modified_Seminario import *
 # color
 RED = '\033[91m'
 GREEN = '\033[92m'
+YELLOW = '\033[93m'
 ENDC = '\033[0m'
 
 def genAtomType(txyz, key, potent):
@@ -208,7 +209,24 @@ def assignCFlux_general(fname, tinkerkey):
             f.write("bndcflux %s %s %s\n"%(d[1], d[2], stype2param[comb]))
             print(GREEN + "CFlux parameter assigned for bond %s-%s"%(d[1], d[2]) + ENDC)
           else:
-            print(RED + "CFlux parameter NOT found for bond %s-%s"%(d[1], d[2]) + ENDC)
+            print(RED + f"CFlux parameter NOT found for bond %s-%s with type {comb}"%(d[1], d[2]) + ENDC)
+            
+            # do an average 
+            jb1, jb2 = [], []
+            s1_ = s1[0] + 'other'
+            s2_ = s2[0] + 'other'
+            for n1 in [s1, s1_]:
+              for n2 in [s2, s2_]:
+                combn = f"{n1}_{n2}"
+                if (combn in stype2param):
+                  p = stype2param[combn].split()
+                  jb1.append(float(p[0]))
+                  jb2.append(float(p[1]))
+            jb1 = "%10.5f"%np.array(jb1).mean()
+            jb2 = "%10.5f"%np.array(jb2).mean()
+            f.write("bndcflux %s %s %s\n"%(d[1], d[2], ''.join([jb1, jb2])))
+            print(YELLOW + f"CFlux parameter GENERATED for bond %s-%s"%(d[1], d[2]) + ENDC)
+      
       if ("angle " in line) or ("anglep " in line):
         d = line.split()
         if set(d[1:4]).issubset(set(classs)):
@@ -223,7 +241,26 @@ def assignCFlux_general(fname, tinkerkey):
             f.write("angcflux %s %s %s %s\n"%(d[1], d[2], d[3], stype2param[comb]))
             print(GREEN + "CFlux parameter assigned for angle %s-%s-%s"%(d[1], d[2], d[3]) + ENDC)
           else:
-            print(RED + "CFlux parameter NOT found for angle %s-%s-%s"%(d[1], d[2], d[3]) + ENDC)
+            print(RED + f"CFlux parameter NOT found for angle %s-%s-%s with type {comb}"%(d[1], d[2], d[3]) + ENDC)
+            # do an average 
+            jt1, jt2, jb1, jb2 = [], [], [], [] 
+            s1_ = s1[0] + 'other'
+            s3_ = s3[0] + 'other'
+            for n1 in [s1, s1_]:
+              for n3 in [s3, s3_]:
+                combn = f"{n1}_{s2}_{n3}"
+                if combn in stype2param:
+                  p = stype2param[combn].split()
+                  jt1.append(float(p[0]))
+                  jt2.append(float(p[1]))
+                  jb1.append(float(p[2]))
+                  jb2.append(float(p[3]))
+            jt1 = "%10.5f"%np.array(jt1).mean()
+            jt2 = "%10.5f"%np.array(jt2).mean()
+            jb1 = "%10.5f"%np.array(jb1).mean()
+            jb2 = "%10.5f"%np.array(jb2).mean()
+            f.write("angcflux %s %s %s %s\n"%(d[1], d[2], d[3], ''.join([jt1, jt2, jb1, jb2])))
+            print(YELLOW + f"CFlux parameter GENERATED for angle %s-%s-%s"%(d[1], d[2], d[3]) + ENDC)
   return True
 
 def assignCFlux(fname, tinkerkey):
