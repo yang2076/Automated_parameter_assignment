@@ -3,16 +3,42 @@ import sys
 import numpy as np
 from valenceModule.typing_tree import typing_tree
 
+# color
+RED = '\033[91m'
+
+def wild_type_warning(message):
+  print(RED + f"Warning wild match type for {message[0]}, use {message[1]} here automatically. Please check your structure")
+
 def wild_type_check(atoms):
+  is_wild = False
   for i, j in enumerate(atoms):
-    if(int(j) == 2 ):   atoms[i] = '35' 
-    elif(int(j) == 3 ): atoms[i] = '29' 
-    elif(int(j) == 4 ): atoms[i] = '171' 
-    elif(int(j) == 5 ): atoms[i] = '169' 
-    elif(int(j) == 6 ): atoms[i] = '223' 
-    elif(int(j) == 8 ): atoms[i] = '271' 
-    elif(int(j) == 9 ): atoms[i] = '252' 
-    elif(int(j) == 10): atoms[i] = '252' 
+    if(int(j) >= 2 and int(j) <= 10):
+      is_wild = True
+    if(int(j) == 2 ):
+      atoms[i] = '35'
+      wild_type_warning(['C', 'sp3 C (C33)'])
+    elif(int(j) == 3 ):
+      atoms[i] = '29' 
+      wild_type_warning(['c', 'general aromatic c (car)'])
+    elif(int(j) == 4 ):
+      atoms[i] = '171' 
+      wild_type_warning(['N', 'sp3 N (N3)'])
+    elif(int(j) == 5 ):
+      atoms[i] = '169'
+      wild_type_warning(['n', 'general aromatic n (nar)'])
+    elif(int(j) == 6 ):
+      atoms[i] = '223'
+      wild_type_warning(['O', 'sp3 O (OR2)'])
+    elif(int(j) == 8 ):
+      atoms[i] = '271'
+      wild_type_warning(['P', 'Phosphate P (PO4)'])
+    elif(int(j) == 9 ):
+      atoms[i] = '252'
+      wild_type_warning(['S', 'sp3 S (SC2)'])
+    elif(int(j) == 10):
+      atoms[i] = '252'
+      wild_type_warning(['s', 'sp3 S (SC2)'])
+  return is_wild
 
 def typing_tree_assign(typing_tree, term, comb, classParameterDict):
 
@@ -20,7 +46,7 @@ def typing_tree_assign(typing_tree, term, comb, classParameterDict):
   if(term == 'b'):
     atoms = comb.split('_')
     # check if there is wild type and assign them a general type
-    wild_type_check(atoms)
+    is_wild = wild_type_check(atoms)
 
     lists_1 = typing_tree.search_in_tree(max(int(atoms[0]),int(atoms[1])))
     lists_2 = typing_tree.search_in_tree(min(int(atoms[0]),int(atoms[1])))
@@ -31,17 +57,17 @@ def typing_tree_assign(typing_tree, term, comb, classParameterDict):
         comb_1 = str(i) + '_' + atoms[1]
         comb_2 = atoms[1] + '_' + str(i)
         if(comb_1 in classParameterDict):
-          return (comb, classParameterDict[comb_1])
+          return (comb, classParameterDict[comb_1], is_wild)
         if(comb_2 in classParameterDict):
-          return (comb, classParameterDict[comb_2])
+          return (comb, classParameterDict[comb_2], is_wild)
     if(int(atoms[1]) == 1 or int(atoms[1]) in range(16,29)):
       for i in lists_1:
         comb_1 = str(i) + '_' + atoms[0]
         comb_2 = atoms[0] + '_' + str(i)
         if(comb_1 in classParameterDict):
-          return (comb, classParameterDict[comb_1])
+          return (comb, classParameterDict[comb_1], is_wild)
         elif(comb_2 in classParameterDict):
-          return (comb, classParameterDict[comb_2])
+          return (comb, classParameterDict[comb_2], is_wild)
 
     # check if there is any canonical sp3 C
     collect = []
@@ -81,7 +107,7 @@ def typing_tree_assign(typing_tree, term, comb, classParameterDict):
       ave0 = np.array(collect_1)[:,0].mean()
       ave1 = np.array(collect_1)[:,1].mean()
       average = (ave0, ave1)
-      return (comb, average)
+      return (comb, average, is_wild)
     else:
       pass
 
@@ -102,7 +128,7 @@ def typing_tree_assign(typing_tree, term, comb, classParameterDict):
       ave0 = np.array(collect_1)[:5,0].mean()
       ave1 = np.array(collect_1)[:5,1].mean()
       average = (ave0, ave1)
-      return (comb, average)
+      return (comb, average, is_wild)
     else:
       pass
 
@@ -110,7 +136,7 @@ def typing_tree_assign(typing_tree, term, comb, classParameterDict):
   if(term == 'a'):
     atoms = comb.split('_')
     # check if there is wild type and assign them a general type
-    wild_type_check(atoms)
+    is_wild = wild_type_check(atoms)
 
     lists_1 = typing_tree.search_in_tree(int(atoms[0]))
     lists_2 = typing_tree.search_in_tree(int(atoms[1]))
@@ -122,17 +148,17 @@ def typing_tree_assign(typing_tree, term, comb, classParameterDict):
         comb_1 = str(i) + '_' + atoms[1] + '_' + atoms[2]
         comb_2 = atoms[2] + '_' + atoms[1] + '_' + str(i)
         if(comb_1 in classParameterDict):
-          return (comb, classParameterDict[comb_1])
+          return (comb, classParameterDict[comb_1], is_wild)
         if(comb_2 in classParameterDict):
-          return (comb, classParameterDict[comb_2])
+          return (comb, classParameterDict[comb_2], is_wild)
     if(int(atoms[2]) == 1 or int(atoms[2]) in range(16,29)):
       for i in lists_3:
         comb_1 = str(i) + '_' + atoms[1] + '_' + atoms[0]
         comb_2 = atoms[0] + '_' + atoms[1] + '_' + str(i)
         if(comb_1 in classParameterDict):
-          return (comb, classParameterDict[comb_1])
+          return (comb, classParameterDict[comb_1], is_wild)
         elif(comb_2 in classParameterDict):
-          return (comb, classParameterDict[comb_2])
+          return (comb, classParameterDict[comb_2], is_wild)
 
     # check if there is any canonical sp3 C
     collect = []
@@ -216,7 +242,7 @@ def typing_tree_assign(typing_tree, term, comb, classParameterDict):
       ave0 = np.array(collect_1)[:,0].mean()
       ave1 = np.array(collect_1)[:,1].mean()
       average = (ave0, ave1)
-      return (comb, average)
+      return (comb, average, is_wild)
     else:
       pass
 
@@ -238,7 +264,7 @@ def typing_tree_assign(typing_tree, term, comb, classParameterDict):
       ave0 = np.array(collect_1)[:5, 0].mean()
       ave1 = np.array(collect_1)[:5, 1].mean()
       average = (ave0, ave1)
-      return (comb, average)
+      return (comb, average, is_wild)
     else:
       pass
 
@@ -246,7 +272,7 @@ def typing_tree_assign(typing_tree, term, comb, classParameterDict):
   if(term == 'ba'):
     atoms = comb.split('_')
     # check if there is wild type and assign them a general type
-    wild_type_check(atoms)
+    is_wild = wild_type_check(atoms)
 
     lists_1 = typing_tree.search_in_tree(int(atoms[0]))
     lists_2 = typing_tree.search_in_tree(int(atoms[1]))
@@ -258,17 +284,17 @@ def typing_tree_assign(typing_tree, term, comb, classParameterDict):
         comb_1 = str(i) + '_' + atoms[1] + '_' + atoms[2]
         comb_2 = atoms[2] + '_' + atoms[1] + '_' + str(i)
         if(comb_1 in classParameterDict):
-          return (comb, classParameterDict[comb_1])
+          return (comb, classParameterDict[comb_1], is_wild)
         if(comb_2 in classParameterDict):
-          return (comb, classParameterDict[comb_2])
+          return (comb, classParameterDict[comb_2], is_wild)
     if(int(atoms[2]) == 1 or int(atoms[2]) in range(16,29)):
       for i in lists_3:
         comb_1 = str(i) + '_' + atoms[1] + '_' + atoms[0]
         comb_2 = atoms[0] + '_' + atoms[1] + '_' + str(i)
         if(comb_1 in classParameterDict):
-          return (comb, classParameterDict[comb_1])
+          return (comb, classParameterDict[comb_1], is_wild)
         if(comb_2 in classParameterDict):
-          return (comb, classParameterDict[comb_2])
+          return (comb, classParameterDict[comb_2], is_wild)
 
     # check if there is any canonical sp3 C
     collect = []
@@ -352,7 +378,7 @@ def typing_tree_assign(typing_tree, term, comb, classParameterDict):
       ave0 = np.array(collect_1)[:,0].mean()
       ave1 = np.array(collect_1)[:,1].mean()
       average = (ave0, ave1) 
-      return (comb, average)
+      return (comb, average, is_wild)
     else:
       pass
 
@@ -374,7 +400,7 @@ def typing_tree_assign(typing_tree, term, comb, classParameterDict):
       ave0 = np.array(collect_1)[:5,0].mean()
       ave1 = np.array(collect_1)[:5,1].mean()
       average = (ave0, ave1)
-      return (comb, average)
+      return (comb, average, is_wild)
     else:
       pass
 
@@ -382,7 +408,7 @@ def typing_tree_assign(typing_tree, term, comb, classParameterDict):
   if(term == 'o'):
     atoms = comb.split('_')
     # check if there is wild type and assign them a general type
-    wild_type_check(atoms)
+    is_wild = wild_type_check(atoms)
 
     lists_1 = typing_tree.search_in_tree(max(int(atoms[0]),int(atoms[1])))
     lists_2 = typing_tree.search_in_tree(min(int(atoms[0]),int(atoms[1])))
@@ -393,17 +419,17 @@ def typing_tree_assign(typing_tree, term, comb, classParameterDict):
         comb_1 = str(i) + '_' + atoms[1]
         comb_2 = atoms[1] + '_' + str(i)
         if(comb_1 in classParameterDict):
-          return (comb, float(classParameterDict[comb_1]))
+          return (comb, float(classParameterDict[comb_1]), is_wild)
         elif(comb_2 in classParameterDict):
-          return (comb, float(classParameterDict[comb_2]))
+          return (comb, float(classParameterDict[comb_2]), is_wild)
     if(int(atoms[1]) == 1 or int(atoms[1]) in range(16,29)):
       for i in lists_1:
         comb_1 = str(i) + '_' + atoms[0]
         comb_2 = atoms[0] + '_' + str(i)
         if(comb_1 in classParameterDict):
-          return (comb, float(classParameterDict[comb_1]))
+          return (comb, float(classParameterDict[comb_1]), is_wild)
         elif(comb_2 in classParameterDict):
-          return (comb, float(classParameterDict[comb_2]))
+          return (comb, float(classParameterDict[comb_2]), is_wild)
 
     # check if there is any canonical sp3 C
     collect = []
@@ -441,7 +467,7 @@ def typing_tree_assign(typing_tree, term, comb, classParameterDict):
           collect_1.append(float(classParameterDict[comb_2]))
     if(len(collect) != 0):
       average = np.array(collect_1).mean()
-      return (comb, average)
+      return (comb, average, is_wild)
     else:
       pass
 
@@ -460,6 +486,6 @@ def typing_tree_assign(typing_tree, term, comb, classParameterDict):
           collect_1.append(float(classParameterDict[comb_2]))
     if(len(collect) != 0):
       average = np.array(collect_1[:5]).mean()
-      return (comb, average)
+      return (comb, average, is_wild)
     else:
       pass
