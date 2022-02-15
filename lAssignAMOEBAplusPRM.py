@@ -215,6 +215,10 @@ def assignCFlux_general(fname, tinkerkey):
             jb1, jb2 = [], []
             s1_ = s1[0] + 'other'
             s2_ = s2[0] + 'other'
+            if ("Cl" in s1[:2]) or ("Br" in s1[:2]):
+              s1_ = s1[0:2] + 'other'
+            if ("Cl" in s3[:2]) or ("Br" in s3[:2]):
+              s3_ = s3[0:2] + 'other'
             for n1 in [s1, s1_]:
               for n2 in [s2, s2_]:
                 combn = f"{n1}_{n2}"
@@ -243,9 +247,15 @@ def assignCFlux_general(fname, tinkerkey):
           else:
             print(RED + f"CFlux parameter NOT found for angle %s-%s-%s with type {comb}"%(d[1], d[2], d[3]) + ENDC)
             # do an average 
-            jt1, jt2, jb1, jb2 = [], [], [], [] 
+            jt1, jt2, jb1, jb2 = [], [], [], []
             s1_ = s1[0] + 'other'
             s3_ = s3[0] + 'other'
+            
+            if ("Cl" in s1[:2]) or ("Br" in s1[:2]):
+              s1_ = s1[0:2] + 'other'
+            if ("Cl" in s3[:2]) or ("Br" in s3[:2]):
+              s3_ = s3[0:2] + 'other'
+
             for n1 in [s1, s1_]:
               for n3 in [s3, s3_]:
                 combn = f"{n1}_{s2}_{n3}"
