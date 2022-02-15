@@ -41,7 +41,8 @@ python lAssignAMOEBAplusPRM.py -potent CF -xyz phenol.xyz -key phenol.key
 Go to the example folder and execute `sh run.sh`, you should be able to get the assigned parameter files including `phenol.key_boned`, `phenol.key_cf` and `phenol.key_polar`.
 
 ### Reference
-* Polarizability parameters. _Manuscript in prep_ (2021)
-* Valence parameters for organic molecules. _Submitted_ (2021)
+* Non-bonded parameters (CP, CT, and VDW) (under development), 2022
+* Atomic Polarizabilities for Interactive Dipole Induction Models. _J. Chem. Info. Model._ 2022, 62, 1, 79-87 
+* Valence Parameters for Organic molecules. _Journal of Computational Biophysics and Chemistry_ 0 0:0, 1-17
 * CF parameters for organic molecules. _J. Chem. Phys._ 153, 064103 (2020); [link](https://doi.org/10.1063/5.0016376)
 * CF model implementation & AMOEBA+ water. _J. Phys. Chem. Lett._ 2020, 11, 2, 419–426; [link](https://doi.org/10.1021/acs.jpclett.9b03489)
