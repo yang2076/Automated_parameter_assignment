@@ -212,23 +212,21 @@ def assignCFlux_general(fname, tinkerkey):
             print(RED + f"CFlux parameter NOT found for bond %s-%s with type {comb}"%(d[1], d[2]) + ENDC)
             
             # do an average 
-            jb1, jb2 = [], []
+            jb = []
             s1_ = s1[0] + 'other'
             s2_ = s2[0] + 'other'
             if ("Cl" in s1[:2]) or ("Br" in s1[:2]):
               s1_ = s1[0:2] + 'other'
-            if ("Cl" in s3[:2]) or ("Br" in s3[:2]):
-              s3_ = s3[0:2] + 'other'
+            if ("Cl" in s2[:2]) or ("Br" in s2[:2]):
+              s2_ = s2[0:2] + 'other'
             for n1 in [s1, s1_]:
               for n2 in [s2, s2_]:
                 combn = f"{n1}_{n2}"
                 if (combn in stype2param):
                   p = stype2param[combn].split()
-                  jb1.append(float(p[0]))
-                  jb2.append(float(p[1]))
-            jb1 = "%10.5f"%np.array(jb1).mean()
-            jb2 = "%10.5f"%np.array(jb2).mean()
-            f.write("bndcflux %s %s %s\n"%(d[1], d[2], ''.join([jb1, jb2])))
+                  jb.append(float(p[0]))
+            jb = "%10.5f"%np.array(jb).mean()
+            f.write("bndcflux %s %s %s\n"%(d[1], d[2], jb))
             print(YELLOW + f"CFlux parameter GENERATED for bond %s-%s"%(d[1], d[2]) + ENDC)
       
       if ("angle " in line) or ("anglep " in line):
@@ -249,26 +247,38 @@ def assignCFlux_general(fname, tinkerkey):
             # do an average 
             jt1, jt2, jb1, jb2 = [], [], [], []
             s1_ = s1[0] + 'other'
+            s2_ = s2[0] + 'other'
             s3_ = s3[0] + 'other'
             
             if ("Cl" in s1[:2]) or ("Br" in s1[:2]):
               s1_ = s1[0:2] + 'other'
+            if ("Cl" in s2[:2]) or ("Br" in s2[:2]):
+              s2_ = s2[0:2] + 'other'
             if ("Cl" in s3[:2]) or ("Br" in s3[:2]):
               s3_ = s3[0:2] + 'other'
 
             for n1 in [s1, s1_]:
-              for n3 in [s3, s3_]:
-                combn = f"{n1}_{s2}_{n3}"
-                if combn in stype2param:
-                  p = stype2param[combn].split()
-                  jt1.append(float(p[0]))
-                  jt2.append(float(p[1]))
-                  jb1.append(float(p[2]))
-                  jb2.append(float(p[3]))
-            jt1 = "%10.5f"%np.array(jt1).mean()
-            jt2 = "%10.5f"%np.array(jt2).mean()
-            jb1 = "%10.5f"%np.array(jb1).mean()
-            jb2 = "%10.5f"%np.array(jb2).mean()
+              for n2 in [s2, s2_]:
+                for n3 in [s3, s3_]:
+                  combn = f"{n1}_{n2}_{n3}"
+                  if combn in stype2param:
+                    p = stype2param[combn].split()
+                    jt1.append(float(p[0]))
+                    jt2.append(float(p[1]))
+                    jb1.append(float(p[2]))
+                    jb2.append(float(p[3]))
+            if jt1 != []:
+              jt1 = "%10.5f"%np.array(jt1).mean()
+              jt2 = "%10.5f"%np.array(jt2).mean()
+              jb1 = "%10.5f"%np.array(jb1).mean()
+              jb2 = "%10.5f"%np.array(jb2).mean()
+            else:
+              print(RED + "No similar angle found in database. Please assign by yourself" + ENDC)
+              f.write("# Please assign the following ZEROS by yourself \n")
+              jt1 = '0.0 '
+              jt2 = '0.0 '
+              jb1 = '0.0 '
+              jb2 = '0.0 '
             f.write("angcflux %s %s %s %s\n"%(d[1], d[2], d[3], ''.join([jt1, jt2, jb1, jb2])))
             print(YELLOW + f"CFlux parameter GENERATED for angle %s-%s-%s"%(d[1], d[2], d[3]) + ENDC)
   return True
