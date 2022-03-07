@@ -396,13 +396,13 @@ def assignBonded(fname, tinkerkey, new_para_method, fitting = "NO"):
           comb1 = c1 + "_" + c2
           comb2 = c2 + "_" + c1
           if comb1 in classBondParameterDict:
-            para_strings_k.append("bond %s %s %10.4f %s\n\n"%(d[1], d[2], classBondParameterDict[comb1][0], d[4]))
-            para_strings_kbt.append("bond %s %s %10.4f %10.4f\n\n"%(d[1], d[2], classBondParameterDict[comb1][0], classBondParameterDict[comb1][1]))
-            print(GREEN + "BOND stretching parameter assigned for bond %s-%s\n"%(d[1], d[2]) + ENDC)
+            para_strings_k.append("bond %s %s %10.4f %s\n"%(d[1], d[2], classBondParameterDict[comb1][0], d[4]))
+            para_strings_kbt.append("bond %s %s %10.4f %10.4f\n"%(d[1], d[2], classBondParameterDict[comb1][0], classBondParameterDict[comb1][1]))
+            print(GREEN + "BOND stretching parameter assigned for bond %s-%s"%(d[1], d[2]) + ENDC)
           elif comb2 in classBondParameterDict:
-            para_strings_k.append("bond %s %s %10.4f %s\n\n"%(d[1], d[2], classBondParameterDict[comb2][0], d[4]))
-            para_strings_kbt.append("bond %s %s %10.4f %10.4f\n\n"%(d[1], d[2], classBondParameterDict[comb2][0], classBondParameterDict[comb2][1]))
-            print(GREEN + "BOND stretching parameter assigned for bond %s-%s\n"%(d[1], d[2]) + ENDC)
+            para_strings_k.append("bond %s %s %10.4f %s\n"%(d[1], d[2], classBondParameterDict[comb2][0], d[4]))
+            para_strings_kbt.append("bond %s %s %10.4f %10.4f\n"%(d[1], d[2], classBondParameterDict[comb2][0], classBondParameterDict[comb2][1]))
+            print(GREEN + "BOND stretching parameter assigned for bond %s-%s"%(d[1], d[2]) + ENDC)
           else:
             is_wild = False
             if(new_para_method == 'DATABASE'):
@@ -413,9 +413,9 @@ def assignBonded(fname, tinkerkey, new_para_method, fitting = "NO"):
             if(fitting == 'NO'):
               if(is_wild): 
                 para_strings_k.append("# Warning! This bond involves wild type. Please check your structure\n")
-              para_strings_k.append("bond %s %s %10.4f %s\n\n"%(d[1], d[2], para[0], d[4])) # para[0]: k;  para[1]: b 
-              para_strings_kbt.append("bond %s %s %10.4f %10.4f\n\n"%(d[1], d[2], para[0], para[1]))
-              print(GREEN + "BOND stretching parameter (newly generated) assigned for bond %s-%s\n"%(d[1], d[2]) + ENDC)
+              para_strings_k.append("bond %s %s %10.4f %s\n"%(d[1], d[2], para[0], d[4])) # para[0]: k;  para[1]: b 
+              para_strings_kbt.append("bond %s %s %10.4f %10.4f\n"%(d[1], d[2], para[0], para[1]))
+              print(GREEN + "BOND stretching parameter (newly generated) assigned for bond %s-%s"%(d[1], d[2]) + ENDC)
             else:
               para_strings_k.append("bond %s %s PRM%d_ %s\n"%(d[1], d[2], len(fitting_list), d[4]))
               fitting_list.append(para)
@@ -452,13 +452,13 @@ def assignBonded(fname, tinkerkey, new_para_method, fitting = "NO"):
           comb1 = c1 + "_" + c2 + "_" + c3
           comb2 = c3 + "_" + c2 + "_" + c1
           if (comb1 in classAngleParameterDict):
-            para_strings_k.append("%s %s %s %s %10.5f %s\n\n"%(d[0], angletype1, angletype2, angletype3, classAngleParameterDict[comb1][0], d[5]))
-            para_strings_kbt.append("%s %s %s %s %10.5f %10.5f\n\n"%(d[0], angletype1, angletype2, angletype3, classAngleParameterDict[comb1][0], classAngleParameterDict[comb1][1]))
-            print(GREEN + "ANGLE bending parameter found for angle %s-%s-%s\n"%(angletype1, angletype2, angletype3) + ENDC)
+            para_strings_k.append("%s %s %s %s %10.5f %s\n"%(d[0], angletype1, angletype2, angletype3, classAngleParameterDict[comb1][0], d[5]))
+            para_strings_kbt.append("%s %s %s %s %10.5f %10.5f\n"%(d[0], angletype1, angletype2, angletype3, classAngleParameterDict[comb1][0], classAngleParameterDict[comb1][1]))
+            print(GREEN + "ANGLE bending parameter found for angle %s-%s-%s"%(angletype1, angletype2, angletype3) + ENDC)
           elif (comb2 in classAngleParameterDict):
-            para_strings_k.append("%s %s %s %s %10.5f %s\n\n"%(d[0], angletype3, angletype2, angletype1, classAngleParameterDict[comb2][0], d[5]))
-            para_strings_kbt.append("%s %s %s %s %10.5f %10.5f\n\n"%(d[0],angletype3, angletype2, angletype1, classAngleParameterDict[comb2][0], classAngleParameterDict[comb2][1]))
-            print(GREEN + "ANGLE bending parameter found for angle %s-%s-%s\n"%(angletype1, angletype2, angletype3) + ENDC)
+            para_strings_k.append("%s %s %s %s %10.5f %s\n"%(d[0], angletype3, angletype2, angletype1, classAngleParameterDict[comb2][0], d[5]))
+            para_strings_kbt.append("%s %s %s %s %10.5f %10.5f\n"%(d[0],angletype3, angletype2, angletype1, classAngleParameterDict[comb2][0], classAngleParameterDict[comb2][1]))
+            print(GREEN + "ANGLE bending parameter found for angle %s-%s-%s"%(angletype1, angletype2, angletype3) + ENDC)
           else: 
             is_wild = False
             if(new_para_method == 'DATABASE'):
@@ -469,9 +469,9 @@ def assignBonded(fname, tinkerkey, new_para_method, fitting = "NO"):
             if(fitting == 'NO'):
               if(is_wild):
                 para_strings_k.append("# Warning! This angle involves wild type. Please check your structure\n")
-              para_strings_k.append("%s %s %s %s %10.5f %s\n\n"%(d[0], angletype1, angletype2, angletype3, para[0], d[5]))
-              para_strings_kbt.append("%s %s %s %s %10.5f %s\n\n"%(d[0], angletype1, angletype2, angletype3, para[0], para[1]))
-              print(GREEN + "ANGLE bending parameter (newly generated) assigned for angle %s-%s-%s\n"%(d[1], d[2], d[3]) + ENDC)
+              para_strings_k.append("%s %s %s %s %10.5f %s\n"%(d[0], angletype1, angletype2, angletype3, para[0], d[5]))
+              para_strings_kbt.append("%s %s %s %s %10.5f %s\n"%(d[0], angletype1, angletype2, angletype3, para[0], para[1]))
+              print(GREEN + "ANGLE bending parameter (newly generated) assigned for angle %s-%s-%s"%(d[1], d[2], d[3]) + ENDC)
             else:
               para_strings_k.append("%s %s %s %s PRM%d_ %s\n"%(d[0], d[1], d[2], d[3], len(fitting_list), d[5]))
               fitting_list.append(para)
@@ -507,13 +507,13 @@ def assignBonded(fname, tinkerkey, new_para_method, fitting = "NO"):
           comb2 = c3 + "_" + c2 + "_" + c1
           if (comb1 in classStrbndKconstantDict):
             tmp = "%10.5f%10.5f"%(classStrbndKconstantDict[comb1][0], classStrbndKconstantDict[comb1][1])
-            para_strings_k.append("strbnd %s %s %s %s\n\n"%(angletype1, angletype2, angletype3, tmp))
-            para_strings_kbt.append("strbnd %s %s %s %s\n\n"%(angletype1, angletype2, angletype3, tmp))
+            para_strings_k.append("strbnd %s %s %s %s\n"%(angletype1, angletype2, angletype3, tmp))
+            para_strings_kbt.append("strbnd %s %s %s %s\n"%(angletype1, angletype2, angletype3, tmp))
             print(GREEN + "STRBND coupling parameter found for angle %s-%s-%s"%(angletype1, angletype2, angletype3) + ENDC)
           elif (comb2 in classStrbndKconstantDict):
             tmp = "%10.5f%10.5f"%(classStrbndKconstantDict[comb2][0], classStrbndKconstantDict[comb2][1])
-            para_strings_k.append("strbnd %s %s %s %s\n\n"%(angletype3, angletype2, angletype1, tmp))
-            para_strings_kbt.append("strbnd %s %s %s %s\n\n"%(angletype3, angletype2, angletype1, tmp))
+            para_strings_k.append("strbnd %s %s %s %s\n"%(angletype3, angletype2, angletype1, tmp))
+            para_strings_kbt.append("strbnd %s %s %s %s\n"%(angletype3, angletype2, angletype1, tmp))
             print(GREEN + "STRBND coupling parameter found for angle %s-%s-%s"%(angletype1, angletype2, angletype3) + ENDC)
           else: 
             _, para, is_wild = typing_tree_assign(tree_1, 'ba', comb1, classStrbndKconstantDict)
@@ -522,9 +522,9 @@ def assignBonded(fname, tinkerkey, new_para_method, fitting = "NO"):
                 para_strings_k.append("# Warning! This strbnd involves wild type. Please check your structure\n")
               p0 = "%10.5f"%para[0] 
               p1 = "%10.5f"%para[1] 
-              para_strings_k.append("strbnd %s %s %s %s %s\n\n"%(angletype1, angletype2, angletype3, p0, p1))
-              para_strings_kbt.append("strbnd %s %s %s %s %s\n\n"%(angletype1, angletype2, angletype3, p0, p1))
-              print(GREEN + "STRBND coupling parameter (newly generated) assigned for angle %s-%s-%s\n"%(d[1], d[2], d[3]) + ENDC)
+              para_strings_k.append("strbnd %s %s %s %s %s\n"%(angletype1, angletype2, angletype3, p0, p1))
+              para_strings_kbt.append("strbnd %s %s %s %s %s\n"%(angletype1, angletype2, angletype3, p0, p1))
+              print(GREEN + "STRBND coupling parameter (newly generated) assigned for angle %s-%s-%s"%(d[1], d[2], d[3]) + ENDC)
             else:
               para_strings_k.append("strbnd %s %s %s PRM%d_ PRM%d_\n"%(d[1], d[2], d[3], len(fitting_list), len(fitting_list)))
               fitting_list.append(para)
@@ -545,16 +545,16 @@ def assignBonded(fname, tinkerkey, new_para_method, fitting = "NO"):
           c2 = tinker2database[d[2]]
           comb = c1 + "_" + c2
           if comb in classOpbendKconstantDict:
-            para_strings_k.append("opbend %s %s    0    0 %s\n\n"%(d[1], d[2], float(classOpbendKconstantDict[comb])))
-            para_strings_kbt.append("opbend %s %s    0    0 %s\n\n"%(d[1], d[2], float(classOpbendKconstantDict[comb])))
+            para_strings_k.append("opbend %s %s    0    0 %s\n"%(d[1], d[2], float(classOpbendKconstantDict[comb])))
+            para_strings_kbt.append("opbend %s %s    0    0 %s\n"%(d[1], d[2], float(classOpbendKconstantDict[comb])))
             print(GREEN + "OPBEND parameter assigned for bond %s-%s-0-0"%(d[1], d[2]) + ENDC)
           else:
             _, para, is_wild = typing_tree_assign(tree_1, 'o', comb, classOpbendKconstantDict)
             if(is_wild):
               para_strings_k.append("# Warning! This opbend involves wild type. Please check your structure\n")
-            para_strings_k.append("opbend %s %s    0    0 %s\n\n"%(d[1], d[2], para))
-            para_strings_kbt.append("opbend %s %s    0    0 %s\n\n"%(d[1], d[2], para))
-            print(GREEN + "OPBEND parameter (newly generated) assigned for bond %s-%s-0-0\n"%(d[1], d[2]) + ENDC)
+            para_strings_k.append("opbend %s %s    0    0 %s\n"%(d[1], d[2], para))
+            para_strings_kbt.append("opbend %s %s    0    0 %s\n"%(d[1], d[2], para))
+            print(GREEN + "OPBEND parameter (newly generated) assigned for bond %s-%s-0-0"%(d[1], d[2]) + ENDC)
 
   with open(tinkerkey + "_bonded", "w") as f:
     if konly == "YES":
