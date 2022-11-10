@@ -72,15 +72,15 @@
 [CX4r6]                                               51    43       C3R6 #                 C3R6, sp3 carbon on 6-membered cycle
 [CX4r3]                                               52    44       C3R3 #                 C3R3, sp3 carbon on 3-membered cycle
 [CX4r4]                                               53    45       C3R4 #                 C3R4, sp3 carbon on 4-membered cycle
-[C]1(CCO1)                                            54    46     C3R4O1 #               C3R4O1,  sp3 C in oxetane ring closer to O
+[CX4]1(CCO1)                                          54    46     C3R4O1 #               C3R4O1,  sp3 C in oxetane ring closer to O
 [CX4r7]                                               55    47       C3R7 #                 C3R7,  sp3 carbon in 7-membered ring
 [CX3r7](=[O])                                         56    48      C=OR7 #                C=OR7,  C=O in 7-membered ring (after CNN)
 [CX4r6]([Or6])                                        57    49      C3O1R #                C3O1R, sp3 carbon on 6-membered cycle bonded to 1 O on cycle
 [CX4r5]([NH1])                                        58    50     C3N1R5 #               C3N1R5, sp3 carbon on 5-membered cycle bonded to 1 NH
 [CX4r5]([NH1])([NH1])                                 59    51     C3N2R5 #               C3N2R5, sp3 carbon on 5-membered cycle bonded to 2 NH
 [CX4]([C](=O))([C](=O))                               60    52     C-Bket #               C-Bket, sp3 carbon with 2 C=O
-[$([#6](-[#7])(-[#6](=[#8])(-[#8])))]                 61    53         CA #                  CA, sp3 carbon on alanine C chain
-[C]([cr6])[cr6]                                       62    54     C3c6c6 #               C3c6c6,  sp3 C connected with 2 benzene rings
+[$([#6X4](-[#7])(-[#6](=[#8])(-[#8])))]               61    53         CA #                  CA, sp3 carbon on alanine C chain
+[CX4]([cr6])[cr6]                                     62    54     C3c6c6 #               C3c6c6,  sp3 C connected with 2 benzene rings
 [CX4]([F])[F]                                         63    55        CF2 #                  CF2, sp3 carbon with 2 F
 [CX4]([F])([F])[F]                                    64    56        CF3 #                  CF3, sp3 carbon with 3 F
 [CX4]([F])([F])([F])[F]                               65    57        CF4 #                  CF4, sp3 carbon with 4 F
@@ -145,7 +145,7 @@
 [CX3N2H1]                                            124   112        CNN #                  CNN, sp2 carbon, C between Ns in imidazole with positive charge
 [CX3]=[S]                                            125   113        C=S #              C=S, Carbon of C=S bond
 [CX2](#[NX1])[SX2]                                   126   114      C-SCN #       
-[C]1([O,S]C=CC=C1)                                   127   115   C3-pyran #             C3-pyran,  sp3 C in pyran ring
+[CX4]1([O,S]C=CC=C1)                                 127   115   C3-pyran #             C3-pyran,  sp3 C in pyran ring
 [$([C]1(=CC=C[O,S]C1)),$([C]1(=CC[O,S]C=C1)),$([C]1(=CC=CC[O,S]1)),$([C]1(=C[O,S]CC=C1))]   128   116   C2-pyran #             C2-pyran,  sp2 C in pyran ring
 [c]([c])[n]                                          129   117        ccn #                  ccn, aromatic carbon bonded to aromatic nitrogen
 [cr5]([cr5])[nH0r5]                                  130   118      ccnr5 #                ccnr5, aromatic carbon bonded to aromatic nitrogen in 5-membered cycle
@@ -210,7 +210,7 @@
 [NX4r5]                                              186   173       N4R5 #                 N4R5,  sp3 N with charge in 5-membered ring
 [NX3r6]                                              187   174       N3R6 #                 N3R6,  sp3 N in 6-membered ring
 [NX4r6]                                              188   175       N4R6 #                 N4R6,  sp3 N in 6-membered ring with charge
-[Nr7]                                                189   176       N3R7 #                 N3R7,  sp3 N in 7-membered ring
+[NX3r7]                                              189   176       N3R7 #                 N3R7,  sp3 N in 7-membered ring
 [NX3H3]                                              190   177       N3H3 #                 N3H3, ammonia N
 [NX3H2]([C](=[N]))                                   191   178      N3C=N #                N3C=N,
 [NX3;!r]([CX3](=O))                                  192   179       NC=O #                 NC=O, sp3 Nitrogen in amide
@@ -224,9 +224,11 @@
 [NX3H0]([NX3H0c0])[cccccc]                           200   186        N2N #                  N2N, N in azobenzene
 [NX1]                                                201   187         NT #       , Triple bond Nitrogen 
 [NX1](#[CX2]([SX2]))                                 202   188      N-SCN #                N-SCN
-[NX3H0]([N])[cccccc]                                 203   189       N1Ni #       N, Triple bond Nitrogen in diazonium (bond to other atoms) 
-[NX3H0]([N])[C]                                      204   189       N1Ni #       N, Triple bond Nitrogen in diazonium (bond to other atoms) 
-[NX3]([NH0][cccccc])                                 205   190       N1No #       N, Triple bond Nitrogen in diazonium (outer side)
+[NX2H0](#[N])[#6]                                    203   189       N1Ni #       N, Triple bond Nitrogen in diazonium (bond to other atoms) 
+# [NX3H0]([N])[cccccc]                                 203   189       N1Ni #       N, Triple bond Nitrogen in diazonium (bond to other atoms) 
+# [NX3H0]([N])[C]                                      204   189       N1Ni #       N, Triple bond Nitrogen in diazonium (bond to other atoms) 
+[N]#[NX2H0][#6]                                      205   190       N1No #       N, Triple bond Nitrogen in diazonium (outer side)
+# [NX3]([NH0][cccccc])                                 205   190       N1No #       N, Triple bond Nitrogen in diazonium (outer side)
 [NH0]([NH0][cccccc])[cccccc]                         206   191      N-Azo #                N-Azo, N in Azobenzene
 [NX2]=[C]                                            207   192        N=C #                  N=C, Double bond N=C
 [NH2]=[C]                                            208   193       N=C+ #                 N=C+, Double bond N+
