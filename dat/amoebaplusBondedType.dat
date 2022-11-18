@@ -224,11 +224,9 @@
 [NX3H0]([NX3H0c0])[cccccc]                           200   186        N2N #                  N2N, N in azobenzene
 [NX1]                                                201   187         NT #       , Triple bond Nitrogen 
 [NX1](#[CX2]([SX2]))                                 202   188      N-SCN #                N-SCN
-[NX2H0](#[N])[#6]                                    203   189       N1Ni #       N, Triple bond Nitrogen in diazonium (bond to other atoms) 
-# [NX3H0]([N])[cccccc]                                 203   189       N1Ni #       N, Triple bond Nitrogen in diazonium (bond to other atoms) 
-# [NX3H0]([N])[C]                                      204   189       N1Ni #       N, Triple bond Nitrogen in diazonium (bond to other atoms) 
-[N]#[NX2H0][#6]                                      205   190       N1No #       N, Triple bond Nitrogen in diazonium (outer side)
-# [NX3]([NH0][cccccc])                                 205   190       N1No #       N, Triple bond Nitrogen in diazonium (outer side)
+[NX3H0]([N])[cccccc]                                 203   189       N1Ni #       N, Triple bond Nitrogen in diazonium (bond to other atoms) 
+[NX3H0]([N])[C]                                      204   189       N1Ni #       N, Triple bond Nitrogen in diazonium (bond to other atoms) 
+[NX3]([NH0][cccccc])                                 205   190       N1No #       N, Triple bond Nitrogen in diazonium (outer side)
 [NH0]([NH0][cccccc])[cccccc]                         206   191      N-Azo #                N-Azo, N in Azobenzene
 [NX2]=[C]                                            207   192        N=C #                  N=C, Double bond N=C
 [NH2]=[C]                                            208   193       N=C+ #                 N=C+, Double bond N+
